@@ -1,0 +1,19 @@
+name: Ошибка или опечатка
+description: Нашли неточность, опечатку или битую ссылку в книге
+labels: [ошибка]
+body:
+  - type: input
+    id: chapter
+    attributes:
+      label: Глава
+      description: Номер главы или ссылка на страницу
+      placeholder: "Глава 5 или https://bockacho.github.io/granular-synthesis-book/…"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что не так
+      description: Процитируйте фразу и напишите, как правильно
+    validations:
+      required: true

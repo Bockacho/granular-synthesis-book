@@ -1,0 +1,15 @@
+name: Вопрос или идея
+description: Что-то непонятно в главе или есть идея, что добавить
+labels: [вопрос]
+body:
+  - type: input
+    id: chapter
+    attributes:
+      label: Глава
+      placeholder: "Глава 11, Granulator III"
+  - type: textarea
+    id: question
+    attributes:
+      label: Вопрос или идея
+    validations:
+      required: true

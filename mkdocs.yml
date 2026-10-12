@@ -1,0 +1,136 @@
+site_name: Гранулярный синтез
+site_description: Учебник по гранулярному синтезу для электронных музыкантов — от первого зерна до игры вживую.
+site_url: https://bockacho.github.io/granular-synthesis-book/
+repo_url: https://github.com/Bockacho/granular-synthesis-book
+repo_name: Bockacho/granular-synthesis-book
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  icon:
+    logo: material/grain
+    repo: fontawesome/brands/github
+    edit: material/pencil
+  favicon: images/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Тема как в системе
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
+
+plugins:
+  - search:
+      lang: ru
+  - glightbox:
+      zoomable: true
+      skip_classes:
+        - no-zoom
+  - git-revision-date-localized:
+      type: date
+      locale: ru
+      fallback_to_build_date: true
+      strict: false
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Ссылка на этот раздел
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.smartsymbols
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Bockacho/granular-synthesis-book
+      name: Исходники книги на GitHub
+
+copyright: Книга некоммерческая. Названия программ и интерфейсы принадлежат их правообладателям.
+
+nav:
+  - Главная: index.md
+  - Как читать: kak-chitat.md
+  - "Часть 1. Что такое звуковое зерно":
+    - chast-1-zerno/index.md
+    - "Глава 1. Звук можно разрезать": chast-1-zerno/01-zvuk-mozhno-razrezat.md
+    - "Глава 2. Анатомия зерна и облака": chast-1-zerno/02-anatomiya-zerna.md
+    - "Глава 3. Откуда это взялось": chast-1-zerno/03-istoriya.md
+  - "Часть 2. Параметры вглубь":
+    - chast-2-parametry/index.md
+    - "Глава 4. Источник и позиция": chast-2-parametry/04-istochnik-i-poziciya.md
+    - "Глава 5. Размер зерна и огибающая": chast-2-parametry/05-razmer-i-ogibayushchaya.md
+    - "Глава 6. Плотность и синхронность": chast-2-parametry/06-plotnost-i-sinkhronnost.md
+    - "Глава 7. Высота, направление и разброс высоты": chast-2-parametry/07-vysota-i-napravlenie.md
+    - "Глава 8. Пространство, случайность и голоса": chast-2-parametry/08-prostranstvo-i-golosa.md
+    - "Глава 9. Модуляция: звук, который живёт сам": chast-2-parametry/09-modulyaciya.md
+  - "Часть 3. Три инструмента":
+    - chast-3-instrumenty/index.md
+    - "Глава 10. Xfer Serum 2": chast-3-instrumenty/10-serum-2.md
+    - "Глава 11. Ableton Granulator III": chast-3-instrumenty/11-granulator-iii.md
+    - "Глава 12. Arturia Pigments": chast-3-instrumenty/12-pigments.md
+  - "Часть 4. Бесконечность на практике":
+    - chast-4-praktika/index.md
+    - "Глава 13. Карта звука и двадцать инструментов из одной ложки": chast-4-praktika/13-karta-zvuka.md
+    - "Глава 14. Рецепты по источнику": chast-4-praktika/14-recepty-po-istochniku.md
+    - "Глава 15. Рецепты по задаче": chast-4-praktika/15-recepty-po-zadache.md
+    - "Глава 16. Гранулярность вживую": chast-4-praktika/16-vzhivuyu.md
+    - "Глава 17. Кто так делает": chast-4-praktika/17-kto-tak-delaet.md
+  - "Часть 5. Дальше сам":
+    - chast-5-dalshe-sam/index.md
+    - "Глава 18. Типичные ошибки": chast-5-dalshe-sam/18-oshibki.md
+    - "Глава 19. Задания": chast-5-dalshe-sam/19-zadaniya.md
+    - "Глава 20. Словарь": chast-5-dalshe-sam/20-slovar.md
+    - "Глава 21. Бесплатные инструменты и что читать дальше": chast-5-dalshe-sam/21-chto-dalshe.md
