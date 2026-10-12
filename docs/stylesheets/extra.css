@@ -1,95 +1,473 @@
-/* Цвета книги: оранжевые зёрна и голубая волна с иллюстраций */
-:root {
-  --grain-orange: #e8832a;
-  --wave-cyan: #8fd3e0;
-  --night: #00101c;
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap");
 
-[data-md-color-scheme="default"] {
-  --md-primary-fg-color: var(--night);
-  --md-primary-fg-color--light: #0b2a3d;
-  --md-primary-fg-color--dark: #000a12;
-  --md-accent-fg-color: #c45f0a;
-  --md-typeset-a-color: #b3540a;
+/* ── Палитра: цвета иллюстраций — ночной синий, оранжевые зёрна, голубая волна ── */
+:root {
+  --grain: #e8832a;
+  --wave: #8fd3e0;
+  --night: #0a1620;
+  --font-head: "Manrope", "Golos Text", sans-serif;
 }
 
 [data-md-color-scheme="slate"] {
   --md-hue: 205;
-  --md-default-bg-color: #06131d;
-  --md-primary-fg-color: var(--night);
-  --md-primary-fg-color--light: #0b2a3d;
-  --md-primary-fg-color--dark: #000a12;
-  --md-accent-fg-color: var(--grain-orange);
-  --md-typeset-a-color: var(--wave-cyan);
+  --md-default-bg-color: #0a1620;
+  --md-default-bg-color--light: #0f2030;
+  --md-default-bg-color--lighter: #16293a;
+  --md-default-bg-color--lightest: #1b3243;
+  --md-default-fg-color: #dbe5ea;
+  --md-default-fg-color--light: #8fa3ae;
+  --md-default-fg-color--lighter: #5d7381;
+  --md-default-fg-color--lightest: #1b3243;
+  --md-typeset-color: #b9c8d0;
+  --md-typeset-a-color: var(--wave);
+  --md-accent-fg-color: var(--grain);
+  --md-primary-fg-color: #0a1620;
+  --md-primary-bg-color: #f1f5f7;
+  --md-primary-bg-color--light: #8fa3ae;
+  --md-code-bg-color: #0f2030;
+  --md-code-fg-color: #e9b98a;
+  --md-footer-bg-color: #071019;
+  --md-footer-bg-color--dark: #050c13;
+  --md-typeset-table-color: #1b3243;
+  --md-admonition-bg-color: #0f2030;
+  --md-shadow-z1: none;
+  --head-color: #f1f5f7;
+  --card-bg: #0f2030;
+  --card-border: #1b3243;
+  --demo-canvas: #071019;
+  --demo-muted: #8fa3ae;
+  --eyebrow: var(--grain);
+  --rule: #16293a;
 }
 
-/* Удобная для чтения ширина строки */
-.md-typeset {
-  font-size: 0.85rem;
-  line-height: 1.7;
-}
-.md-grid {
-  max-width: 68rem;
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #faf8f4;
+  --md-default-fg-color: #1d1d1b;
+  --md-default-fg-color--light: #5f5e5a;
+  --md-default-fg-color--lighter: #8a8780;
+  --md-default-fg-color--lightest: #e6e1d7;
+  --md-typeset-color: #33322e;
+  --md-typeset-a-color: #b3540a;
+  --md-accent-fg-color: #c45f0a;
+  --md-primary-fg-color: #faf8f4;
+  --md-primary-bg-color: #121211;
+  --md-primary-bg-color--light: #5f5e5a;
+  --md-code-bg-color: #f1ede5;
+  --md-code-fg-color: #8a3f06;
+  --md-footer-bg-color: #0a1620;
+  --md-footer-bg-color--dark: #071019;
+  --md-typeset-table-color: #e6e1d7;
+  --md-admonition-bg-color: #ffffff;
+  --md-shadow-z1: none;
+  --head-color: #121211;
+  --card-bg: #f2efe8;
+  --card-border: #e4ded2;
+  --demo-canvas: #0a1620;
+  --demo-muted: #5f5e5a;
+  --eyebrow: #c45f0a;
+  --rule: #e6e1d7;
 }
 
-.md-typeset .lead {
-  font-size: 1.15rem;
-  opacity: 0.85;
+/* ── Шапка в цвет страницы, с тонкой линией вместо тени ── */
+.md-header,
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  box-shadow: none;
 }
-
-/* Кнопки: главная всегда оранжевая, второстепенная контурная */
-.md-typeset .md-button {
+.md-header {
+  border-bottom: 1px solid var(--rule);
+}
+.md-header__topic:first-child {
+  font-family: var(--font-head);
+  font-weight: 600;
+}
+.md-tabs {
+  border-bottom: 1px solid var(--rule);
+}
+.md-tabs__link {
+  font-size: 0.72rem;
+  opacity: 1;
+  color: var(--md-default-fg-color--light);
+}
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link:hover {
+  color: var(--md-accent-fg-color);
+}
+.md-search__form {
+  background-color: var(--md-default-bg-color--light, var(--card-bg));
   border-radius: 0.4rem;
+}
+[data-md-color-scheme="default"] .md-search__form {
+  background-color: var(--card-bg);
+}
+.md-search__input::placeholder,
+.md-search__icon {
+  color: var(--md-default-fg-color--light);
+}
+
+/* ── Типографика: узкая колонка, Manrope в заголовках ── */
+.md-grid {
+  max-width: 72rem;
+}
+.md-content__inner {
+  max-width: 41rem;
+}
+@media screen and (min-width: 60em) {
+  .md-content__inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.md-typeset {
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: var(--font-head);
+  color: var(--head-color);
+  letter-spacing: -0.01em;
+}
+.md-typeset h1 {
+  font-weight: 700;
+  font-size: 2.1em;
+  line-height: 1.15;
+  margin: 0 0 1em;
+}
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.35em;
+  margin-top: 2.2em;
+}
+.md-typeset strong {
+  color: var(--head-color);
+  font-weight: 500;
+}
+.md-typeset .eyebrow {
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--eyebrow);
+  margin: 0 0 0.6rem;
+}
+.md-typeset .eyebrow + h1 {
+  margin-top: 0;
+}
+.md-typeset hr {
+  border-bottom-color: var(--rule);
+}
+
+/* Боковые меню спокойнее */
+.md-nav {
+  font-size: 0.68rem;
+}
+.md-nav__title {
+  font-family: var(--font-head);
+}
+.md-nav__link--active,
+.md-nav__link:is(:focus, :hover) {
+  color: var(--md-accent-fg-color);
+}
+
+/* ── Иллюстрации: сливаются с тёмной страницей, в светлой выглядят как окна ── */
+.md-typeset figure {
+  margin: 2em auto;
+}
+.md-typeset figure img {
+  border-radius: 0.8rem;
+  max-height: 24rem;
+  width: auto;
+}
+[data-md-color-scheme="slate"] .md-typeset figure img:not([src$=".svg"]) {
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0 1px var(--rule);
+}
+.md-typeset figcaption {
+  font-style: normal;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 34rem;
+}
+[data-md-color-scheme="slate"] img[src$="karta-zvuka.svg"] {
+  filter: brightness(0.9);
+}
+
+/* ── Кнопки: главная оранжевая, второстепенная контурная ── */
+.md-typeset .md-button {
+  font-family: var(--font-head);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border-width: 1px;
   color: var(--md-typeset-a-color);
   border-color: currentcolor;
+  padding: 0.55em 1.4em;
 }
 .md-typeset .md-button:hover,
 .md-typeset .md-button:focus {
-  background-color: color-mix(in srgb, var(--md-typeset-a-color) 15%, transparent);
+  background-color: color-mix(in srgb, var(--md-typeset-a-color) 14%, transparent);
   border-color: var(--md-typeset-a-color);
   color: var(--md-typeset-a-color);
 }
 .md-typeset .md-button--primary,
 .md-typeset .md-button--primary:hover,
 .md-typeset .md-button--primary:focus {
-  background-color: var(--grain-orange);
-  border-color: var(--grain-orange);
+  background-color: var(--grain);
+  border-color: var(--grain);
   color: var(--night);
 }
 .md-typeset .md-button--primary:hover,
 .md-typeset .md-button--primary:focus {
-  filter: brightness(1.1);
+  filter: brightness(1.08);
 }
 
-/* Иллюстрации со скруглёнными углами */
-.md-typeset figure img {
-  border-radius: 0.6rem;
+/* ── Блоки: «Под капотом» голубой, рецепты оранжевые ── */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.8rem;
+  border: 1px solid var(--card-border);
+  border-radius: 0.7rem;
+  background-color: var(--card-bg);
+  box-shadow: none;
 }
-.md-typeset figcaption {
-  font-style: italic;
-  max-width: 36rem;
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-family: var(--font-head);
+  font-weight: 600;
+  background-color: transparent !important;
+  border-radius: 0.7rem;
+}
+.md-typeset details.info,
+.md-typeset .admonition.info {
+  border-color: color-mix(in srgb, var(--wave) 35%, var(--card-border));
+}
+.md-typeset details.info > summary,
+.md-typeset .info > .admonition-title {
+  color: var(--md-typeset-a-color);
+}
+.md-typeset details.info > summary::before,
+.md-typeset .info > .admonition-title::before {
+  background-color: var(--md-typeset-a-color);
+}
+.md-typeset .admonition.success {
+  border-color: color-mix(in srgb, var(--grain) 40%, var(--card-border));
+}
+.md-typeset .success > .admonition-title {
+  color: var(--eyebrow);
+}
+.md-typeset .success > .admonition-title::before {
+  background-color: var(--eyebrow);
+}
+.md-typeset details.question > summary,
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset .admonition.tip > .admonition-title {
+  color: var(--head-color);
+}
+.md-typeset details.question > summary::before,
+.md-typeset .note > .admonition-title::before,
+.md-typeset .tip > .admonition-title::before {
+  background-color: var(--md-default-fg-color--light);
+}
+.md-typeset details > summary::after {
+  background-color: var(--md-default-fg-color--light);
 }
 
-/* Карта звука на тёмной теме не слепит */
-[data-md-color-scheme="slate"] img[src$="karta-zvuka.svg"] {
-  filter: brightness(0.92);
-  border-radius: 0.6rem;
-}
-
-/* Упражнения: заметный заголовок с иконкой */
-.md-typeset h2.exercise {
-  border-left: 0.25rem solid var(--grain-orange);
-  padding-left: 0.6rem;
-}
+/* ── Упражнения ── */
 .md-typeset h2.exercise::before {
-  content: "✎ ";
-  color: var(--grain-orange);
+  content: "";
+  display: inline-block;
+  width: 0.45em;
+  height: 0.45em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background: var(--grain);
+  vertical-align: 0.12em;
 }
 
-/* Широкие таблицы листаются, а не ломают страницу */
+/* ── Таблицы ── */
+.md-typeset table:not([class]) {
+  font-size: 0.74rem;
+  border: 1px solid var(--card-border);
+  border-radius: 0.6rem;
+  box-shadow: none;
+}
+.md-typeset table:not([class]) th {
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: var(--head-color);
+  background-color: var(--card-bg);
+}
+.md-typeset table:not([class]) td {
+  border-top-color: var(--card-border);
+}
 .md-typeset__table {
   min-width: 100%;
 }
-.md-typeset table:not([class]) {
-  font-size: 0.75rem;
+
+/* ── Главная ── */
+.md-typeset .hero {
+  display: grid;
+  gap: 1.6rem;
+  margin: 1rem 0 2.5rem;
+}
+.md-typeset .hero h1 {
+  font-size: 2.8em;
+  margin: 0;
+}
+.md-typeset .hero .lead {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+.md-typeset .hero img {
+  border-radius: 1rem;
+}
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--card-border);
+  border-radius: 0.8rem;
+  background-color: var(--card-bg);
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: color-mix(in srgb, var(--grain) 50%, var(--card-border));
+  box-shadow: none;
+}
+.md-typeset .grid.cards .num {
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
+  color: var(--eyebrow);
+  letter-spacing: 0.1em;
+}
+.md-typeset .grid.cards a {
+  color: var(--head-color);
+  font-family: var(--font-head);
+  font-weight: 600;
+}
+.md-typeset .grid.cards hr {
+  display: none;
+}
+
+/* ── Звуковые демо ── */
+.grain-demo {
+  margin: 1.8em 0;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 0.9rem;
+  background: var(--card-bg);
+  font-size: 0.72rem;
+  color: var(--demo-muted);
+}
+.grain-demo .gd-title {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--head-color);
+  margin: 0 0 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.grain-demo .gd-title::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: var(--grain);
+}
+.grain-demo canvas {
+  display: block;
+  width: 100%;
+  height: 7rem;
+  border-radius: 0.6rem;
+  background: var(--demo-canvas);
+}
+.grain-demo .gd-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 0.9rem;
+  flex-wrap: wrap;
+}
+.grain-demo .gd-play {
+  flex: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--grain);
+  color: var(--night);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.grain-demo .gd-play svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentcolor;
+}
+.grain-demo .gd-play:focus-visible,
+.grain-demo button:focus-visible,
+.grain-demo input:focus-visible {
+  outline: 2px solid var(--wave);
+  outline-offset: 2px;
+}
+.grain-demo .gd-slider {
+  flex: 1 1 12rem;
+  min-width: 10rem;
+}
+.grain-demo .gd-slider label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+.grain-demo .gd-value {
+  font-family: var(--md-code-font-family);
+  color: var(--eyebrow);
+}
+.grain-demo input[type="range"] {
+  width: 100%;
+  accent-color: var(--grain);
+}
+.grain-demo .gd-seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.grain-demo .gd-seg button {
+  font: inherit;
+  color: var(--demo-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 0.4rem;
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+}
+.grain-demo .gd-seg button[aria-pressed="true"] {
+  color: var(--night);
+  background: var(--wave);
+  border-color: var(--wave);
+}
+.grain-demo .gd-hint {
+  margin-top: 0.8rem;
+  color: var(--head-color);
+  min-height: 1.4em;
+}
+.grain-demo .gd-hint::before {
+  content: "→ ";
+  color: var(--grain);
+}
+
+@media (min-width: 60em) {
+  .md-typeset .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* Главная шире колонки текста */
+.md-content__inner:has(.hero) {
+  max-width: 60rem;
 }
