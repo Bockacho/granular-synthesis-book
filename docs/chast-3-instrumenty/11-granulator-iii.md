@@ -12,7 +12,10 @@ Granulator III написал Роберт Хенке, тот самый, что
 
 **Push 3 Standalone.** Инструмент работает и там, но с ограничениями: нет картинки волны, сэмплы с самого Push не заменить (только играть пресеты, сделанные в Live), захват звука не работает.
 
-<!-- Скриншот 11.1. Granulator III с загруженным звуком, режим Classic. Интерфейс Granulator III, © Ableton. -->
+<figure markdown="span">
+  ![Granulator III в режиме Classic: волна загруженного сэмпла, ниже ручки Position, Scan, Grain Size, Shape, Variation и Transpose](../images/11-1.jpeg)
+  <figcaption>Скриншот 11.1. Granulator III с загруженным звуком, режим Classic. Интерфейс Granulator III, © Ableton.</figcaption>
+</figure>
 
 ## Устройство интерфейса
 

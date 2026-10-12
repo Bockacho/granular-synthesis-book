@@ -6,7 +6,10 @@
 
     Описание соответствует Serum 2 версии 2.0.18. Учти: руководство предупреждает, что гранулярный режим нагружает процессор сильнее режимов Wavetable, Sample и Multisample.
 
-<!-- Скриншот 10.1. OSC A в режиме Granular с загруженным звуком. Интерфейс Serum 2, © Xfer Records. -->
+<figure markdown="span">
+  ![Serum 2: осциллятор OSC B в режиме Granular, под волной ручки SCAN, DENS, LENGTH и нижний ряд разбросов](../images/10-1.png)
+  <figcaption>Скриншот 10.1. OSC B в режиме Granular с загруженным звуком. Интерфейс Serum 2, © Xfer Records.</figcaption>
+</figure>
 
 ## Включаем и загружаем звук
 
