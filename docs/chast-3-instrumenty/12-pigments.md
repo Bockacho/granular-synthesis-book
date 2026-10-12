@@ -6,7 +6,10 @@
 
     Описание соответствует Pigments 7.0.0. Диапазоны с пометкой «по руководству Pigments 2» взяты из документации второй версии и в новых версиях могли измениться.
 
-<!-- Скриншот 12.1. Движок Sample в режиме Main, гранулярная секция включена. Интерфейс Pigments, © Arturia. -->
+<figure markdown="span">
+  ![Pigments: движок Sample в режиме Main, под волной включена секция Granular с ручками Density, Shape и Size, ниже ряд рандомайзеров Start, Pitch, Density, Direction, Size, Width и Volume](../images/12-1.jpg)
+  <figcaption>Скриншот 12.1. Движок Sample в режиме Main, гранулярная секция включена. Интерфейс Pigments, © Arturia.</figcaption>
+</figure>
 
 ## Загружаем звук
 
