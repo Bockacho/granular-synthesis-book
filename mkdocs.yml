@@ -98,7 +98,9 @@ extra:
       link: https://github.com/Bockacho/granular-synthesis-book
       name: Исходники книги на GitHub
 
-copyright: Книга некоммерческая. Названия программ и интерфейсы принадлежат их правообладателям.
+copyright: >
+  Текст и иллюстрации — <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru">CC BY-NC-SA 4.0</a>.
+  Названия программ и интерфейсы принадлежат их правообладателям.
 
 nav:
   - Главная: index.md

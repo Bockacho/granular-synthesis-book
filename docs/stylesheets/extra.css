@@ -37,6 +37,30 @@
   opacity: 0.85;
 }
 
+/* Кнопки: главная всегда оранжевая, второстепенная контурная */
+.md-typeset .md-button {
+  border-radius: 0.4rem;
+  color: var(--md-typeset-a-color);
+  border-color: currentcolor;
+}
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background-color: color-mix(in srgb, var(--md-typeset-a-color) 15%, transparent);
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+.md-typeset .md-button--primary,
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: var(--grain-orange);
+  border-color: var(--grain-orange);
+  color: var(--night);
+}
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  filter: brightness(1.1);
+}
+
 /* Иллюстрации со скруглёнными углами */
 .md-typeset figure img {
   border-radius: 0.6rem;

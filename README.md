@@ -45,6 +45,12 @@
 
 [Откройте issue](https://github.com/Bockacho/granular-synthesis-book/issues/new/choose) или нажмите на карандаш ✎ вверху любой страницы сайта, чтобы предложить правку.
 
+## Лицензия
+
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey)](LICENSE)
+
+Текст и иллюстрации распространяются по лицензии [Creative Commons «Attribution-NonCommercial-ShareAlike» 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru): книгу можно копировать, переводить и переделывать с указанием автора и ссылкой на оригинал, только некоммерчески и на тех же условиях. Полный текст — в файле [LICENSE](LICENSE). Названия программ и интерфейсы принадлежат их правообладателям и под эту лицензию не подпадают.
+
 ## Как собрать сайт локально
 
 ```bash
