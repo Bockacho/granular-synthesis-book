@@ -21,6 +21,8 @@
 ## Что читать
 
 - **Кёртис Роудс, «Microsound»** (MIT Press, 2001). Главный учебник по гранулярному синтезу и микрозвуку: теория, история, методы, пульсарный синтез.
+- **Кёртис Роудс, «Introduction to Granular Synthesis»** (Computer Music Journal, 1988). Короткое введение в тему от автора «Microsound».
+- **Chris Carlson, Ge Wang, «Borderlands: An Audiovisual Interface for Granular Synthesis»** (конференция NIME, 2012). Как устроен гранулятор, в котором зёрна видно на экране.
 - **Янис Ксенакис, «Formalized Music»** (английское издание 1971 года). Теория, на которой выросла гранулярная композиция.
 - **Деннис Габор, «Acoustical Quanta and the Theory of Hearing»** (журнал Nature, 1947). Статья, где звук впервые описан как поток квантов.
 - **Барри Тракс, Granular Synthesis** ([sfu.ca](https://www.sfu.ca/~truax/gran.html)). Короткий текст автора первого гранулятора реального времени.
