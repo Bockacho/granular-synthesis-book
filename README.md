@@ -1,6 +1,7 @@
 # Гранулярный синтез: учебник для электронных музыкантов
 
 [![Читать онлайн](https://img.shields.io/badge/читать-онлайн-e8832a?style=for-the-badge)](https://bockacho.github.io/granular-synthesis-book/)
+[![Поддержать автора](https://img.shields.io/badge/поддержать-PayPal-0070ba?logo=paypal&logoColor=white&style=for-the-badge)](https://paypal.me/limbmusic)
 [![Сборка сайта](https://github.com/Bockacho/granular-synthesis-book/actions/workflows/deploy.yml/badge.svg)](https://github.com/Bockacho/granular-synthesis-book/actions/workflows/deploy.yml)
 
 ![Один звук: сплошной, нарезанный на куски и рассыпанный облаком зёрен](docs/images/1-1.png)
@@ -44,6 +45,10 @@
 ## Нашли ошибку?
 
 [Откройте issue](https://github.com/Bockacho/granular-synthesis-book/issues/new/choose) или нажмите на карандаш ✎ вверху любой страницы сайта, чтобы предложить правку.
+
+## Поддержать автора
+
+Книга бесплатная. Если она оказалась полезной, можно [поддержать автора через PayPal](https://paypal.me/limbmusic). Кнопка «Sponsor» наверху страницы репозитория ведёт туда же.
 
 ## Лицензия
 

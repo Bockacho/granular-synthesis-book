@@ -101,9 +101,12 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Bockacho/granular-synthesis-book
       name: Исходники книги на GitHub
+    - icon: fontawesome/brands/paypal
+      link: https://paypal.me/limbmusic
+      name: Поддержать автора через PayPal
 
 copyright: >
-  Текст и иллюстрации — <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru">CC BY-NC-SA 4.0</a>.
+  Текст и иллюстрации — <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru">CC BY-NC-SA 4.0</a>. <a href="https://paypal.me/limbmusic">Поддержать автора</a>.
   Названия программ и интерфейсы принадлежат их правообладателям.
 
 nav:
