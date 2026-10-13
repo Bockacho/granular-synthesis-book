@@ -80,7 +80,7 @@
       title: "Послушай: ровный поток и вразнобой",
       controls: [
         { type: "range", key: "d", label: "Плотность", value: 30, show: (v) => `${Math.round(logMap(v, 2, 220))} зёрен/с` },
-        { type: "seg", key: "mode", options: [["sync", "Ровно"], ["async", "Вразнобой"]], value: "sync" },
+        { type: "seg", key: "mode", label: "Режим потока", options: [["sync", "Ровно"], ["async", "Вразнобой"]], value: "sync" },
       ],
       params(s) {
         const d = logMap(s.d, 2, 220);
@@ -96,7 +96,7 @@
       title: "Послушай: размер зерна и форма окна",
       controls: [
         { type: "range", key: "s", label: "Размер зерна", value: 62, show: (v) => `${fmt(logMap(v, 1, 500), logMap(v, 1, 500) < 10 ? 1 : 0)} мс` },
-        { type: "seg", key: "shape", options: [["hann", "Колокол"], ["gauss", "Гаусс"], ["tukey", "Трапеция"], ["perc", "Перкуссия"], ["rev", "Обратная"], ["rect", "Прямоугольник"]], value: "hann" },
+        { type: "seg", key: "shape", label: "Форма окна", options: [["hann", "Колокол"], ["gauss", "Гаусс"], ["tukey", "Трапеция"], ["perc", "Перкуссия"], ["rev", "Обратная"], ["rect", "Прямоугольник"]], value: "hann" },
       ],
       params(s) {
         const size = logMap(s.s, 1, 500) / 1000;
@@ -140,7 +140,7 @@
       title: "Послушай: разброс высоты",
       controls: [
         { type: "range", key: "p", label: "Разброс высоты", value: 30, show: (v) => centsLabel(spreadCents(v)) },
-        { type: "seg", key: "mode", options: [["free", "Свободно"], ["oct", "Октавы"], ["fifth", "Октавы и квинты"], ["scale", "Ноты лада"]], value: "free" },
+        { type: "seg", key: "mode", label: "Привязка высоты", options: [["free", "Свободно"], ["oct", "Октавы"], ["fifth", "Октавы и квинты"], ["scale", "Ноты лада"]], value: "free" },
       ],
       params(s) {
         const cents = spreadCents(s.p);
@@ -239,6 +239,7 @@
         const seg = document.createElement("div");
         seg.className = "gd-seg";
         seg.setAttribute("role", "group");
+        seg.setAttribute("aria-label", c.label);
         for (const [v, label] of c.options) {
           const b = document.createElement("button");
           b.type = "button";
@@ -264,6 +265,7 @@
     }
     function tick() {
       const p = spec.params(state);
+      if (demo.next < ctx.currentTime) demo.next = ctx.currentTime + 0.02;
       while (demo.next < ctx.currentTime + 0.12) {
         const g = p.grain();
         g.gain = 0.75 / Math.sqrt(Math.max(1, p.density * g.size));
@@ -284,6 +286,7 @@
       demo.timer = setInterval(tick, 25);
       play.innerHTML = ICON_PAUSE;
       play.setAttribute("aria-label", "Пауза");
+      kick();
     }
     function stop() {
       demo.playing = false;
@@ -297,11 +300,26 @@
     // Временная шкала: голубая волна-исходник, оранжевые зёрна в момент звучания
     const g2d = canvas.getContext("2d");
     const SPAN = 2;
+    let looping = false;
+    function kick() {
+      if (!looping) {
+        looping = true;
+        requestAnimationFrame(draw);
+      }
+    }
     function draw() {
+      looping = false;
       if (!canvas.isConnected) return;
       const dpr = window.devicePixelRatio || 1;
-      const W = (canvas.width = canvas.clientWidth * dpr);
-      const H = (canvas.height = canvas.clientHeight * dpr);
+      const cw = Math.round(canvas.clientWidth * dpr);
+      const ch = Math.round(canvas.clientHeight * dpr);
+      if (canvas.width !== cw || canvas.height !== ch) {
+        canvas.width = cw;
+        canvas.height = ch;
+      }
+      const W = cw;
+      const H = ch;
+      let visible = false;
       g2d.clearRect(0, 0, W, H);
       g2d.strokeStyle = "rgba(143,211,224,0.55)";
       g2d.lineWidth = 2 * dpr;
@@ -316,7 +334,9 @@
         const now = ctx.currentTime;
         for (const d of demo.dots) {
           const age = now - d.t;
-          if (age < 0 || age > SPAN) continue;
+          if (age > SPAN) continue;
+          visible = true;
+          if (age < 0) continue;
           const x = W - (age / SPAN) * W;
           const y = H * 0.5 - (d.pitch / 26) * H * 0.85 + Math.sin((x / W) * Math.PI * 4) * H * 0.1;
           const w = Math.max(3 * dpr, (d.size / SPAN) * W);
@@ -326,8 +346,9 @@
           g2d.fill();
         }
       }
-      requestAnimationFrame(draw);
+      if (demo.playing || visible) kick();
     }
+    if (window.ResizeObserver) new ResizeObserver(() => kick()).observe(canvas);
     update();
     draw();
   }
@@ -336,6 +357,10 @@
     if (current) current.stop();
     document.querySelectorAll(".grain-demo").forEach(mount);
   }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden && current) current.stop();
+  });
 
   if (window.document$) window.document$.subscribe(init);
   else document.addEventListener("DOMContentLoaded", init);
