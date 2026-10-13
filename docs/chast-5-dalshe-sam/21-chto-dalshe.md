@@ -22,6 +22,8 @@
 - **Янис Ксенакис, «Formalized Music»** (английское издание 1971 года). Теория, на которой выросла гранулярная композиция.
 - **Деннис Габор, «Acoustical Quanta and the Theory of Hearing»** (журнал Nature, 1947). Статья, где звук впервые описан как поток квантов.
 - **Барри Тракс, Granular Synthesis** ([sfu.ca](https://www.sfu.ca/~truax/gran.html)). Короткий текст автора первого гранулятора реального времени.
+- **Барри Тракс, «Real-Time Granular Synthesis with a Digital Signal Processor»** (Computer Music Journal, 1988) и **«Composing with Real-Time Granular Sound»** (Perspectives of New Music, 1990). Первоисточники о первом гранулярном синтезе в реальном времени.
+- **Joshua Batty, Kipps Horn, Stefan Greuter, «Audiovisual Granular Synthesis: Micro Relationships Between Sound and Image»** (конференция IE '13, ACM, 2013). Гранулярный синтез звука и видео одновременно, инструмент Kortex.
 - **Кёртис Роудс, «Path to Half Life»** ([curtisroads.net](https://www.curtisroads.net/s/04-Path-to-Half-Life.pdf)). Как композитор шёл от первых этюдов к музыке на зёрнах.
 - **Роберт Хенке, страница Granulator III** ([roberthenke.com](https://www.roberthenke.com/technology/granulator3.html)). Полное описание инструмента от автора.
 - **Руководства Serum 2 и Pigments 7.** Полные описания всех параметров, открываются из меню самих инструментов.
