@@ -14,7 +14,9 @@
 
 **Granulator II, Роберт Хенке.** Предшественник Granulator III, бесплатный, под некоммерческой лицензией Creative Commons ([Synthtopia, цитата Хенке](https://synthtopia.com/?p=48204)). Нужен Max for Live. Хенке пишет, что Granulator II по-прежнему доступен, но обновлять его, скорее всего, уже не будут.
 
-**Pure Data и SuperCollider.** Бесплатные среды, где гранулятор собирается из блоков или пишется кодом. Подходят для задания 11 из [главы 19](../chast-5-dalshe-sam/19-zadaniya.md) и для всех, кому интересно, как оно устроено внутри.
+**EmissionControl2, Кёртис Роудс, Джек Килгор, Родни Дюплесси.** Отдельная программа (не плагин) для macOS, Windows и Linux, открытый код под лицензией GPL-3. Работает со звуковыми файлами, живой вход не берёт. До 2048 зёрен одновременно, длина зерна от 20 микросекунд до 10 секунд, у каждого зерна свои фильтр, панорама и окно, шесть LFO до 6000 Гц, ручки прерывистости и числа потоков, пресеты с плавным переходом между ними. Сделан автором «Microsound» для учёбы, исследований и сцены ([GitHub](https://github.com/EmissionControl2/EmissionControl2)).
+
+**Pure Data и SuperCollider.** Бесплатные среды, где гранулятор собирается из блоков или пишется кодом. Подходят для задания 11 из [главы 19](../chast-5-dalshe-sam/19-zadaniya.md) и для всех, кому интересно, как оно устроено внутри. Для Pure Data и Max есть бесплатный гранулятор +bubbler Тома Эрбе, автора алгоритмов для модулей Make Noise ([SoundHack](https://www.soundhack.com/freeware/)).
 
 ## Что читать
 
@@ -24,6 +26,7 @@
 - **Барри Тракс, Granular Synthesis** ([sfu.ca](https://www.sfu.ca/~truax/gran.html)). Короткий текст автора первого гранулятора реального времени.
 - **Барри Тракс, «Real-Time Granular Synthesis with a Digital Signal Processor»** (Computer Music Journal, 1988; [doi.org](https://doi.org/10.2307/3679938)) и **«Composing with Real-Time Granular Sound»** (Perspectives of New Music, 1990). Первоисточники о первом гранулярном синтезе в реальном времени.
 - **Joshua Batty, Kipps Horn, Stefan Greuter, «Audiovisual Granular Synthesis: Micro Relationships Between Sound and Image»** (конференция IE '13, ACM, 2013; [doi.org](https://doi.org/10.1145/2513002.2513568)). Гранулярный синтез звука и видео одновременно, инструмент Kortex.
+- **Кёртис Роудс, Джек Килгор, Родни Дюплесси, «Architecture for Real-Time Granular Synthesis With Per-Grain Processing: EmissionControl2»** (Computer Music Journal, 2021; [doi.org](https://doi.org/10.1162/comj_a_00613)). Как устроен современный гранулятор изнутри и короткая история метода от Габора до наших дней.
 - **Кёртис Роудс, «Path to Half Life»** ([curtisroads.net](https://www.curtisroads.net/s/04-Path-to-Half-Life.pdf)). Как композитор шёл от первых этюдов к музыке на зёрнах.
 - **Роберт Хенке, страница Granulator III** ([roberthenke.com](https://www.roberthenke.com/technology/granulator3.html)). Полное описание инструмента от автора.
 - **Руководства Serum 2 и Pigments 7.** Полные описания всех параметров, открываются из меню самих инструментов.
