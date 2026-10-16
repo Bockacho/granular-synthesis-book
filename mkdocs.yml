@@ -37,8 +37,6 @@ theme:
         icon: material/weather-night
         name: Тёмная тема
   features:
-    - navigation.instant
-    - navigation.instant.progress
     - navigation.tracking
     - navigation.sections
     - navigation.indexes
@@ -52,9 +50,61 @@ theme:
     - content.action.view
     - content.tooltips
 
+hooks:
+  - hooks/english_labels.py
+
 plugins:
   - search:
-      lang: ru
+      lang:
+        - ru
+        - en
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: false
+      languages:
+        - locale: ru
+          default: true
+          name: Русский
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: Granular Synthesis
+          site_description: A textbook on granular synthesis for electronic musicians, from the first grain to playing live.
+          copyright: >
+            Text and illustrations are under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. <a href="https://paypal.me/limbmusic">Support the author</a>.
+            Program names and interfaces belong to their owners.
+          nav_translations:
+            Главная: Home
+            Как читать: How to read
+            "Часть 1. Что такое звуковое зерно": "Part 1. What a Sound Grain Is"
+            "Часть 2. Параметры вглубь": "Part 2. Parameters in Depth"
+            "Часть 3. Три инструмента": "Part 3. Three Instruments"
+            "Часть 4. Бесконечность на практике": "Part 4. Endless Possibilities in Practice"
+            "Часть 5. Дальше сам": "Part 5. On Your Own"
+            "Глава 1. Звук можно разрезать": "Chapter 1. Sound can be cut up"
+            "Глава 2. Анатомия зерна и облака": "Chapter 2. The anatomy of a grain and a cloud"
+            "Глава 3. Откуда это взялось": "Chapter 3. Where it all came from"
+            "Глава 4. Источник и позиция": "Chapter 4. Source and position"
+            "Глава 5. Размер зерна и огибающая": "Chapter 5. Grain size and envelope"
+            "Глава 6. Плотность и синхронность": "Chapter 6. Density and synchronicity"
+            "Глава 7. Высота, направление и разброс высоты": "Chapter 7. Pitch, direction and pitch spread"
+            "Глава 8. Пространство, случайность и голоса": "Chapter 8. Space, randomness and voices"
+            "Глава 9. Модуляция: звук, который живёт сам": "Chapter 9. Modulation: a sound that lives on its own"
+            "Глава 10. Xfer Serum 2": "Chapter 10. Xfer Serum 2"
+            "Глава 11. Ableton Granulator III": "Chapter 11. Ableton Granulator III"
+            "Глава 12. Arturia Pigments": "Chapter 12. Arturia Pigments"
+            "Глава 13. Карта звука и двадцать инструментов из одной ложки": "Chapter 13. The sound map and twenty instruments from one spoon"
+            "Глава 14. Рецепты по источнику": "Chapter 14. Recipes by source"
+            "Глава 15. Рецепты по задаче": "Chapter 15. Recipes by task"
+            "Глава 16. Гранулярность вживую": "Chapter 16. Granular sound live"
+            "Глава 17. Кто так делает": "Chapter 17. Who works this way"
+            "Глава 18. Типичные ошибки": "Chapter 18. Common mistakes"
+            "Глава 19. Задания": "Chapter 19. Exercises"
+            "Глава 20. Словарь": "Chapter 20. Glossary"
+            "Глава 21. Бесплатные инструменты и что читать дальше": "Chapter 21. Free instruments and what to read next"
   - glightbox:
       zoomable: true
       skip_classes:

@@ -5,9 +5,13 @@
   let spoon = null;
   let current = null; // демо, которое сейчас играет
 
+  // Язык берём из адреса: английские страницы лежат в /en/
+  const EN = /\/en(\/|$)/.test(location.pathname);
+  const T = (ru, en) => (EN ? en : ru);
+
   const ICON_PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
   const ICON_PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
-  const fmt = (n, d = 0) => n.toFixed(d).replace(".", ",");
+  const fmt = (n, d = 0) => n.toFixed(d).replace(".", EN ? "." : ",");
   const logMap = (v, lo, hi) => lo * Math.pow(hi / lo, v / 100);
 
   function audio() {
@@ -77,10 +81,10 @@
   // ── Описания демо: элементы управления, параметры зерна, подсказка ──
   const DEMOS = {
     sync: {
-      title: "Послушай: ровный поток и вразнобой",
+      title: T("Послушай: ровный поток и вразнобой", "Listen: a steady stream and a scattered one"),
       controls: [
-        { type: "range", key: "d", label: "Плотность", value: 30, show: (v) => `${Math.round(logMap(v, 2, 220))} зёрен/с` },
-        { type: "seg", key: "mode", label: "Режим потока", options: [["sync", "Ровно"], ["async", "Вразнобой"]], value: "sync" },
+        { type: "range", key: "d", label: T("Плотность", "Density"), value: 30, show: (v) => `${Math.round(logMap(v, 2, 220))} ${T("зёрен/с", "grains/s")}` },
+        { type: "seg", key: "mode", label: T("Режим потока", "Stream mode"), options: [["sync", T("Ровно", "Steady")], ["async", T("Вразнобой", "Scattered")]], value: "sync" },
       ],
       params(s) {
         const d = logMap(s.d, 2, 220);
@@ -88,15 +92,15 @@
       },
       hint(s) {
         const d = Math.round(logMap(s.d, 2, 220));
-        if (s.mode === "sync") return d < 18 ? "Дробь: ухо ещё различает отдельные удары." : `Тон: высота ноты равна частоте зёрен, ${d} Гц.`;
-        return d < 18 ? "Редкие капли в случайные моменты." : "Облако: шелест без высоты, тона больше нет.";
+        if (s.mode === "sync") return d < 18 ? T("Дробь: ухо ещё различает отдельные удары.", "A rattle: the ear can still pick out single hits.") : T(`Тон: высота ноты равна частоте зёрен, ${d} Гц.`, `A tone: the pitch equals the grain rate, ${d} Hz.`);
+        return d < 18 ? T("Редкие капли в случайные моменты.", "Rare drops at random moments.") : T("Облако: шелест без высоты, тона больше нет.", "A cloud: a rustle with no pitch, the tone is gone.");
       },
     },
     size: {
-      title: "Послушай: размер зерна и форма окна",
+      title: T("Послушай: размер зерна и форма окна", "Listen: grain size and window shape"),
       controls: [
-        { type: "range", key: "s", label: "Размер зерна", value: 62, show: (v) => `${fmt(logMap(v, 1, 500), logMap(v, 1, 500) < 10 ? 1 : 0)} мс` },
-        { type: "seg", key: "shape", label: "Форма окна", options: [["hann", "Колокол"], ["gauss", "Гаусс"], ["tukey", "Трапеция"], ["perc", "Перкуссия"], ["rev", "Обратная"], ["rect", "Прямоугольник"]], value: "hann" },
+        { type: "range", key: "s", label: T("Размер зерна", "Grain size"), value: 62, show: (v) => `${fmt(logMap(v, 1, 500), logMap(v, 1, 500) < 10 ? 1 : 0)} ${T("мс", "ms")}` },
+        { type: "seg", key: "shape", label: T("Форма окна", "Window shape"), options: [["hann", T("Колокол", "Bell")], ["gauss", T("Гаусс", "Gauss")], ["tukey", T("Трапеция", "Trapezoid")], ["perc", T("Перкуссия", "Percussive")], ["rev", T("Обратная", "Reversed")], ["rect", T("Прямоугольник", "Rectangle")]], value: "hann" },
       ],
       params(s) {
         const size = logMap(s.s, 1, 500) / 1000;
@@ -108,18 +112,18 @@
       },
       hint(s) {
         const ms = logMap(s.s, 1, 500);
-        let h = ms <= 10 ? "Щелчки и жужжание: тембр ложки пропал." : ms <= 30 ? "Зернисто и шершаво, ложка едва узнаётся." : ms <= 100 ? "Тон и окраска звона: зона пэдов." : "Слышны куски звона целиком.";
-        if (s.shape === "rect") h += " Прямоугольное окно щёлкает на каждом зерне.";
-        if (s.shape === "perc") h += " Каждое зерно звучит как маленький щипок.";
-        if (s.shape === "rev") h += " Зёрна всасываются, как запись задом наперёд.";
+        let h = ms <= 10 ? T("Щелчки и жужжание: тембр ложки пропал.", "Clicks and buzzing: the spoon's timbre is gone.") : ms <= 30 ? T("Зернисто и шершаво, ложка едва узнаётся.", "Grainy and rough, the spoon is barely recognizable.") : ms <= 100 ? T("Тон и окраска звона: зона пэдов.", "The pitch and colour of the ring: pad territory.") : T("Слышны куски звона целиком.", "You can hear whole pieces of the ring.");
+        if (s.shape === "rect") h += T(" Прямоугольное окно щёлкает на каждом зерне.", " The rectangular window clicks on every grain.");
+        if (s.shape === "perc") h += T(" Каждое зерно звучит как маленький щипок.", " Each grain sounds like a tiny pluck.");
+        if (s.shape === "rev") h += T(" Зёрна всасываются, как запись задом наперёд.", " The grains get sucked in, like a recording played backwards.");
         return h;
       },
     },
     density: {
-      title: "Послушай: от капель к облаку",
+      title: T("Послушай: от капель к облаку", "Listen: from drops to a cloud"),
       controls: [
-        { type: "range", key: "d", label: "Плотность", value: 18, show: (v) => `${Math.round(logMap(v, 2, 300))} зёрен/с` },
-        { type: "range", key: "j", label: "Разброс времени", value: 100, show: (v) => `${Math.round(v)}%` },
+        { type: "range", key: "d", label: T("Плотность", "Density"), value: 18, show: (v) => `${Math.round(logMap(v, 2, 300))} ${T("зёрен/с", "grains/s")}` },
+        { type: "range", key: "j", label: T("Разброс времени", "Timing jitter"), value: 100, show: (v) => `${Math.round(v)}%` },
       ],
       params(s) {
         return {
@@ -131,16 +135,16 @@
       hint(s) {
         const d = logMap(s.d, 2, 300);
         const o = d * 0.05;
-        const head = `Зерно 50 мс, перекрытие ${fmt(o, 1)}. `;
-        if (s.j < 15 && d >= 20) return head + `Поток ровный: облако гудит тоном ${Math.round(d)} Гц.`;
-        return head + (o < 0.45 ? "Отдельные капли, редкий дождь." : o <= 1 ? "Дробь, зёрна почти встык." : o <= 5 ? "Гладкое облако." : "Плотная стена: звук похож на шум с окраской.");
+        const head = T(`Зерно 50 мс, перекрытие ${fmt(o, 1)}. `, `Grain 50 ms, overlap ${fmt(o, 1)}. `);
+        if (s.j < 15 && d >= 20) return head + T(`Поток ровный: облако гудит тоном ${Math.round(d)} Гц.`, `The stream is steady: the cloud hums at ${Math.round(d)} Hz.`);
+        return head + (o < 0.45 ? T("Отдельные капли, редкий дождь.", "Single drops, a sparse rain.") : o <= 1 ? T("Дробь, зёрна почти встык.", "A rattle, grains nearly end to end.") : o <= 5 ? T("Гладкое облако.", "A smooth cloud.") : T("Плотная стена: звук похож на шум с окраской.", "A dense wall: it sounds like coloured noise."));
       },
     },
     pitch: {
-      title: "Послушай: разброс высоты",
+      title: T("Послушай: разброс высоты", "Listen: pitch spread"),
       controls: [
-        { type: "range", key: "p", label: "Разброс высоты", value: 30, show: (v) => centsLabel(spreadCents(v)) },
-        { type: "seg", key: "mode", label: "Привязка высоты", options: [["free", "Свободно"], ["oct", "Октавы"], ["fifth", "Октавы и квинты"], ["scale", "Ноты лада"]], value: "free" },
+        { type: "range", key: "p", label: T("Разброс высоты", "Pitch spread"), value: 30, show: (v) => centsLabel(spreadCents(v)) },
+        { type: "seg", key: "mode", label: T("Привязка высоты", "Pitch snapping"), options: [["free", T("Свободно", "Free")], ["oct", T("Октавы", "Octaves")], ["fifth", T("Октавы и квинты", "Octaves and fifths")], ["scale", T("Ноты лада", "Scale notes")]], value: "free" },
       ],
       params(s) {
         const cents = spreadCents(s.p);
@@ -161,10 +165,10 @@
       },
       hint(s) {
         const c = spreadCents(s.p);
-        if (s.mode === "oct") return c < 1200 ? "Подними разброс до октавы, и зёрна начнут прыгать по регистрам." : "Мерцание по октавам: блики на воде, а нота одна.";
-        if (s.mode === "fifth") return c < 500 ? "Подними разброс, чтобы появились квинты и октавы." : "Мерцающий органный аккорд.";
-        if (s.mode === "scale") return c < 200 ? "Подними разброс, чтобы зёрна разошлись по нотам лада." : "Одна клавиша, а звучит облако-аккорд.";
-        return c < 1 ? "Все зёрна на одной ноте." : c <= 10 ? "Лёгкий хорус: звук шире и теплее." : c <= 50 ? "Плывущая, «пьяная» расстройка." : c <= 600 ? "Облако соседних нот: кластер, туман." : "Зёрна прыгают по регистрам.";
+        if (s.mode === "oct") return c < 1200 ? T("Подними разброс до октавы, и зёрна начнут прыгать по регистрам.", "Raise the spread to an octave and the grains will start jumping between registers.") : T("Мерцание по октавам: блики на воде, а нота одна.", "Shimmering in octaves: glints on water, yet it is one note.");
+        if (s.mode === "fifth") return c < 500 ? T("Подними разброс, чтобы появились квинты и октавы.", "Raise the spread to bring in fifths and octaves.") : T("Мерцающий органный аккорд.", "A shimmering organ chord.");
+        if (s.mode === "scale") return c < 200 ? T("Подними разброс, чтобы зёрна разошлись по нотам лада.", "Raise the spread so the grains fan out across the notes of the scale.") : T("Одна клавиша, а звучит облако-аккорд.", "One key, and a cloud of a chord sounds.");
+        return c < 1 ? T("Все зёрна на одной ноте.", "All the grains are on one note.") : c <= 10 ? T("Лёгкий хорус: звук шире и теплее.", "A light chorus: the sound is wider and warmer.") : c <= 50 ? T("Плывущая, «пьяная» расстройка.", "A drifting, \"drunken\" detune.") : c <= 600 ? T("Облако соседних нот: кластер, туман.", "A cloud of neighbouring notes: a cluster, a haze.") : T("Зёрна прыгают по регистрам.", "The grains jump between registers.");
       },
     },
   };
@@ -182,12 +186,12 @@
   function centsLabel(c) {
     if (c < 100) {
       const n = Math.round(c);
-      return `±${n} ${plural(n, "цент", "цента", "центов")}`;
+      return `±${n} ${EN ? (n === 1 ? "cent" : "cents") : plural(n, "цент", "цента", "центов")}`;
     }
     const st = c / 100;
-    if (st < 10 && Math.abs(st - Math.round(st)) >= 0.05) return `±${fmt(st, 1)} полутона`;
+    if (st < 10 && Math.abs(st - Math.round(st)) >= 0.05) return `±${fmt(st, 1)} ${T("полутона", "semitones")}`;
     const n = Math.round(st);
-    return `±${n} ${plural(n, "полутон", "полутона", "полутонов")}`;
+    return `±${n} ${EN ? (n === 1 ? "semitone" : "semitones") : plural(n, "полутон", "полутона", "полутонов")}`;
   }
 
   // ── Один экземпляр демо на странице ──
@@ -203,13 +207,13 @@
     title.textContent = spec.title;
     const canvas = document.createElement("canvas");
     canvas.setAttribute("role", "img");
-    canvas.setAttribute("aria-label", "Зёрна на временной шкале: каждое зерно появляется справа в момент, когда звучит");
+    canvas.setAttribute("aria-label", T("Зёрна на временной шкале: каждое зерно появляется справа в момент, когда звучит", "Grains on a timeline: each grain appears on the right at the moment it sounds"));
     const row = document.createElement("div");
     row.className = "gd-row";
     const play = document.createElement("button");
     play.className = "gd-play";
     play.type = "button";
-    play.setAttribute("aria-label", "Играть");
+    play.setAttribute("aria-label", T("Играть", "Play"));
     play.innerHTML = ICON_PLAY;
     row.append(play);
     const row2 = document.createElement("div");
@@ -285,14 +289,14 @@
       demo.next = ctx.currentTime + 0.05;
       demo.timer = setInterval(tick, 25);
       play.innerHTML = ICON_PAUSE;
-      play.setAttribute("aria-label", "Пауза");
+      play.setAttribute("aria-label", T("Пауза", "Pause"));
       kick();
     }
     function stop() {
       demo.playing = false;
       clearInterval(demo.timer);
       play.innerHTML = ICON_PLAY;
-      play.setAttribute("aria-label", "Играть");
+      play.setAttribute("aria-label", T("Играть", "Play"));
       if (current === demo) current = null;
     }
     play.addEventListener("click", () => (demo.playing ? stop() : start()));
