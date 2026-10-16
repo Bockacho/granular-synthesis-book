@@ -14,7 +14,7 @@ If all the knobs stand still, the cloud sounds beautiful but static, like a phot
 **LFO, low-frequency oscillator.** Swings a parameter back and forth, over and over. The main settings: speed (in hertz or in note divisions), shape (sine, triangle, saw, square, random steps), depth.
 
 - A slow sine on position (0.05–0.2 Hz) makes the cloud drift through the file, and the sound changes every few seconds.
-- Random steps (Sample & Hold) on position, in time with quarter notes: on every beat the grains are taken from a new place. A ready-made rhythmic slicing.
+- Random steps (Sample & Hold) on position, in time with quarter notes: on every beat the grains are taken from a new place. Instant rhythmic slicing.
 - A fast LFO on grain pitch (5–7 Hz, depth 20–50 cents) gives vibrato.
 
 **Envelope, ADSR.** Changes a parameter once per note: from key press to release.
@@ -34,7 +34,7 @@ If all the knobs stand still, the cloud sounds beautiful but static, like a phot
 
 ## Depth and polarity
 
-Every "source → parameter" connection has a depth: how far the modulation moves the knob. And a sign: plus moves it one way, minus the other. Depth matters more than speed. Start with a small depth and add until you hear movement, then back off a little. The most common beginner's mistake: modulation at full, and the sound turns into a carousel.
+Every "source → parameter" connection has a depth: how far the modulation moves the knob. And a sign: plus moves it one way, minus the other. Depth matters more than speed. Start with a small depth and increase it until you hear movement, then back off a little. The most common beginner's mistake: modulation at full, and the sound turns into a carousel.
 
 ## Parameter links
 
@@ -58,16 +58,16 @@ Internal modulation is done by the synthesizer itself and repeats on every note.
 
 ??? info "Under the hood"
 
-    Modulating position with an audio-rate LFO (above 20 Hz) stops being movement and becomes timbre: the position swings so fast that the grains read the sound with frequency modulation inside. The same goes for grain pitch: an LFO in the audio range on pitch gives sidebands, as in FM synthesis. Not all instruments let the LFO go that high, but where they do, you get metallic and bell-like timbres from any source.
+    When position is modulated by an audio-rate LFO (above 20 Hz), the modulation stops being movement and becomes timbre: the position swings so fast that the grains read the sound with frequency modulation inside. The same goes for grain pitch: an LFO in the audio range on pitch gives sidebands, as in FM synthesis. Not all instruments let the LFO go that high, but where they do, you get metallic and bell-like timbres from any source.
 
 ??? info "Under the hood"
 
-    Modulation in a granulator almost always acts on grains that aren't born yet. The values of the knobs are read at the moment a grain is born, and from then on the grain plays out to the end with them. Roads calls this grain integrity: in EmissionControl2 a released grain no longer changes its filter, its pan or its place in the file, and that protects against clicks ([Roads et al., 2021](https://doi.org/10.1162/comj_a_00613)). The Kaivo manual says the same, and Granulator III calculates the window shape this way ([chapter 11](../chast-3-instrumenty/11-granulator-iii.md)). So fast modulation on long grains sounds not like a smooth shift but like a scattering of grains with different values.
+    Modulation in a granulator almost always acts on grains that haven't been born yet. The values of the knobs are read at the moment a grain is born, and from then on the grain plays out to the end with them. Roads calls this grain integrity: in EmissionControl2 a released grain no longer changes its filter, its pan or its place in the file, and that protects against clicks ([Roads et al., 2021](https://doi.org/10.1162/comj_a_00613)). The Kaivo manual says the same, and Granulator III calculates the window shape this way ([chapter 11](../chast-3-instrumenty/11-granulator-iii.md)). So fast modulation on long grains sounds not like a smooth shift but like a scattering of grains with different values.
 
 ## Exercise 9.1. A breathing pad { .exercise }
 
 1. The spoon, position on the ring, size 120 ms, density 30, position spread 30 ms, pitch spread 10 cents, pan 50%.
-2. Hang a slow sine LFO (0.1 Hz) on position, with a depth such that the position wanders through the whole ring.
-3. Hang an envelope on density: attack 2 seconds, release 4 seconds.
+2. Assign a slow sine LFO (0.1 Hz) to position, with a depth such that the position wanders through the whole ring.
+3. Assign an envelope to density: attack 2 seconds, release 4 seconds.
 4. Assign the modulation wheel to grain size, negative: you turn the wheel, and the grains get finer.
-5. Take a long chord and play with the wheel. This is the first finished granular instrument made from a spoon.
+5. Take a long chord and play with the wheel. That's your first complete granular instrument made from a spoon.

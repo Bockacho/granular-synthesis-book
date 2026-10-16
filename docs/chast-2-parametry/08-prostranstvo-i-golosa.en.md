@@ -67,7 +67,7 @@ Grains almost always benefit from processing after the granulator:
 ## Exercise 8.1. A cloud around your head { .exercise }
 
 1. Take the sound from exercise 6.1, where the cloud has just formed. Put on headphones.
-2. Raise the pan spread from 0 to 100%. Note the moment when the cloud became spacious.
+2. Raise the pan spread from 0 to 100%. Note the moment the cloud opens up into space.
 3. Switch the master to mono. Compare. Find the width at which mono still sounds fine.
 4. Add random volume of 30–50%. The cloud will sparkle.
-5. After the granulator, put a reverb with a long tail and a delay. Listen to how the sound became a place.
+5. After the granulator, put a reverb with a long tail and a delay. Listen to how the sound turns into a place.

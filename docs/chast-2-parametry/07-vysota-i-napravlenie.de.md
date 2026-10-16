@@ -44,13 +44,13 @@ Bei vielen Granulatoren lässt sich die Streuung an Intervalle binden. Dann nimm
 - **Oktaven und Quinten.** Ein schimmernder Orgelakkord.
 - **Skalentöne.** Jedes Grain spielt einen zufälligen Ton der Skala, und eine einzige gedrückte Taste lässt eine Akkordwolke entstehen.
 
-In Quanta 2 heißt dieses Raster QUANT: Eine Taste mit einer Klaviatur neben dem Regler TUNE öffnet ein kleines Fenster mit Tasten. Schalte die gewünschten Töne ein, und jedes Grain spielt nur diese. Schaltest du alle zwölf ein, gehen die Grains auf beliebige Töne der Oktave; schaltest du nur die untere Reihe ein, nur auf Töne ohne Vorzeichen. Die Quantisierung berücksichtigt die aktuelle Stimmung des Plugins, funktioniert also auch mit nichtstandardmäßigen Stimmungen. So bleibt die Wolke in der Tonart des Tracks.
+In Quanta 2 heißt dieses Raster QUANT: Eine Taste mit einer Klaviatur neben dem Regler TUNE öffnet ein kleines Fenster mit Tasten. Schalte die gewünschten Töne ein, und jedes Grain spielt nur diese. Schaltest du alle zwölf ein, gehen die Grains auf beliebige Töne der Oktave; schaltest du nur die untere Reihe ein, nur auf Töne ohne Vorzeichen. Die Quantisierung berücksichtigt die aktuelle Stimmung des Plugins, funktioniert also auch mit alternativen Stimmungen. So bleibt die Wolke in der Tonart des Tracks.
 
 <div class="grain-demo" data-demo="pitch">Die Klangdemo läuft im Browser mit aktiviertem JavaScript.</div>
 
 ## Richtung
 
-Ein Grain lässt sich rückwärts lesen. Ein kurzes rückwärts gespieltes Grain ist vom Gehör kaum von einem vorwärts gespielten zu unterscheiden, aber bei Grains über 50 ms drehen sich die Anschläge um, und der Klang beginnt „eingesogen“ zu werden.
+Ein Grain lässt sich rückwärts lesen. Ein kurzes rückwärts gespieltes Grain ist kaum von einem vorwärts gespielten zu unterscheiden, aber bei Grains über 50 ms drehen sich die Anschläge um, und der Klang beginnt „eingesogen“ zu werden.
 
 **So heißt sie:** Reverse, Direction, Rev Prob, Backwards.
 

@@ -15,24 +15,24 @@ What makes a sound a good source:
 
 - **A rich spectrum.** A ring, a voice, a string, street noise give the grains plenty of material. A pure sine gives a boring sine.
 - **Change over time.** If a sound changes as it goes, each position in the file sounds different, and moving the position becomes music. The spoon does just that: the knock, the ring, the tail.
-- **A clean recording.** Overload and digital clicks will be multiplied by a granulator into hundreds of copies.
+- **A clean recording.** A granulator will multiply clipping and digital clicks a hundredfold.
 - **No extra silence.** A grain taken from silence sounds like silence. The cloud will start falling into holes.
 
-Stereo or mono? A stereo source gives the grains its own width, while mono leaves it up to the pan knob ([chapter 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)). Start with mono, it makes clearer what each knob does.
+Stereo or mono? A stereo source gives the grains its own width, while mono leaves it up to the pan knob ([chapter 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)). Start with mono: it makes it clearer what each knob does.
 
-The source doesn't have to be a recording. In Quanta 2 the input of the granulator is fed by the signals of two built-in oscillators, noise and a loaded file: four INPUT LEVELS sliders mix them, and the mix is cut into grains. So the granulator sounds even without a file. Simple waves with spreads turn into a dense layer like a "supersaw". Noise usually gives just more noise, but a little of it is useful mixed into a recording for density, or you can build percussion from it. In Serum 2 you can also granulate not only recordings but wavetables ([chapter 10](../chast-3-instrumenty/10-serum-2.md)).
+The source doesn't have to be a recording. In Quanta 2 the input of the granulator is fed by the signals of two built-in oscillators, noise and a loaded file: four INPUT LEVELS sliders mix them, and the mix is cut into grains. So the granulator sounds even without a file. Simple waves with spreads turn into a dense layer like a "supersaw". Noise usually gives just more noise, but a little of it mixed into a recording adds density, or you can build percussion from it. In Serum 2 you can also granulate not only recordings but wavetables ([chapter 10](../chast-3-instrumenty/10-serum-2.md)).
 
 ## Position
 
-Position tells from which place in the file to take the next grain. It is the main knob of a granulator, because it controls time.
+Position determines which place in the file the next grain is taken from. It is the main knob of a granulator, because it controls time.
 
 **What it's called in interfaces:** Position, Pos, Start, Scan, Playhead, Offset.
 
 Position is set as a percentage of the file length, in milliseconds, or with a cursor right on the picture of the waveform. It can be moved in three ways.
 
-**Standing still (freeze).** The position doesn't move, and all the grains are taken from one point. The sound at that point goes on endlessly. Steady places freeze best: a vowel in a voice, the middle of a ring, an even string note. An attack freezes worse: grains from a knock give a buzz like a motor.
+**Standing still (freeze).** The position doesn't move, and all the grains are taken from one point. The sound at that point goes on endlessly. Steady places freeze best: a vowel in a voice, the middle of a ring, an even string note. An attack doesn't freeze as well: grains from a knock give a buzz like a motor.
 
-**Moving by hand.** You turn the knob and move through the file at any speed, forward and back. The sound becomes an instrument that you play with time.
+**Moving by hand.** You turn the knob and move through the file at any speed, forward and back. The sound becomes an instrument on which you play time itself.
 
 **Moving automatically (scan).** The position travels through the file by itself at a set speed. A speed of 100% means the original tempo. 50% means half as fast, 0% means a freeze, and a negative speed means backwards.
 
@@ -40,7 +40,7 @@ $$
 T_{\text{new}} = \frac{T_{\text{source}}}{s}
 $$
 
-Here s is the scan speed (1 = 100%) and T is the duration. A 3-second spoon at a speed of 1% sounds for 300 seconds, that is, 5 minutes, at the same pitch.
+Here s is the scan speed (1 = 100%) and T is the duration. A 3-second spoon recording at a speed of 1% sounds for 300 seconds, that is, 5 minutes, at the same pitch.
 
 ## Reading window
 
@@ -50,7 +50,7 @@ Many granulators let you limit the piece of the file that the position moves thr
 
 ## Position spread
 
-Spread tells how far from the position each grain may jump. At a spread of 0, all grains are taken from one point. At 20 ms, each grain is taken at random from somewhere within 20 ms of it.
+Spread determines how far from the position each grain may jump. At a spread of 0, all grains are taken from one point. At 20 ms, each grain is taken at random from somewhere within 20 ms of it.
 
 **What it's called:** Spray, Jitter, Scatter, Random Position, Pos Rand, Variation.
 

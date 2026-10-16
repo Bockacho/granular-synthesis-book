@@ -37,7 +37,7 @@ Die Grenzen sind unscharf und verschieben sich mit dem Material. Eine Stimme erk
 
 ## Überlappung
 
-Grains können mit Pausen, lückenlos oder übereinander folgen. Wie stark sie sich überlagern, ist leicht zu berechnen:
+Grains können mit Pausen, lückenlos oder überlappend aufeinanderfolgen. Wie stark sie sich überlagern, ist leicht zu berechnen:
 
 $$
 O = d \times r
@@ -49,7 +49,7 @@ Dabei ist d die Grain-Länge in Sekunden, r die Dichte in Grains pro Sekunde, un
 - 50 ms × 20 = 1. Die Grains folgen lückenlos.
 - 100 ms × 40 = 4. Vier Grains klingen gleichzeitig, die Wolke ist glatt.
 
-Unter eins heißt gepunktete Linie und Rhythmus. Über eins heißt geschlossene Wolke, und je höher der Wert, desto dichter die Wolke und desto verschwommener die Quelle.
+Ein Wert unter eins bedeutet gepunktete Linie und Rhythmus. Ein Wert über eins bedeutet eine geschlossene Wolke, und je höher der Wert, desto dichter die Wolke und desto verschwommener die Quelle.
 
 ## Synchron und ungeordnet
 
@@ -62,7 +62,7 @@ Unter eins heißt gepunktete Linie und Rhythmus. Über eins heißt geschlossene 
 
 **Asynchroner Strom.** Die Abstände sind zufällig. Es gibt keinen Ton, sondern ein Rauschen, Regen, Kies, einen Schwarm. So klingen die klassischen Granularwolken.
 
-**Quasi-synchroner Strom.** Die Abstände sind gleichmäßig, aber mit einer kleinen zufälligen Streuung. Der Ton bleibt, wird aber rau und lebendig, wie ein Chor oder ein Bogen.
+**Quasi-synchroner Strom.** Die Abstände sind gleichmäßig, aber mit einer kleinen zufälligen Streuung. Der Ton bleibt, wird aber rau und lebendig, wie ein Chor oder ein gestrichenes Instrument.
 
 <div class="grain-demo" data-demo="sync">Die Klangdemo läuft im Browser mit aktiviertem JavaScript.</div>
 

@@ -14,4 +14,4 @@ Cómo grabarlo: una habitación silenciosa, el móvil a 20–30 cm de la taza, u
 
 Cualquier DAW: Ableton Live, FL Studio, Logic, Reaper, Bitwig. Uno de los tres instrumentos de la [parte 3](chast-3-instrumenty/index.md). Auriculares o monitores: muchos efectos de los granos viven en estéreo y desaparecen en los altavoces del portátil. Si todavía no tienes el instrumento, mira en la web del fabricante si hay versión de prueba.
 
-Cada capítulo termina con un ejercicio de 5–15 minutos. La síntesis granular se aprende con el oído, y solo leyendo el libro costará más entenderla.
+Cada capítulo termina con un ejercicio de 5–15 minutos. La síntesis granular se aprende con el oído, y solo con la lectura cuesta más entenderla.

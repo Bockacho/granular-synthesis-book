@@ -47,7 +47,7 @@ El [capítulo 2](../chast-1-zerno/02-anatomiya-zerna.md) presentó tres modos de
 **Cómo se llama:** Sync, Async, Random Rate, Rate Jitter, Spray (en el tiempo), Irregularity, Chaos.
 
 - **Dispersión temporal 0.** Los granos van como un metrónomo. Por encima de 20 granos por segundo nace un tono.
-- **Dispersión temporal media.** El tono es áspero y vivo, como un coro o un arco.
+- **Dispersión temporal media.** El tono es áspero y vivo, como un coro o un instrumento de arco.
 - **Dispersión temporal máxima.** No hay tono: hay una nube, un susurro, un enjambre.
 
 Junto a la sincronía hay a veces otro mando: la intermitencia (Intermittency). Fija la probabilidad de que el siguiente grano simplemente no nazca. El flujo sigue su rejilla, regular o aleatoria, pero aparecen huecos, y la nube se aclara sin cambiar la densidad en el mando. Así funciona este mando en el EmissionControl2 gratuito ([capítulo 21](../chast-5-dalshe-sam/21-chto-dalshe.md)).
@@ -76,4 +76,4 @@ Este modo existe también en instrumentos listos para usar. En Grain de Reason S
 2. Densidad de 3 granos por segundo, asíncrona. Gotas escasas.
 3. Sube suavemente la densidad hasta 200. Fíjate en dónde las gotas se funden en una nube.
 4. Pon la dispersión temporal a cero. Sube la densidad por encima de 100. Escucha cómo la nube empieza a zumbar con un tono.
-5. Si en tu instrumento la densidad puede ligarse al teclado, toca una escala. Estás tocando una melodía con la cucharilla, y la posición no se ha movido en todo el rato.
+5. Si en tu instrumento la densidad puede ligarse al teclado, toca una escala. Estás tocando una melodía con la cucharilla, y la posición no se ha movido en ningún momento.

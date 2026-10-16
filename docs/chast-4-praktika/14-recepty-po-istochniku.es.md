@@ -38,7 +38,7 @@ Sobre los derechos. Para tus temas, usa tus propias grabaciones o samples con un
 
 **Por dónde empezar.** Granos largos de 200–500 ms, escaneo lento, mucha dispersión de posición. El sonido conserva el lugar, pero pierde el argumento.
 
-**La trampa.** El retumbo grave. Una nube densa lo acumula y lo convierte en un engrudo. Corta los graves con un filtro antes del granulador o en él.
+**La trampa.** El retumbo grave. Una nube densa lo acumula y embarra el sonido. Corta los graves con un filtro antes del granulador o en él.
 
 **Receta.** Ruido de la calle, escaneo al 2–5 %, grano de 400 ms, nube, reverb larga. La ciudad se ralentiza hasta convertirse en respiración.
 
@@ -66,7 +66,7 @@ Sobre los derechos. Para tus temas, usa tus propias grabaciones o samples con un
 
 **Receta.** Un loop, escaneo al 25 %, dispersión de posición media, granos invertidos al 30 %. La batería se deshace en una «locura granular», como la llama Henke.
 
-## Ruido: blanco, viento, agua
+## Ruido: ruido blanco, viento, agua
 
 **Qué tiene.** Un espectro continuo sin altura.
 
@@ -98,7 +98,7 @@ Sobre los derechos. Para tus temas, usa tus propias grabaciones o samples con un
 
 **Dónde poner la posición.** En las uniones. Graba con cualquier instrumento todos los acordes o notas de la canción seguidos y solapados: con una cola larga de reverb o un pad sostenido. Donde los acordes se superponen nacen armonías «intermedias» que no existen en ningún acorde por separado.
 
-**Por dónde empezar.** Granos largos de 150–300 ms, escaneo lento, nube y una dispersión de posición pequeña para que la armonía no se convierta en un engrudo.
+**Por dónde empezar.** Granos largos de 150–300 ms, escaneo lento, nube y una dispersión de posición pequeña para que la armonía no se emborrone.
 
 **La trampa.** La afinación. Graba en la misma tonalidad que el tema y no toques la transposición de los granos.
 
@@ -109,4 +109,4 @@ Sobre los derechos. Para tus temas, usa tus propias grabaciones o samples con un
 1. Monta un pad de la receta 10.1, 11.1 o 12.1.
 2. Sin tocar los mandos, cambia la fuente: canto, habla, calle, guitarra, batería, ruido, piano.
 3. Para cada una, busca el mando que más mejora el sonido. Apúntalo.
-4. Compara la lista con las trampas de este capítulo. Lo más probable es que las hayas encontrado tú solo.
+4. Compara la lista con las trampas de este capítulo. Lo más probable es que las hayas encontrado por tu cuenta.

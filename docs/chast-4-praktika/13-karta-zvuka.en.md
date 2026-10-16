@@ -2,20 +2,20 @@
 
 # The sound map and twenty instruments from one spoon
 
-At the start of the book there was a promise: from three seconds of the spoon's ring, twenty very different instruments would grow. It is time to keep it. First a map that shows the whole space at once.
+At the start of the book there was a promise: twenty very different instruments would grow from three seconds of a spoon's ring. It is time to keep it. First a map that shows the whole space at once.
 
 ## The sound map
 
-Two knobs decide the character of granular sound more than all the others: grain length and density. Plot them on the axes, and the space splits into zones.
+Two knobs shape the character of granular sound more than any others: grain length and density. Plot them on the axes, and the space splits into zones.
 
 <figure markdown="span">
   ![The sound map: grain length and density](../images/karta-zvuka-en.svg)
   <figcaption>The sound map: grain length and density.</figcaption>
 </figure>
 
-The lines on the map are the overlap from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md), O = length × density. Everything to the left of and below the solid line sounds dotted: the grains go with gaps. Everything to the right and above merges into a cloud, and beyond the dashed line the cloud thickens into a wall. The tone zone in the top left corner lives by the rules of [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): an even stream of short grains gives a note, an uneven one gives a hiss.
+The lines on the map are the overlap from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md), O = length × density. Everything to the left of and below the solid line sounds dotted: the grains come with gaps between them. Everything to the right and above merges into a cloud, and beyond the dashed line the cloud thickens into a wall. The tone zone in the top left corner lives by the rules of [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): an even stream of short grains gives a note, an uneven one gives a hiss.
 
-How to use the map. Start from the middle of the cloud: a grain of about 100 ms, 30 grains a second. This is a safe point where almost any source sounds beautiful. Then move one knob and watch which zone you have gone into. The other knobs (position, pitch, spreads, window) change the color inside a zone, but rarely take you out of it.
+How to use the map. Start from the middle of the cloud: a grain of about 100 ms, 30 grains a second. This is a safe point where almost any source sounds beautiful. Then move one knob and watch which zone you end up in. The other knobs (position, pitch, spreads, window) change the color inside a zone, but rarely take you out of it.
 
 ## Twenty instruments
 
@@ -24,7 +24,7 @@ How to use the map. Start from the middle of the cloud: a grain of about 100 ms,
   <figcaption>Illustration 13.1. One spoon, twenty instruments.</figcaption>
 </figure>
 
-The source is the same everywhere: a spoon against a cup. The parameters are given in the terms of [Part 2](../chast-2-parametry/index.md), and on the right it is shown where this sound is easiest to build and in which recipe it has already been worked out.
+The source is the same everywhere: a spoon against a cup. The parameters are given in the terms of [Part 2](../chast-2-parametry/index.md), and the right-hand column shows where this sound is easiest to build and in which recipe it has already been worked out.
 
 | # | Sound | How to get it | Where it's easiest |
 | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ The source is the same everywhere: a spoon against a cup. The parameters are giv
 | 12 | Drops | grain 20–40 ms, 3–6 grains a second, a percussive window, position spread across the whole ring | everywhere: recipes 10.2, 12.2 |
 | 13 | A hi-hat from a knock | position on the attack, grain 5–15 ms, density by tempo 1/16, a percussive window, a high-pass filter | Serum, Pigments: density by tempo |
 | 14 | Slicing onto a grid | the sample's pass is tied to the bar, density 1/16, grain length as a fraction of the period | Serum: recipe 10.3; Pigments: Time Division |
-| 15 | A sucking rhythm | the slicing from item 14 plus reversed grains on command | Serum: Reverse Grains; Granulator III: Reverse in Loop |
+| 15 | A sucked-in rhythm | the slicing from item 14 plus reversed grains on command | Serum: Reverse Grains; Granulator III: Reverse in Loop |
 | 16 | A quacking grid | its own filter envelope on each grain | Pigments: recipe 12.5 |
 | 17 | Bass | position on the ring, pitch −24…−36 semitones, a long grain, mono, glide, a low-pass filter | Granulator III: mono and Glide; everywhere |
 | 18 | Riser | over 4–8 bars the density grows, the grain shrinks, the pitch and filter rise | everywhere, with one macro |

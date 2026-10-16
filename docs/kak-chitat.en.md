@@ -14,4 +14,4 @@ How to record it: a quiet room, the phone 20–30 cm from the cup, one hit, and 
 
 Any DAW: Ableton Live, FL Studio, Logic, Reaper, Bitwig. One of the three instruments from [Part 3](chast-3-instrumenty/index.md). Headphones or monitors: many grain effects live in stereo and vanish on laptop speakers. If you don't have an instrument yet, check the manufacturer's site for a trial version.
 
-Every chapter ends with an exercise of 5–15 minutes. Granular synthesis is learned by ear, and it is harder to understand just by reading a textbook.
+Every chapter ends with an exercise of 5–15 minutes. Granular synthesis is learned by ear, and it's hard to grasp by reading alone.

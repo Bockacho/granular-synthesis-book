@@ -23,4 +23,4 @@ Almost all problems with a granulator come down to about fifteen symptoms. Find 
 
 ## The order of troubleshooting
 
-When it's unclear what the matter is, go from top to bottom. First zero out all the spreads and modulation. Then check the source: listen to it without the granulator. Then return the grain length and density to the middle of the cloud on the map (100 ms, 30 grains a second). If the sound is normal at that point, bring the knobs back one at a time until the problem appears. The knob that brought it back is the culprit.
+When you can't tell what's wrong, go from top to bottom. First zero out all the spreads and modulation. Then check the source: listen to it without the granulator. Then return the grain length and density to the middle of the cloud on the map (100 ms, 30 grains a second). If the sound is normal at that point, restore the knobs to their settings one at a time until the problem reappears. The knob that brings it back is the culprit.

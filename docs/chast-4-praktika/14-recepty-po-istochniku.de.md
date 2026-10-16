@@ -22,7 +22,7 @@ Zu den Rechten. Nimm für deine eigenen Tracks eigene Aufnahmen oder Samples mit
 
 **Was darin steckt.** Schneller Wechsel der Laute, der Rhythmus der Silben, Pausen.
 
-**Wohin mit der Position.** Ein Scan mit Originalgeschwindigkeit lässt die Wörter verständlich. Verlangsame den Scan, und die Phrase dehnt sich, bis sie zu einer Textur aus Vokalen wird.
+**Wohin mit der Position.** Bei einem Scan mit Originalgeschwindigkeit bleiben die Wörter verständlich. Verlangsame den Scan, und die Phrase dehnt sich, bis sie zu einer Textur aus Vokalen wird.
 
 **Womit anfangen.** Grain 40–80 ms, Scan 25–50 %, eine kleine Positionsstreuung, damit die Reihenfolge der Silben erhalten bleibt.
 
@@ -66,7 +66,7 @@ Zu den Rechten. Nimm für deine eigenen Tracks eigene Aufnahmen oder Samples mit
 
 **Rezept.** Ein Loop, Scan 25 %, mittlere Positionsstreuung, 30 % rückwärts laufende Grains. Das Schlagzeug zerfällt in „granularen Wahnsinn“, wie Henke es nennt.
 
-## Rauschen: weiß, Wind, Wasser
+## Rauschen: weißes Rauschen, Wind, Wasser
 
 **Was darin steckt.** Ein durchgehendes Spektrum ohne Tonhöhe.
 

@@ -23,7 +23,7 @@ hide:
 
 </div>
 
-El texto principal lo entiende un chico de doce años, y los recuadros «Bajo el capó» dan la física y las fórmulas a quien quiera profundizar. Se analizan tres instrumentos: Xfer Serum 2, Ableton Granulator III y Arturia Pigments. Los capítulos 2, 5, 6 y 7 tienen demos sonoras: mueves un mando y oyes al instante lo que hace.
+El texto principal se entiende a partir de los doce años, y los recuadros «Bajo el capó» dan la física y las fórmulas a quien quiera profundizar. Se analizan tres instrumentos: Xfer Serum 2, Ableton Granulator III y Arturia Pigments. Los capítulos 2, 5, 6 y 7 tienen demos sonoras: mueves un mando y oyes al instante lo que hace.
 
 <div class="grain-demo" data-demo="sync">La demo sonora funciona en el navegador con JavaScript activado.</div>
 

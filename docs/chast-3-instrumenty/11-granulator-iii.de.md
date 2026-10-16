@@ -65,9 +65,9 @@ Das ist das Erste, was du wählen musst: Vom Modus hängt ab, wie Grain Size, Sh
 
 ## Position
 
-Position entscheidet, welchen Abschnitt des Samples jedes Grain spielt. Die Skala ist in Prozent, deshalb bleibt die Position relativ zur Datei erhalten: Lädst du ein anderes Sample, bleibt die Position zum Beispiel bei einem Drittel. Sie wird mit dem Regler oder per Klick direkt auf die Wellenform gesetzt.
+Position entscheidet, welchen Abschnitt des Samples jedes Grain spielt. Die Skala ist in Prozent angegeben, deshalb bleibt die Position relativ zur Datei erhalten: Lädst du ein anderes Sample, bleibt die Position zum Beispiel bei einem Drittel. Sie wird mit dem Regler oder per Klick direkt auf die Wellenform gesetzt.
 
-Position wird moduliert vom LFO, von Envelope 2, von der Tonnummer (**Key**), von der Anschlagstärke (**Vel**) und allen drei MPE-Parametern. Dazu kommt der Zufall pro Grain über Variation.
+Position wird moduliert vom LFO, von Envelope 2, von der Notennummer (**Key**), von der Anschlagstärke (**Vel**) und allen drei MPE-Parametern. Dazu kommt der Zufall pro Grain über Variation.
 
 ## Scan
 
@@ -91,7 +91,7 @@ Der Hauptparameter der Engine. Ein Grain reicht von 2 ms bis 2 s. Bei 2 ms kling
 
 Grain Size hängt von Key, Velocity, MPE Slide und Press ab, wird vom LFO und Envelope 2 moduliert, und Variation fügt der Größe jedes Grains Zufall hinzu. Wird die Größe moduliert, greift der neue Wert nicht sofort: Das Instrument versucht, das aktuelle Grain erst zu Ende zu spielen, damit keine Klicks entstehen. Wie genau, hängt vom Modus ab.
 
-Eine Feinheit, vor der beide Video-Tutorials warnen: Grain Size misst einen Abschnitt des Samples, die hörbare Länge des Grains hängt aber von der Lesegeschwindigkeit ab. Höherer Ton, das Sample wird schneller gelesen, und dasselbe Grain klingt kürzer. Im zweiten Tutorial klingt ein Grain von 76,1 ms bei einer Transposition von +12 Halbtönen halb so lang.
+Eine Feinheit, vor der beide Video-Tutorials warnen: Grain Size misst einen Abschnitt des Samples, die hörbare Länge des Grains hängt aber von der Lesegeschwindigkeit ab. Je höher der Ton, desto schneller wird das Sample gelesen, und dasselbe Grain klingt kürzer. Im zweiten Tutorial klingt ein Grain von 76,1 ms bei einer Transposition von +12 Halbtönen halb so lang.
 
 Eine Tempo-Synchronisation hat Grain Size nicht. Ein Workaround aus dem zweiten Tutorial: die Länge einer Zählzeit in Millisekunden ausrechnen und von Hand eintragen. Eine Viertel dauert 60.000 / BPM Millisekunden: bei 120 BPM sind das 500 ms, eine Achtel 250 ms. Genau auf die Zählzeit trifft das Grain, wenn die Transposition auf null steht und die Kopplung von Transpose an die Tasten aus ist (dazu unten mehr).
 
@@ -132,7 +132,7 @@ Variation wird von MPE Slide und Press, dem LFO, Envelope 2, Key und Velocity mo
 
 **Eine Tonhöhe auf allen Tasten.** Für Drones und Zerschneiden stört die Transposition über die Tasten oft. Wähl Transpose und stell auf dem Modulationsdisplay Key auf 0: Alle Töne klingen in derselben Tonhöhe. Dieselbe Kopplung Key auf 100 % hat auch die Filterfrequenz, und auch die solltest du auf null stellen, sonst wandert das Filter mit jedem Ton. Pitch Bend verschiebt die Tonhöhe weiterhin und lässt sich als Automation im Clip zeichnen.
 
-Henke erklärt die Stimmung eigens, und das lohnt sich nachzuerzählen. Ein Sample auf dem Ton C3 spielt in seiner Originalgeschwindigkeit. Klingt darin ein C3, ist alles einfach. Klingt ein C#3, senk es um einen Halbton. Aber in der Granularsynthese wiederholen sich kurze Stücke sehr oft, und die hörbare Tonhöhe wird zu einer seltsamen Mischung aus der Tonhöhe der Quelle und der Grain-Größe. Vorhersagen lässt sie sich nicht auf einfache Weise, man muss es ausprobieren. Die nötigen Regler sitzen in den Bereichen Transpose und Grain Size.
+Henke erklärt die Stimmung gesondert, und es lohnt sich, das nachzuerzählen. Auf der Taste C3 spielt ein Sample in seiner Originalgeschwindigkeit. Klingt darin ein C3, ist alles einfach. Klingt ein C#3, senk es um einen Halbton. Aber in der Granularsynthese wiederholen sich kurze Stücke sehr oft, und die hörbare Tonhöhe wird zu einer seltsamen Mischung aus der Tonhöhe der Quelle und der Grain-Größe. Vorhersagen lässt sie sich nicht auf einfache Weise, man muss es ausprobieren. Die nötigen Regler sitzen in den Bereichen Transpose und Grain Size.
 
 **Henkes Trick: Tonhöhe aus der Grain-Größe.** Stell **Transpose Key** auf 0 und **Grain Size Key** auf 100. Jetzt spielen alle Tasten das Sample in derselben Tonhöhe, aber die Grain-Größe ändert sich mit dem Ton, und es entsteht ein deutliches Tonhöhenempfinden. Damit es stimmt, rät Henke zu einer Größe von genau 3,822 ms. Die Zahl ist kein Zufall: Eine Periode von 3,822 ms entspricht einer Frequenz von etwa 261,6 Hz, dem eingestrichenen C (in Live heißt es C3). Das ist eine direkte Demonstration von [Kapitel 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): Der Ton entsteht aus der Grain-Rate.
 
@@ -157,7 +157,7 @@ Formen: Sine, Triangle, Up, Down, Rect, Sample & Hold (zufällige Stufen) und zw
 - **Die LFO-Tiefe** wird von Slide und Pressure, Envelope 2, Key und Velocity moduliert. Die Option **Use Mod Wheel** fügt eine Skalierung durch das Modulationsrad hinzu. Henke nennt MIDI CC 2, obwohl das Modulationsrad nach dem MIDI-Standard CC 1 ist.
 - **Quant.** Quantisiert den LFO-Ausgang vor der Tiefenregelung und erzeugt eine gestufte Modulation. Henkes Beispiel: Bei Quant 0,5 ergibt eine Rampe drei Werte (0; 0,5; 1), ein Sinus fünf (von −1 bis 1 in Schritten von 0,5). Der Unterschied liegt daran, dass die Rampen Up und Down unipolar sind (von 0 bis 1), die übrigen Formen bipolar (von −1 bis 1).
 
-Der Regler Stereo ist besonders gut auf Position und Grain Size: Mit Phasenverschiebung bewegt der LFO Position und Grain-Größe im linken und rechten Ohr unterschiedlich, und die Wolke spaltet sich in zwei.
+Der Regler Stereo wirkt besonders gut auf Position und Grain Size: Mit Phasenverschiebung bewegt der LFO Position und Grain-Größe im linken und rechten Ohr unterschiedlich, und die Wolke spaltet sich in zwei.
 
 ## Filter
 
@@ -189,7 +189,7 @@ Capture macht aus Granulator III einen Granulator für Live-Klang.
 
 1. Schalte die Aufnahme mit der Taste **I/O** ein. Das Sample ändert sich noch nicht, es erscheint nur die Aufnahmeoberfläche.
 2. Wähl die Quelle über die zwei Menüs **Source**. Du kannst sogar den Ausgang von Granulator III selbst nehmen und dich selbst resamplen.
-3. Das Instrument nimmt ständig die letzten Sekunden Klang auf, wie viele, legt das Menü **Length** fest.
+3. Das Instrument nimmt ständig die letzten Sekunden Klang auf; wie viele, legt das Menü **Length** fest.
 4. Drück **Capture**: Das aktuelle Sample wird durch einen Schnappschuss der letzten Sekunden ersetzt. Die Reglereinstellungen bleiben.
 5. **Cancel** holt das zuletzt geladene Sample zurück, auch wenn du Capture viele Male gedrückt hast.
 6. **Save** öffnet einen Speicherdialog: Das Instrument schreibt die Datei und lädt sie als normales Sample neu.
@@ -202,7 +202,7 @@ Die Aufnahmequelle kann eine andere Live-Spur oder ein externer Eingang sein: ei
 
 ## Löffel-Rezepte
 
-Ein Tipp aus dem ersten Tutorial: Stell die Regler an einem Sample ein und tausch dann die Samples aus und hör zu. Der Klang hängt stark von der Quelle ab, und dieselbe Einstellung ergibt mit verschiedenen Dateien ganz unterschiedliche Ergebnisse.
+Ein Tipp aus dem ersten Tutorial: Stell die Regler an einem Sample ein, tausch dann die Samples aus und hör zu. Der Klang hängt stark von der Quelle ab, und dieselbe Einstellung ergibt mit verschiedenen Dateien ganz unterschiedliche Ergebnisse.
 
 !!! success "Rezept 11.1. Pad in Classic"
 
@@ -231,7 +231,7 @@ Ein Tipp aus dem ersten Tutorial: Stell die Regler an einem Sample ein und tausc
     1. Modus Cloud. Density etwa 12.
     2. Grain Size 150–300 ms.
     3. Variation deutlich: Position auf 300–500 ms, Transpose auf ein paar Halbtöne.
-    4. Spread höher. Darüber ein Hall mit langer Fahne.
+    4. Spread höher. Darüber ein Hall mit langer Hallfahne.
 
 !!! success "Rezept 11.5. Zerschneiden über die Tasten"
 
@@ -247,7 +247,7 @@ Ein Tipp aus dem ersten Tutorial: Stell die Regler an einem Sample ein und tausc
 2. Sag mehrmals „Löffel“ ins Mikrofon und dehne dabei den Vokal.
 3. Drück Capture. Gefällt es dir nicht, sprich noch einmal und drück Capture erneut.
 4. Schalte Scan mit Loop ein, Distance auf die Länge eines Wortes. Hold, ein einziger Ton.
-5. Speicher eine gelungene Aufnahme mit der Taste Save, sonst geht sie verloren.
+5. Speichere eine gelungene Aufnahme mit der Taste Save, sonst geht sie verloren.
 
 ## Quellen zu diesem Kapitel
 

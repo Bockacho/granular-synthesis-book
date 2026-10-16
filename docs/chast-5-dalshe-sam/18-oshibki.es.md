@@ -9,7 +9,7 @@ Casi todos los problemas con un granulador se reducen a una quincena de síntoma
 | Clics y crepitar | la ventana es demasiado brusca y los bordes de los granos se cortan; los marcadores del sample no están en cruces por cero | ventana de campana o más suavizado; marcadores ajustados al cero, fundidos en los bordes del sample | 1, 5, 10, 12 |
 | Un zumbido mecánico al congelar | todos los granos son idénticos, el flujo se ha vuelto periódico | dispersión de posición de 5–30 ms | 4 |
 | La nube cae en agujeros | el solapamiento es menor que uno; los granos se toman del silencio | subir la densidad o la duración del grano; una ventana de lectura sin silencio | 2, 4 |
-| Engrudo en los graves | una nube densa acumula retumbo | filtro paso alto; menos densidad; filtro sobre el sample antes del granulador | 14, 16 |
+| Graves embarrados | una nube densa acumula retumbo | filtro paso alto; menos densidad; filtro sobre el sample antes del granulador | 14, 16 |
 | El volumen salta, la salida satura | el volumen crece con la densidad | bajar el volumen general, un limitador a la salida, dispersiones para descorrelacionar | 6, 16 |
 | El sonido está desafinado | la nota fundamental del sample no es C | averigua la nota con un afinador, ajusta la transposición o Root Note | 10, 11, 12 |
 | La voz se ha vuelto una ardilla | la transposición del grano mueve los formantes | fija la nota con la frecuencia de los granos; usa una fuente en la tonalidad adecuada | 6, 7, 14 |
@@ -23,4 +23,4 @@ Casi todos los problemas con un granulador se reducen a una quincena de síntoma
 
 ## El orden para buscar el fallo
 
-Cuando no está claro qué pasa, ve de arriba abajo. Primero pon a cero todas las dispersiones y la modulación. Luego comprueba la fuente: escúchala sin el granulador. Después devuelve la duración del grano y la densidad al centro de la nube del mapa (100 ms, 30 granos por segundo). Si en ese punto el sonido es normal, recupera los mandos de uno en uno hasta que aparezca el problema. El mando que lo ha traído de vuelta es el culpable.
+Cuando no está claro qué pasa, ve de arriba abajo. Primero pon a cero todas las dispersiones y la modulación. Luego comprueba la fuente: escúchala sin el granulador. Después devuelve la duración del grano y la densidad al centro de la nube del mapa (100 ms, 30 granos por segundo). Si en ese punto el sonido es normal, devuelve los mandos a sus valores de uno en uno hasta que aparezca el problema. El mando que lo ha traído de vuelta es el culpable.

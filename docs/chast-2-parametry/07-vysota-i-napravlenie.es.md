@@ -50,7 +50,7 @@ En Quanta 2 este ajuste se llama QUANT: un botón con un teclado junto al mando 
 
 ## Dirección
 
-Un grano puede leerse al revés. Un grano corto invertido casi no se distingue de uno normal de oído, pero en granos de más de 50 ms los ataques se dan la vuelta y el sonido empieza a «aspirarse».
+Un grano puede leerse al revés. A oído, un grano corto invertido casi no se distingue de uno normal, pero en granos de más de 50 ms los ataques se dan la vuelta y el sonido empieza a «aspirarse».
 
 **Cómo se llama:** Reverse, Direction, Rev Prob, Backwards.
 

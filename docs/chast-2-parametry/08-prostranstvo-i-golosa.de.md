@@ -17,13 +17,13 @@ Jedes Grain lässt sich an einen eigenen Platz im Stereopanorama setzen. Solange
 - **20–50 %.** Die Wolke ist breit, aber die Mitte ist dicht. Eine gute Wahl für ein Pad im Mix.
 - **100 %.** Die Grains fliegen von Rand zu Rand. Eindrucksvoll im Kopfhörer, aber auf einem Monolautsprecher kann ein Teil des Klangs verschwinden.
 
-Prüf eine breite Wolke in Mono: Schalte in der DAW den Master für ein paar Sekunden auf mono. Wenn der Klang einbricht oder dumpf wird, nimm die Breite zurück.
+Prüf eine breite Wolke in Mono: Schalte in der DAW den Master für ein paar Sekunden auf Mono. Wenn der Klang einbricht oder dumpf wird, nimm die Breite zurück.
 
 Breite lässt sich auch anders erreichen. In Quanta 2 arbeiten zwei unabhängige Granulatoren, einer für den linken und einer für den rechten Kanal, mit gemeinsamen Reglern. Selbst aus einer Monoaufnahme liefern sie verschiedene Grains, vor allem mit eingeschalteten Streuungen, und der Klang wird breit. Der Regler WIDTH mischt die Kanäle ineinander: Bei null ist der Klang mono, danach wächst die Breite bis zum Maximum.
 
 ??? info "Unter der Haube"
 
-    Ein zufälliges Panorama pro Grain dekorreliert linken und rechten Kanal. Eine breite Wolke aus dekorrelierten Grains verliert beim Summieren auf mono weniger als ein Stereo-Chorus, weil sie kaum gegenphasige Kopien desselben Signals enthält. Bei einer Stereoquelle mit breiter Basis und voller Streuung sind Einbrüche in Mono aber trotzdem möglich.
+    Ein zufälliges Panorama pro Grain dekorreliert linken und rechten Kanal. Eine breite Wolke aus dekorrelierten Grains verliert beim Summieren auf Mono weniger als ein Stereo-Chorus, weil sie kaum gegenphasige Kopien desselben Signals enthält. Bei einer Stereoquelle mit breiter Basis und voller Streuung sind Einbrüche in Mono aber trotzdem möglich.
 
 ## Zufällige Lautstärke
 
@@ -45,7 +45,7 @@ Jedes Grain kostet den Prozessor Arbeit. Dichte 200 Grains pro Sekunde, Größe 
 
 **So heißt es:** Max Grains, Grain Limit, Voices, Polyphony, Quality.
 
-Wenn das Projekt ruckelt: Senk die Dichte, verkürze die Grains, reduziere die Polyphonie oder friere die Spur ein beziehungsweise bounce sie zu Audio.
+Wenn das Projekt ruckelt: Senk die Dichte, verkürze die Grains, reduziere die Polyphonie oder friere die Spur ein oder bounce sie zu Audio.
 
 ## Stimmen und Spielmodi
 
@@ -68,6 +68,6 @@ Grains profitieren fast immer von Bearbeitung nach dem Granulator:
 
 1. Nimm den Klang aus Übung 6.1, bei dem sich die Wolke gerade gebildet hat. Setz die Kopfhörer auf.
 2. Dreh die Panoramastreuung von 0 auf 100 %. Achte auf den Moment, in dem die Wolke räumlich wird.
-3. Schalte den Master auf mono. Vergleiche. Such die Breite, bei der mono noch gut klingt.
+3. Schalte den Master auf Mono. Vergleiche. Such die Breite, bei der das Mono-Signal noch gut klingt.
 4. Füg eine zufällige Lautstärke von 30–50 % hinzu. Die Wolke beginnt zu funkeln.
-5. Setz hinter den Granulator einen Hall mit langer Fahne und ein Delay. Hör, wie der Klang zu einem Ort geworden ist.
+5. Setz hinter den Granulator einen Hall mit langer Hallfahne und ein Delay. Hör, wie der Klang zu einem Ort geworden ist.

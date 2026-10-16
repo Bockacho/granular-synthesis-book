@@ -9,7 +9,7 @@
 
 ## Grain pitch
 
-Grain pitch decides the speed at which the granulator reads the sound inside each grain. Read twice as fast, and the grain sounds an octave higher. Twice as slow, and an octave lower. The main point: this has no effect on position, and time moves through the file as it did.
+Grain pitch decides the speed at which the granulator reads the sound inside each grain. Read twice as fast, and the grain sounds an octave higher. Twice as slow, and an octave lower. The main point: this has no effect on position, and time moves through the file as before.
 
 **What it's called:** Pitch, Tune, Transpose, Grain Pitch, Coarse/Fine, Semi/Cent.
 
@@ -42,7 +42,7 @@ In many granulators the spread can be tied to intervals. Then each grain takes i
 
 - **Octaves only.** The sound shimmers like glints on water, yet stays on one note. A classic ambient trick.
 - **Octaves and fifths.** A shimmering organ chord.
-- **Scale notes.** Each grain plays a random note of the scale, and one pressed key gives birth to a cloud of a chord.
+- **Scale notes.** Each grain plays a random note of the scale, and one pressed key gives birth to a chord-shaped cloud.
 
 In Quanta 2 this snapping is called QUANT: a button with a keyboard next to the TUNE knob opens a small window with keys. Switch on the notes you need, and each grain will play only those. If you switch on all twelve, the grains will go to any notes of the octave, and if only the bottom row, then only to notes without sharps and flats. Quantization takes the plugin's current tuning into account, so it also works with nonstandard tunings. That way the cloud stays in the key of the track.
 
@@ -64,12 +64,12 @@ In Quanta 2 grain direction has five modes. FORWARD and REVERSE play the grains 
 
 ## Sliding inside the grain
 
-In some engines pitch can be changed right inside the grain: each one starts on one note and slides to another. Short grains with falling pitch sound like drops or laser "pew", long ones sound like groans. If your instrument has no such knob, no problem: a similar effect comes from fast pitch modulation ([chapter 9](../chast-2-parametry/09-modulyaciya.md)). Curtis Roads has a name of his own for such grains: glissons, and synthesis from them is called glisson synthesis.
+In some engines pitch can be changed right inside the grain: each one starts on one note and slides to another. Short grains with falling pitch sound like drops or a laser "pew", long ones sound like groans. If your instrument has no such knob, no problem: a similar effect comes from fast pitch modulation ([chapter 9](../chast-2-parametry/09-modulyaciya.md)). Curtis Roads has a name of his own for such grains: glissons, and synthesis from them is called glisson synthesis.
 
 ## Exercise 7.1. A chord from one spoon { .exercise }
 
 1. The spoon, position on the ring, size 100 ms, density 40, position spread 20 ms.
-2. Play the note C. The ring has become that note.
+2. Play the note C. The ring is now pitched to that note.
 3. Set the pitch to −24 semitones. The spoon has become a bell.
 4. Bring the pitch back. Give a pitch spread of 15 cents. The sound has become wider.
 5. If there is a way to tie spread to intervals, choose octaves and raise the spread to ±1 octave. Shimmering.

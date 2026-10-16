@@ -40,7 +40,7 @@ La envolvente decide cómo cambia el volumen del grano de principio a fin. Ya sa
 
 | Forma | Cómo es | Cómo suena |
 | --- | --- | --- |
-| Campana (Hann) | subida suave, bajada suave | suave, sin clics; la forma de trabajo por defecto |
+| Campana (Hann) | subida suave, bajada suave | suave, sin clics; la forma estándar |
 | Gaussiana | campana más estrecha con colas largas | aún más suave, pero se oye una parte menor del grano; el sonido es más brumoso |
 | Trapecio (Tukey) | subida rápida, meseta plana, bajada rápida | más fuente, más brillante y nítido; en granos cortos puede chasquear |
 | Triángulo | subida recta, bajada recta | entre la campana y el trapecio, algo más duro que la campana |

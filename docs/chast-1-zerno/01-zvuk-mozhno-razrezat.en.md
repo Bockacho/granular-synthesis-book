@@ -11,16 +11,16 @@ The sound you recorded sits in your computer as a long row of numbers. Each numb
 
 Since it is a row of numbers, it can be cut into pieces of any length. Granular synthesis cuts sound into very short pieces, usually from 1 to 100 milliseconds. A millisecond is a thousandth of a second. A 50 ms piece lasts one twentieth of a second: you will hear it, but you are unlikely to recognize where it was cut from.
 
-Such a piece with a smooth start and a smooth end is called a grain. One grain means almost nothing, just as one drop is not yet rain. But fire off hundreds of grains a second and a new sound is born: a cloud. What it turns out like is decided by four things: where the grains are taken from, how long they are, how often they fly and what pitch they sound at.
+Such a piece with a smooth start and a smooth end is called a grain. One grain means almost nothing, just as one drop is not yet rain. But fire off hundreds of grains a second and a new sound is born: a cloud. What it sounds like depends on four things: where the grains are taken from, how long they are, how often they fly and what pitch they sound at.
 
 ## The main superpower
 
-In a tape machine or an ordinary sampler, the speed, pitch and length of a sound are locked together. Speed a recording up twofold and it becomes an octave higher and half as long. Slow it down and it goes lower and lasts longer. That is where the chipmunk voice and the voice of a slowed-down monster come from.
+In a tape machine or an ordinary sampler, the speed, pitch and length of a sound are locked together. Play a recording twice as fast and it sounds an octave higher and lasts half as long. Slow it down and it sounds lower and lasts longer. That is where the chipmunk voice and the voice of a slowed-down monster come from.
 
 A granulator breaks that coupling. It decides separately where in the file to take grains from and separately what pitch to play them at. That gives you tricks a sampler doesn't have:
 
 - **Freeze.** You stay at one point of the file, and the spoon's ring lasts as long as you like, even ten minutes.
-- **Stretching.** You pass through three seconds of sound over three minutes, and the pitch stays the same.
+- **Stretching.** You play through three seconds of sound over three minutes, and the pitch stays the same.
 - **Transposition without changing length.** The ring plays an octave lower and lasts exactly as long.
 - **Shuffling.** Grains are taken from random places in the file, and the sound crumbles into a mosaic.
 

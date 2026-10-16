@@ -9,7 +9,7 @@
 
 ## Density
 
-Density tells how many grains are born per second for one note. It is the knob that turns a rattle into a cloud.
+Density is the number of grains born per second for each note. It is the knob that turns a rattle into a cloud.
 
 **What it's called:** Density, Rate, Grains, Frequency, Grain Rate, Spawn Rate, Interval. If the knob is called Interval or Period, it works the other way round: it sets the pause between grains in milliseconds, and the bigger the number, the sparser the grains.
 
@@ -47,7 +47,7 @@ The more grains sound at once, the louder the cloud. Double the density and the 
 **What it's called:** Sync, Async, Random Rate, Rate Jitter, Spray (in time), Irregularity, Chaos.
 
 - **Timing spread 0.** The grains go like a metronome. Above 20 grains a second, a tone is born.
-- **Timing spread medium.** The tone is rough and alive, like a choir or a bow.
+- **Timing spread medium.** The tone is rough and alive, like a choir or a bowed string.
 - **Timing spread maximum.** There is no tone, there is a cloud, a rustle, a swarm.
 
 Next to synchronicity there is sometimes one more knob: intermittency. It sets the probability that the next grain simply won't be born. The stream keeps to its previous grid, even or random, but holes appear in it, and the cloud thins out without a change of density on the knob. This is how the knob works in the free EmissionControl2 ([chapter 21](../chast-5-dalshe-sam/21-chto-dalshe.md)).
@@ -64,7 +64,7 @@ This mode exists in ready-made instruments too. In Grain from Reason Studios it 
 
 ??? info "Under the hood"
 
-    This principle underlies FOF synthesis and pulsar synthesis. The rate r at which grains follow one another sets the fundamental. The duration of the grain and its content set the spectral envelope: where the spectrum rises, there is a formant. If the grain size is longer than the period 1/r, the grains overlap and the formants become narrower; if shorter, there is silence between the grains, and the spectrum becomes wider and more "pulsar-like".
+    This principle underlies FOF synthesis and pulsar synthesis. The rate r at which grains follow one another sets the fundamental. The duration of the grain and its content set the spectral envelope: where the spectrum rises, there is a formant. If the grain is longer than the period 1/r, the grains overlap and the formants become narrower; if shorter, there is silence between the grains, and the spectrum becomes wider and more "pulsar-like".
 
 ??? info "Under the hood"
 
@@ -74,6 +74,6 @@ This mode exists in ready-made instruments too. In Grain from Reason Studios it 
 
 1. The spoon, position on the ring, size 30 ms, position spread 10 ms.
 2. Density 3 grains a second, asynchronous. Sparse drops.
-3. Smoothly raise the density to 200. Note where the drops merged into a cloud.
+3. Smoothly raise the density to 200. Note where the drops merge into a cloud.
 4. Set the timing spread to zero. Raise the density past 100. Hear how the cloud begins to hum with a tone.
-5. If your instrument lets you tie density to the keyboard, play a scale. You are playing a melody with the spoon, while the position stands still all the time.
+5. If your instrument lets you tie density to the keyboard, play a scale. You are playing a melody with the spoon, while the position never moves.

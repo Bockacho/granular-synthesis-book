@@ -16,7 +16,7 @@ Every grain has its own set of properties, like a note in a score:
 - **volume**;
 - **pan**: where it sounds, left or right.
 
-A cloud adds two more properties. Density tells how many grains are born per second. Synchronicity tells how evenly they follow one another in time.
+A cloud adds two more properties. Density is how many grains are born per second. Synchronicity is how evenly they follow one another in time.
 
 In a synthesizer, every key you press starts its own stream of grains. Play a chord of three notes and you have three clouds, each at its own pitch.
 
@@ -62,7 +62,7 @@ Below one means a dotted line and rhythm. Above one means a merged cloud, and th
 
 **Asynchronous stream.** The intervals are random. There is no tone, there is a rustle, rain, gravel, a swarm. This is how classic granular clouds sound.
 
-**Quasi-synchronous stream.** The intervals are even, but with a small random spread. The tone stays, but becomes rough and alive, like a choir or a bow.
+**Quasi-synchronous stream.** The intervals are even, but with a small random spread. The tone stays, but becomes rough and alive, like a choir or a bowed string.
 
 <div class="grain-demo" data-demo="sync">The sound demo runs in the browser with JavaScript enabled.</div>
 

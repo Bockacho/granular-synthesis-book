@@ -20,7 +20,7 @@ La nube añade dos propiedades más. La densidad dice cuántos granos nacen por 
 
 En un sintetizador, cada nota que pulsas lanza su propio flujo de granos. Toca un acorde de tres notas y tendrás tres nubes, cada una a su altura.
 
-## Qué oye el oído según la duración
+## Qué percibe el oído según la duración
 
 | Duración del grano | Qué se oye | Para qué sirve |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ Menos de uno significa línea de puntos y ritmo. Más de uno significa una nube 
 
 **Flujo asíncrono.** Los intervalos son aleatorios. No hay tono, hay un susurro, lluvia, grava, un enjambre. Así suenan las nubes granulares clásicas.
 
-**Flujo casi síncrono.** Los intervalos son regulares, pero con una pequeña dispersión aleatoria. El tono se mantiene, pero se vuelve áspero y vivo, como un coro o un arco.
+**Flujo casi síncrono.** Los intervalos son regulares, pero con una pequeña dispersión aleatoria. El tono se mantiene, pero se vuelve áspero y vivo, como un coro o un instrumento de arco.
 
 <div class="grain-demo" data-demo="sync">La demo sonora funciona en el navegador con JavaScript activado.</div>
 

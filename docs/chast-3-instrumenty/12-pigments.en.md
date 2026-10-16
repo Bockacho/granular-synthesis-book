@@ -50,7 +50,7 @@ Above the waveform there are three buttons:
 
 In Main mode under the waveform there is the **Granular** section with an on button in its header. While it is off, the engine works as an ordinary sampler. On the right of the header is the **Limit** field: the maximum number of simultaneously overlapping grains. The Pigments 7 manual calls it one of the main ways to keep the processor in check at high density. Per the Pigments 2 manual, the limit is set from 3 to 256.
 
-The top row of knobs sets the main things in the grains, the bottom row scatters them at random.
+The top row of knobs sets the core grain parameters, the bottom row scatters them at random.
 
 ## Start: position
 
@@ -77,7 +77,7 @@ A tip from the manual: learn at low density, where it is easier to hear what is 
 
 ## Shape: the grain envelope
 
-A click on the shape icon above the third knob opens the **Grain Envelope Shape** menu: Triangle, Trapezoid, Tukey, Gaussian, Sinc, Expodec, Rexpodec, Smooth Exp. The menu chooses the shape, and the **Shape** knob bends it further. Per the Pigments 2 manual, the knob moves the shape from "smooth" to "clicking", and it can be modulated.
+A click on the shape icon above the third knob opens the **Grain Envelope Shape** menu: Triangle, Trapezoid, Tukey, Gaussian, Sinc, Expodec, Rexpodec, Smooth Exp. The menu chooses the shape, and the **Shape** knob reshapes it further. Per the Pigments 2 manual, the knob moves the shape from "smooth" to "clicking", and it can be modulated.
 
 | Shape | How it is built | Chapter 5 |
 | --- | --- | --- |
@@ -120,13 +120,13 @@ The bottom row of knobs adds randomness. Most have a direction menu: a button or
 Two subtleties:
 
 - **Direction**, per the Pigments 2 manual: the far right position plays grains forwards, the far left backwards, the middle gives fifty-fifty.
-- **Stereo in Width mode** spreads grains that are already randomized across the stereo field. If there are no other spreads, all grains stay in the center even with Width at maximum. The Pigments 2 manual clarifies: Width adds a difference between the left and right channels for the Size, Pitch and Start spreads. So Width works only in a pair with other randomizers.
+- **Stereo in Width mode** spreads grains that are already randomized across the stereo field. If there are no other spreads, all grains stay in the center even with Width at maximum. The Pigments 2 manual clarifies: Width adds a difference between the left and right channels for the Size, Pitch and Start spreads. So Width works only in combination with other randomizers.
 
 ## Six samples and grains
 
-Here is a possibility that the other two instruments in the book don't have. The **Map** mode lays out slots A–F, and two of its options work grain by grain:
+Here is something the other two instruments in the book can't do. The **Map** mode lays out slots A–F, and two of its options work grain by grain:
 
-- **Round Robin.** The slots play in a circle. With the granular section on, each new grain is taken from the next sample.
+- **Round Robin.** The slots play in rotation. With the granular section on, each new grain is taken from the next sample.
 - **Random.** The sample is chosen at random. With the granular section on, each grain is taken from a random slot.
 
 Load six different recordings into the six slots, and the cloud will weave them together grain by grain. The other Map modes: **Single** (one sample across the whole keyboard), **Key Map** (slots laid out across the keyboard), **Key/Velo Map** (by keys and two velocity layers), **Sample Pick** (the sample is chosen by a knob, which can be modulated).
@@ -142,7 +142,7 @@ Choose a slot with the A–F button and set:
 
 The trim markers (Trim Start and Trim Stop) are vertical lines with triangular handles on top, the loop markers have handles at the bottom. This is the reading window from [chapter 4](../chast-2-parametry/04-istochnik-i-poziciya.md): lock the spoon into the ring. The **Snap** button above the display magnetizes the markers to the waveform's zero crossings and saves you from clicks. For stereo samples the tolerance is wider, because they may have no exact zeros.
 
-Root Note will pick itself up if the root note is written in the WAV file's metadata. Trim and loop markers are also taken from metadata, if there are any.
+Root Note is set automatically if the root note is written in the WAV file's metadata. Trim and loop markers are also taken from metadata, if there are any.
 
 ## The engine's Tune and the sample filter
 
@@ -152,7 +152,7 @@ The engine's Tune section sets the overall tuning of the voices. For the Sample 
 
 Under the Tune section sits the Unison/Shaper section. A click on its name opens the modes menu.
 
-- **Unison, Chord, Super.** Work the same way as in other engines. In Chord mode the unison voices are quantized by semitones to one of 12 classic chords: one key gives a cloud of a chord. For the analog engine the manual gives up to 8 unison voices.
+- **Unison, Chord, Super.** Work the same way as in other engines. In Chord mode the unison voices are quantized by semitones to one of 12 classic chords: one key gives a chord-shaped cloud. For the analog engine the manual gives up to 8 unison voices.
 - **Resonator.** Six parallel band-pass filters, the first tuned by the note and the Tune section, the rest to harmonics of it. In granular mode the resonator follows the pitch of the grains, even with random pitch. Knobs: **Coarse** (tuning), **Wet/Dry**, **Resonance** (resonance and ring length), **Inharm**: at zero the resonators sit on harmonics, above zero they spread apart, below zero they come together. An inharmonic tuning gives bells and metal.
 - **BitCrush.** **Decimate** (sample-rate reduction), **Bit Depth**, **Key Track** (Decimate follows the key).
 - **Modulation.** **Freq Mod** (linear through-zero FM) and **Ring Mod**. The modulation source: the engine's modulator oscillator or another main engine.
@@ -171,7 +171,7 @@ Sources by tab:
 - **Combinate:** mix other sources.
 - **Macros:** four macros M1–M4.
 
-The main granular feature of modulation: for LFOs and Functions the restart menu (Retrig Source) has the items **Engine 1 Grain** and **Engine 2 Grain**. They appear when the slot holds a Sample engine with the granular section on. An LFO restarted by each grain gives every grain its own modulation curve. Hang such a Function on the filter, and each grain will get its own filter decay.
+The main granular feature of modulation: for LFOs and Functions the restart menu (Retrig Source) has the items **Engine 1 Grain** and **Engine 2 Grain**. They appear when the slot holds a Sample engine with the granular section on. An LFO restarted by each grain gives every grain its own modulation curve. Assign such a Function to the filter, and each grain will get its own filter decay.
 
 ## Bonus: the Modal granular exciter
 
@@ -200,7 +200,7 @@ Everywhere: the Sample engine in slot 1, the spoon loaded through Add Folder, Ma
     1. The pad from recipe 12.1.
     2. In Unison/Shaper choose Resonator, Wet/Dry in the middle.
     3. Raise Resonance for a long ring.
-    4. Move Inharm up: the spoon will sound like bells. The Pitch randomizer will be picked up by the resonator.
+    4. Move Inharm up: the spoon will sound like bells. The resonator follows the Pitch randomizer too.
 
 !!! success "Recipe 12.4. Six spoons"
 
@@ -218,10 +218,10 @@ Everywhere: the Sample engine in slot 1, the spoon loaded through Add Folder, Ma
 
 ## Exercise 12.1. One setting, six slots { .exercise }
 
-1. Build recipe 12.1 on the spoon.
+1. Build recipe 12.1 with the spoon.
 2. With the Copy button duplicate the spoon into slots B and C, and in each change Transpose: zero, plus a fifth, plus an octave.
 3. Map mode: Round Robin. The grains will take the three transpositions of one sound in turn.
-4. Compare with Random mode. Record both versions and listen to them one after another.
+4. Compare it with Random mode. Record both versions and listen to them one after another.
 
 ## Sources for this chapter
 

@@ -2,9 +2,9 @@
 
 # Recipes by source
 
-A granulator plays only what lies in the file. So the first question is always the same: what is there in this sound that isn't in others? Every source has its own strong zone on the map and its own traps.
+A granulator plays only what's in the file. So the first question is always the same: what does this sound have that others don't? Every source has its own strong zone on the map and its own traps.
 
-About rights. For your own tracks, use your own recordings or samples with a license that allows reworking. A granulator can make someone else's recording unrecognizable, but the rights to the source don't go anywhere because of that.
+About rights. For your own tracks, use your own recordings or samples with a license that allows derivative works. A granulator can make someone else's recording unrecognizable, but that doesn't make the rights to the source go away.
 
 ## Singing
 
@@ -44,7 +44,7 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 
 ## A string: guitar, violin, pluck
 
-**What it has.** A clear pitch, rich harmonics, an attack and a long decay. A separate gold mine is an overdriven guitar with feedback from the amp: complex drifting harmonics give dozens of places to freeze.
+**What it has.** A clear pitch, rich harmonics, an attack and a long decay. Another gold mine is an overdriven guitar with feedback from the amp: complex drifting harmonics give dozens of places to freeze.
 
 **Where to put the position.** The attack gives a pluck and a knock, the middle of the decay gives a pure tone. The frozen middle of a note sounds like a bowed instrument without a bow.
 
@@ -58,7 +58,7 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 
 **What they have.** Rhythm, sharp attacks, pauses between hits.
 
-**Where to put the position.** It depends on the task. A scan at the original speed and on the grid keeps the groove. A freeze on a cymbal gives a hissing drone, on a kick a humming low end.
+**Where to put the position.** It depends on the task. A scan at the original speed, locked to the grid, keeps the groove. A freeze on a cymbal gives a hissing drone, on a kick a humming low end.
 
 **Where to start.** Long grains (100–300 ms), the sample's pass tied to the bar, density by tempo. The Loop mode in Granulator III is the closest to an ordinary sampler, and the pack page on the Ableton site describes it as a mode for rhythmic material.
 
@@ -66,7 +66,7 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 
 **Recipe.** A loop, scan 25%, medium position spread, reversed grains 30%. The drums crumble into "granular madness", as Henke calls it.
 
-## Noise: white, wind, water
+## Noise: white noise, wind, water
 
 **What it has.** A continuous spectrum with no pitch.
 
@@ -109,4 +109,4 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 1. Build a pad from recipe 10.1, 11.1 or 12.1.
 2. Without touching the knobs, swap the source: singing, speech, street, guitar, drums, noise, piano.
 3. For each, find the one knob that improves the sound the most. Write it down.
-4. Compare the list with the traps of this chapter. Most likely you found them yourself.
+4. Compare the list with the traps of this chapter. Most likely you've found them on your own.

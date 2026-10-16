@@ -23,12 +23,12 @@ Por dentro, un granulador en vivo funciona como una línea de retardo: la entrad
 
 ## El procesador
 
-Un granulador pesa más que un sintetizador normal, y el manual de Serum 2 lo dice directamente. En el escenario, una sobrecarga del procesador suena a crepitar, y no se confunde con nada.
+Un granulador consume más procesador que un sintetizador normal, y el manual de Serum 2 lo dice directamente. En el escenario, una sobrecarga del procesador suena a crepitar, y no se confunde con nada.
 
 - **Límite de granos.** Max Grains en Serum, Limit en Pigments, Density en modo Cloud en Granulator III. Pon el techo con margen.
 - **Unísono y polifonía.** Multiplican el número de granos. En el escenario suelen bastar tres o cuatro voces en lugar de ocho.
 - **Procesamiento de sobra.** El filtro de Granulator III se puede desactivar y ahorra procesador; Henke lo dice directamente.
-- **Congelar a audio.** Todo lo que no necesites girar en vivo, pásalo a archivos de audio antes. La capa de fondo puede sonar como grabación, y dejar en vivo un solo granulador.
+- **Congelar a audio.** Todo lo que no necesites girar en vivo, pásalo a archivos de audio antes. La capa de fondo puede sonar como grabación, y en vivo queda un solo granulador.
 - **El búfer de la tarjeta de sonido.** Un búfer mayor da más margen al procesador a cambio de latencia. Para nubes y drones, un retardo de 10–20 ms apenas molesta.
 
 ## Red de seguridad
@@ -37,7 +37,7 @@ Un granulador pesa más que un sintetizador normal, y el manual de Serum 2 lo di
 - **Un filtro paso alto.** Una nube densa acumula retumbo. Un corte por debajo de 30–40 Hz casi no se oye, pero protege los altavoces y el margen de volumen.
 - **Un punto de retorno.** Ajusta la macro principal para que en su posición cero suene un sonido seguro y probado. ¿Te has perdido en el ruido? Macro a cero.
 - **Captura con red.** Granulator III normaliza el sonido capturado a 0 dB: un susurro débil puede sonar fuerte de repente. Mantén bajo el volumen de la pista hasta que oigas la captura.
-- **Comprobación en mono.** Un recinto suele sonar más cerca del mono que los auriculares. Comprueba antes en mono las nubes más anchas ([capítulo 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)).
+- **Comprobación en mono.** En una sala, el sonido suele estar más cerca del mono que en los auriculares. Comprueba antes en mono las nubes más anchas ([capítulo 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)).
 
 ## Enseña los granos al público
 
@@ -51,7 +51,7 @@ Dentro de una escena (de las escenas hablamos en el apartado siguiente) conviene
 
 El carácter de la transición lo decide su forma. Una transición regular, lineal, suena mecánica. Una con aceleración o frenada suena más natural, y una con rebote crea una sensación física, como si el sonido rebotara elásticamente.
 
-En Serum 2 y Pigments esto se monta con una macro, y en Live con una macro de un Instrument Rack que contenga Granulator III: él no tiene macros propias. Ajústala para que en cero suene el primer estado y al máximo el segundo, y gírala. La forma de la transición la fija tu mano o una curva de automatización: lenta al principio y rápida al final, o al revés.
+En Serum 2 y Pigments esto se monta con una macro, y en Live con una macro de un Instrument Rack que contenga Granulator III, ya que este no tiene macros propias. Ajústala para que en cero suene el primer estado y al máximo el segundo, y gírala. La forma de la transición la fija tu mano o una curva de automatización: lenta al principio y rápida al final, o al revés.
 
 ## Cómo construir una actuación
 

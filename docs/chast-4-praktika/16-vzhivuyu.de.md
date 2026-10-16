@@ -23,7 +23,7 @@ Innen ist ein Live-Granulator wie eine Delay-Linie aufgebaut: Der Eingang wird s
 
 ## Der Prozessor
 
-Ein Granulator ist schwerer als ein normaler Synthesizer, das Handbuch von Serum 2 sagt es direkt. Auf der Bühne klingt eine Prozessorüberlastung wie Knistern, und man verwechselt sie mit nichts.
+Ein Granulator braucht mehr Rechenleistung als ein normaler Synthesizer, das Handbuch von Serum 2 sagt es direkt. Auf der Bühne klingt eine Prozessorüberlastung wie Knistern, und man verwechselt sie mit nichts.
 
 - **Grain-Limit.** Max Grains in Serum, Limit in Pigments, Density im Modus Cloud bei Granulator III. Setz die Obergrenze mit Reserve.
 - **Unison und Polyphonie.** Sie vervielfachen die Zahl der Grains. Auf der Bühne reichen oft drei oder vier Stimmen statt acht.
@@ -35,9 +35,9 @@ Ein Granulator ist schwerer als ein normaler Synthesizer, das Handbuch von Serum
 
 - **Ein Limiter am Ausgang.** Die Dichte hebt die Lautstärke ([Kapitel 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md)), und auf der Bühne passiert das leicht aus Versehen. Ein Limiter fängt die Sprünge ab, bevor das Publikum sie hört.
 - **Ein Hochpassfilter.** Eine dichte Wolke sammelt Brummen an. Ein Schnitt unter 30–40 Hz ist kaum zu hören, schont aber die Lautsprecher und die Lautstärkereserve.
-- **Ein Rückkehrpunkt.** Stell das Hauptmakro so ein, dass in der Nullstellung ein sicherer, erprobter Klang ertönt. Im Rauschen verloren: Makro auf null.
+- **Ein Rückkehrpunkt.** Stell das Hauptmakro so ein, dass in der Nullstellung ein sicherer, erprobter Klang ertönt. Im Rauschen verloren? Makro auf null.
 - **Aufnahme mit Absicherung.** Granulator III normalisiert den aufgenommenen Klang auf 0 dB: Ein leises Rascheln kann plötzlich laut klingen. Halte die Spurlautstärke niedriger, bis du die Aufnahme gehört hast.
-- **Mono-Check.** Ein Saal klingt oft näher an mono als Kopfhörer. Prüf die breitesten Wolken vorher in Mono ([Kapitel 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)).
+- **Mono-Check.** Im Saal klingt es oft eher nach Mono als im Kopfhörer. Prüf die breitesten Wolken vorher in Mono ([Kapitel 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)).
 
 ## Zeig dem Publikum die Grains
 

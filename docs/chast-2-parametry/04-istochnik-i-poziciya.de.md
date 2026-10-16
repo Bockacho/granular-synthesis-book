@@ -9,18 +9,18 @@
 
 ## Quelle
 
-Ein Granulator erfindet nichts selbst: Alles, was er spielt, kommt aus einer Quelle, meistens aus einer aufgenommenen Datei. Eine schlechte Quelle wird durch den Granulator nicht gut, aber eine gute zeigt ein Dutzend Seiten.
+Ein Granulator erfindet nichts selbst: Alles, was er spielt, kommt aus einer Quelle, meistens aus einer aufgenommenen Datei. Eine schlechte Quelle wird durch den Granulator nicht gut, aber eine gute zeigt sich von einem Dutzend Seiten.
 
 Was einen Klang zu einer guten Quelle macht:
 
 - **Ein reiches Spektrum.** Ein Klingen, eine Stimme, eine Saite, Straßenlärm geben den Grains viel Material. Ein reiner Sinus ergibt einen langweiligen Sinus.
 - **Veränderung in der Zeit.** Wenn sich ein Klang im Verlauf ändert, klingt jede Position in der Datei anders, und die Bewegung der Position wird zu Musik. Beim Löffel ist das so: Anschlag, Klingen, Ausklang.
-- **Eine saubere Aufnahme.** Übersteuerung und digitale Klicks vervielfacht der Granulator in Hunderten Kopien.
+- **Eine saubere Aufnahme.** Übersteuerung und digitale Klicks vervielfacht der Granulator hundertfach.
 - **Keine überflüssige Stille.** Ein Grain aus der Stille klingt nach Stille. Die Wolke fällt dann in Löcher.
 
-Stereo oder mono? Eine Stereoquelle gibt den Grains ihre eigene Breite, eine Monoquelle überlässt sie dem Panoramaregler ([Kapitel 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)). Fang mit mono an, so ist klarer, was jeder Regler tut.
+Stereo oder Mono? Eine Stereoquelle gibt den Grains ihre eigene Breite, eine Monoquelle überlässt sie dem Panoramaregler ([Kapitel 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)). Fang mit Mono an, so ist klarer, was jeder Regler tut.
 
-Die Quelle muss keine Aufnahme sein. In Quanta 2 kommen am Eingang des Granulators die Signale zweier eingebauter Oszillatoren, des Rauschens und einer geladenen Datei an: Vier Schieberegler INPUT LEVELS mischen sie, und die Mischung wird in Grains geschnitten. Deshalb klingt der Granulator auch ohne Datei. Einfache Wellen mit Streuungen werden zu einer dichten Schicht wie einem „Supersaw“. Rauschen ergibt meist nur noch mehr Rauschen, aber ein wenig davon unter eine Aufnahme gemischt sorgt für Dichte, oder man baut Perkussion daraus. Auch in Serum 2 lassen sich nicht nur Aufnahmen granulieren, sondern auch Wavetables ([Kapitel 10](../chast-3-instrumenty/10-serum-2.md)).
+Die Quelle muss keine Aufnahme sein. In Quanta 2 kommen am Eingang des Granulators die Signale zweier eingebauter Oszillatoren, des Rauschens und einer geladenen Datei an: Vier Schieberegler INPUT LEVELS mischen sie, und die Mischung wird in Grains geschnitten. Deshalb klingt der Granulator auch ohne Datei. Einfache Wellen mit Streuungen werden zu einer dichten Schicht wie bei einem „Supersaw“. Rauschen ergibt meist nur noch mehr Rauschen, aber ein wenig davon unter eine Aufnahme gemischt sorgt für Dichte, oder man baut Perkussion daraus. Auch in Serum 2 lassen sich nicht nur Aufnahmen granulieren, sondern auch Wavetables ([Kapitel 10](../chast-3-instrumenty/10-serum-2.md)).
 
 ## Position
 
@@ -30,9 +30,9 @@ Die Position sagt, von welcher Stelle der Datei das nächste Grain genommen wird
 
 Die Position wird in Prozent der Dateilänge angegeben, in Millisekunden oder mit einem Cursor direkt im Wellenbild. Bewegen lässt sie sich auf drei Arten.
 
-**Stehen bleiben (Einfrieren).** Die Position bewegt sich nicht, alle Grains kommen von einer Stelle. Der Klang an dieser Stelle dauert endlos an. Am besten frieren stabile Stellen ein: ein Vokal in einer Stimme, die Mitte eines Klingens, ein gleichmäßiger Saitenton. Ein Anschlag friert schlechter ein: Grains aus dem Anschlag ergeben ein Summen wie von einem Motor.
+**Stehen bleiben (Einfrieren).** Die Position bewegt sich nicht, alle Grains kommen von einer Stelle. Der Klang an dieser Stelle dauert endlos an. Am besten frieren stabile Stellen ein: ein Vokal in einer Stimme, die Mitte eines Klingens, ein gleichmäßiger Saitenton. Ein Anschlag lässt sich schlechter einfrieren: Grains aus dem Anschlag ergeben ein Summen wie von einem Motor.
 
-**Von Hand bewegen.** Du drehst den Regler und bewegst dich mit beliebiger Geschwindigkeit durch die Datei, vorwärts und rückwärts. Der Klang wird zu einem Instrument, das du mit der Zeit spielst.
+**Von Hand bewegen.** Du drehst den Regler und bewegst dich mit beliebiger Geschwindigkeit durch die Datei, vorwärts und rückwärts. Der Klang wird zu einem Instrument, auf dem du die Zeit selbst spielst.
 
 **Automatisch bewegen (Scan).** Die Position fährt von selbst mit einer vorgegebenen Geschwindigkeit durch die Datei. 100 % bedeutet das Originaltempo. 50 % bedeutet halb so schnell, 0 % bedeutet Einfrieren, eine negative Geschwindigkeit bedeutet rückwärts.
 
@@ -40,7 +40,7 @@ $$
 T_{\text{new}} = \frac{T_{\text{source}}}{s}
 $$
 
-Dabei ist s die Scan-Geschwindigkeit (1 = 100 %) und T die Dauer. Ein Löffel von 3 Sekunden klingt bei 1 % Geschwindigkeit 300 Sekunden lang, also 5 Minuten, in derselben Tonhöhe.
+Dabei ist s die Scan-Geschwindigkeit (1 = 100 %) und T die Dauer. Ein 3 Sekunden langer Löffelklang klingt bei 1 % Geschwindigkeit 300 Sekunden lang, also 5 Minuten, in derselben Tonhöhe.
 
 ## Lesefenster
 

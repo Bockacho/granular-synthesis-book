@@ -20,7 +20,7 @@ Wenn alle Regler stillstehen, klingt die Wolke schön, aber statisch, wie ein Fo
 **Hüllkurve, ADSR.** Ändert einen Parameter einmal pro Ton: vom Drücken bis zum Loslassen.
 
 - Eine Hüllkurve auf der Position: Jeder Ton beginnt mit dem Anschlag des Löffels und gleitet ins Klingen. Der Klang läuft ab wie ein Sample, aber mit granularem Charakter.
-- Eine Hüllkurve auf der Größe: Am Anfang des Tons sind die Grains kurz und klicken, zum Ende hin lang und glatt. Ein knuspriger Anschlag, eine weiche Fahne.
+- Eine Hüllkurve auf der Größe: Am Anfang des Tons sind die Grains kurz und klicken, zum Ende hin lang und glatt. Ein knuspriger Anschlag, ein weiches Ausklingen.
 - Eine Hüllkurve auf der Dichte: Die Wolke flammt mit dem Ton auf und erlischt mit ihm.
 
 **Spiel.** Parameter, die du beim Spielen mit den Händen steuerst:
@@ -28,13 +28,13 @@ Wenn alle Regler stillstehen, klingt die Wolke schön, aber statisch, wie ein Fo
 - **Anschlagstärke (Velocity).** Je härter du anschlägst, desto größer die Positionsstreuung. Leise Töne sind sauber, laute zerfallen.
 - **Modulationsrad.** Die häufigste Zuweisung bei einem Granulator: Grain-Größe oder Streuung. Eine Hand spielt, die andere dreht die Wolke.
 - **Aftertouch und MPE.** Drück fester auf die Taste, und die Wolke öffnet sich.
-- **Tonnummer (Keytrack).** Hohe Töne bekommen kurze Grains, tiefe lange. So klingt es über die ganze Tastatur gleichmäßiger.
+- **Notennummer (Keytrack).** Hohe Töne bekommen kurze Grains, tiefe lange. So klingt es über die ganze Tastatur gleichmäßiger.
 
 **Zufall pro Ton.** Ein neuer Zufallswert bei jedem Tastendruck. Zum Beispiel eine zufällige Startposition: Jeder Ton beginnt an einer eigenen Stelle der Datei, und selbst eine wiederholte Stimme klingt nie zweimal gleich.
 
 ## Tiefe und Polarität
 
-Jede Verbindung „Quelle → Parameter“ hat eine Tiefe: wie weit die Modulation den Regler bewegt. Und ein Vorzeichen: Plus bewegt ihn in die eine Richtung, Minus in die andere. Die Tiefe ist wichtiger als die Geschwindigkeit. Fang mit wenig Tiefe an und erhöhe, bis du Bewegung hörst, dann nimm ein wenig zurück. Der häufigste Anfängerfehler: Modulation voll aufgedreht, und der Klang wird zum Karussell.
+Jede Verbindung „Quelle → Parameter“ hat eine Tiefe: wie weit die Modulation den Regler bewegt. Und ein Vorzeichen: Plus bewegt ihn in die eine Richtung, Minus in die andere. Die Tiefe ist wichtiger als die Geschwindigkeit. Fang mit wenig Tiefe an und erhöhe sie, bis du Bewegung hörst, dann nimm ein wenig zurück. Der häufigste Anfängerfehler: Modulation voll aufgedreht, und der Klang wird zum Karussell.
 
 ## Parameterkopplungen
 
@@ -58,11 +58,11 @@ Interne Modulation erledigt der Synthesizer selbst, und sie wiederholt sich bei 
 
 ??? info "Unter der Haube"
 
-    Eine Modulation der Position mit einem LFO im Audiobereich (über 20 Hz) hört auf, Bewegung zu sein, und wird zur Klangfarbe: Die Position schwingt so schnell, dass die Grains den Klang mit einer Frequenzmodulation im Inneren lesen. Dasselbe gilt für die Grain-Tonhöhe: Ein LFO im Audiobereich auf der Tonhöhe erzeugt Seitenbänder wie in der FM-Synthese. Nicht alle Instrumente lassen den LFO so hoch, aber wo es geht, entstehen aus jeder Quelle metallische und glockenartige Klangfarben.
+    Eine Modulation der Position mit einem LFO im Audiobereich (über 20 Hz) hört auf, Bewegung zu sein, und wird zur Klangfarbe: Die Position schwingt so schnell, dass die Grains den Klang mit einer Frequenzmodulation im Inneren lesen. Dasselbe gilt für die Grain-Tonhöhe: Ein LFO im Audiobereich auf der Tonhöhe erzeugt Seitenbänder wie in der FM-Synthese. Nicht alle Instrumente lassen den LFO so schnell laufen, aber wo es geht, entstehen aus jeder Quelle metallische und glockenartige Klangfarben.
 
 ??? info "Unter der Haube"
 
-    In einem Granulator wirkt Modulation fast immer auf Grains, die noch nicht geboren sind. Die Reglerwerte werden im Moment der Entstehung eines Grains gelesen, und danach spielt das Grain mit ihnen bis zum Ende. Roads nennt das Grain-Integrität (grain integrity): In EmissionControl2 ändert ein ausgelöstes Grain weder Filter noch Panorama noch seine Stelle in der Datei, und das schützt vor Klicks ([Roads et al., 2021](https://doi.org/10.1162/comj_a_00613)). Das Handbuch von Kaivo sagt dasselbe, und Granulator III berechnet so die Fensterform ([Kapitel 11](../chast-3-instrumenty/11-granulator-iii.md)). Deshalb klingt eine schnelle Modulation bei langen Grains nicht wie eine gleitende Verschiebung, sondern wie ein Schauer von Grains mit unterschiedlichen Werten.
+    In einem Granulator wirkt Modulation fast immer auf Grains, die noch nicht entstanden sind. Die Reglerwerte werden im Moment der Entstehung eines Grains gelesen, und danach spielt das Grain mit ihnen bis zum Ende. Roads nennt das Grain-Integrität (grain integrity): In EmissionControl2 ändert ein ausgelöstes Grain weder Filter noch Panorama noch seine Stelle in der Datei, und das schützt vor Klicks ([Roads et al., 2021](https://doi.org/10.1162/comj_a_00613)). Das Handbuch von Kaivo sagt dasselbe, und Granulator III berechnet so die Fensterform ([Kapitel 11](../chast-3-instrumenty/11-granulator-iii.md)). Deshalb klingt eine schnelle Modulation bei langen Grains nicht wie eine gleitende Verschiebung, sondern wie ein Schauer von Grains mit unterschiedlichen Werten.
 
 ## Übung 9.1. Ein atmendes Pad { .exercise }
 

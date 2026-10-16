@@ -20,7 +20,7 @@ Beim Tonbandgerät und beim normalen Sampler sind Geschwindigkeit, Tonhöhe und 
 Der Granulator bricht diese Kopplung auf. Er entscheidet getrennt, von welcher Stelle der Datei er die Grains nimmt und in welcher Tonhöhe er sie spielt. Daraus entstehen Tricks, die ein Sampler nicht kann:
 
 - **Einfrieren.** Du bleibst an einer Stelle der Datei stehen, und das Klingen des Löffels dauert, so lange du willst, auch zehn Minuten.
-- **Dehnen.** Du gehst drei Sekunden Klang in drei Minuten durch, und die Tonhöhe bleibt gleich.
+- **Dehnen.** Du durchläufst drei Sekunden Klang in drei Minuten, und die Tonhöhe bleibt gleich.
 - **Transponieren ohne Längenänderung.** Das Klingen spielt eine Oktave tiefer und dauert genauso lang.
 - **Mischen.** Die Grains werden von zufälligen Stellen der Datei genommen, und der Klang zerfällt zu einem Mosaik.
 
@@ -34,7 +34,7 @@ Schneid ein Stück Klang mit der Schere heraus, und die Welle reißt an den Rän
 
 ??? info "Unter der Haube"
 
-    Ein Klick entsteht aus einer Unstetigkeit: Das Signal springt innerhalb eines einzigen Samples von einem Wert ungleich null auf null. Ein harter Sprung hat Energie auf allen Frequenzen zugleich, daher der breitbandige Klick. Das Fenster führt die Amplitude an den Rändern auf null, und der Sprung hat keine Gelegenheit zu entstehen.
+    Ein Klick entsteht aus einer Unstetigkeit: Das Signal springt innerhalb eines einzigen Samples von einem Wert ungleich null auf null. Ein harter Sprung hat Energie auf allen Frequenzen zugleich, daher der breitbandige Klick. Das Fenster führt die Amplitude an den Rändern auf null, und ein Sprung kann gar nicht erst entstehen.
 
 ## Übung 1.1. Ein Granulator von Hand { .exercise }
 

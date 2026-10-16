@@ -35,7 +35,7 @@ A cada grano se le puede dar un volumen aleatorio. La nube empieza a chispear: u
 
 Fíjate en que casi cada parámetro del granulador tiene un gemelo aleatorio: dispersión de posición, dispersión temporal, dispersión de altura, de panorama, de volumen, de dirección. Este es el corazón del sonido granular. El mando principal fija hacia dónde va el sonido, y la dispersión fija lo vivo que está.
 
-Una regla sencilla para empezar: primero encuentra el sonido con las dispersiones a cero, luego súbelas de una en una, escuchando cada una. Si lo subes todo a la vez, sale un engrudo, y no se sabe qué mando lo ha cocinado.
+Una regla sencilla para empezar: primero encuentra el sonido con las dispersiones a cero, luego súbelas de una en una, escuchando cada una. Si lo subes todo a la vez, sale una papilla, y no se sabe qué mando la ha cocinado.
 
 En algunos granuladores el azar se puede «congelar»: fijas la semilla del generador (seed), y el dibujo aleatorio se repite igual cada vez que pulsas una nota. Útil cuando necesitas una parte viva pero predecible.
 
@@ -45,7 +45,7 @@ Cada grano le cuesta trabajo al procesador. Densidad de 200 granos por segundo, 
 
 **Cómo se llama:** Max Grains, Grain Limit, Voices, Polyphony, Quality.
 
-Si el proyecto va a tirones: baja la densidad, acorta los granos, reduce la polifonía o congela o bouncea la pista a audio.
+Si el proyecto va a tirones: baja la densidad, acorta los granos, reduce la polifonía o congela la pista o expórtala a audio.
 
 ## Voces y modos de interpretación
 

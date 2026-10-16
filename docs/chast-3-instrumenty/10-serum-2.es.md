@@ -17,7 +17,7 @@ En Serum 2 el granulador vive dentro del oscilador. Cualquiera de los tres oscil
 
 1. Haz clic en la cabecera del oscilador y elige **Granular** en el menú contextual.
 2. Si en ese oscilador ya había un sample en modo Sample o Spectral, aparecerá enseguida en la pantalla. Si no, la pantalla estará vacía.
-3. Abre el menú desplegable del sample. Contiene samples de fábrica tonales y no tonales, y también las tablas de ondas de Serum: también se pueden granular. Tu propio archivo se carga con la opción **Load Sample**. Según las reseñas, también puedes simplemente arrastrar el archivo a la pantalla ([PML](https://www.productionmusiclive.com/blogs/news/how-to-use-granular-synthesis-in-serum-2)).
+3. Abre el menú desplegable del sample. Contiene samples de fábrica tonales y no tonales, y también las tablas de ondas de Serum, que igualmente se pueden granular. Tu propio archivo se carga con la opción **Load Sample**. Según las reseñas, también puedes simplemente arrastrar el archivo a la pantalla ([PML](https://www.productionmusiclive.com/blogs/news/how-to-use-granular-synthesis-in-serum-2)).
 4. Después de cargarlo, el mismo menú mostrará el archivo en el disco o lo volverá a cargar.
 
 Para los drones viene bien desactivar el seguimiento de altura. Clic derecho en la cabecera del oscilador y desmarca **Enable Pitch Tracking**. Entonces el modo Granular toca la nota C3 en cualquier tecla. Ahí mismo aparecerá **Pitch Bend Tracking**: desactívalo también si la rueda de pitch no debe tocar el drone.
@@ -77,7 +77,7 @@ Los marcadores del bucle son azules y aparecen en el borde superior de la pantal
 
 ## Modo Manual: la posición a mano
 
-Elige **Manual** en el menú de bucle. El cursor de reproducción se sustituye por un punto rojo X|Y, y el mando **SCAN** empieza a mover ese punto en horizontal. Al pulsar una nota, el sample ya no se escanea: la posición se queda donde está el punto. Es el movimiento manual y la congelación del [capítulo 4](../chast-2-parametry/04-istochnik-i-poziciya.md) en estado puro.
+Elige **Manual** en el menú de bucle. El cursor de reproducción se sustituye por un punto rojo X|Y, y el mando **SCAN** empieza a mover ese punto en horizontal. Al pulsar una nota, el sample ya no se escanea: la posición se queda donde está el punto. Son el movimiento manual y la congelación del [capítulo 4](../chast-2-parametry/04-istochnik-i-poziciya.md) en estado puro.
 
 La posición se puede automatizar o modular: arrastra cualquier fuente de modulación (un LFO, una envolvente, una macro) directamente sobre el punto. Un LFO lento sobre el punto da una deriva por el tintineo de la cucharilla.
 
@@ -136,7 +136,7 @@ El botón de ventana abre los ajustes de la envolvente del grano. Arrastrar el b
 
 | Forma | Cómo es | Para qué sirve |
 | --- | --- | --- |
-| Hann | subida y bajada cosenoidales suaves | la forma de trabajo para nubes y pads |
+| Hann | subida y bajada cosenoidales suaves | la forma estándar para nubes y pads |
 | Welch | cúpula parabólica | un grano compacto y denso con el centro fuerte |
 | Gaussian | campana | texturas suaves y fluidas |
 | Blackman-Harris | laderas empinadas, pico suave, bordes muy atenuados | el sonido más limpio con mucho solapamiento |
@@ -172,7 +172,7 @@ Un consejo de la sección sobre el modo Sample: si el sample no suena en la nota
 
 El botón Warp muestra y oculta los ajustes de deformación. Por defecto Warp está desactivado; el modo se elige en el menú o con las flechas < >, y la profundidad con un mando. Los modos son los mismos que en las tablas de ondas: sincronización, curvaturas de la forma, filtros, unos quince tipos de distorsión, y además FM, PD, AM y modulación en anillo desde otro oscilador o filtro. Hay dos ranuras (en la lista del eje Y se llaman Warp y Warp 2).
 
-Es decir, la nube de la cucharilla se puede modular en frecuencia con un seno del OSC B. El segundo oscilador tiene que estar activado, pero su volumen puede estar a cero. Así salen nubes metálicas y de campana que un granulador corriente no da.
+Es decir, la nube de la cucharilla se puede modular en frecuencia con una sinusoide del OSC B. El segundo oscilador tiene que estar activado, pero su volumen puede estar a cero. Así salen nubes metálicas y de campana que un granulador corriente no da.
 
 ## Unison
 
@@ -198,7 +198,7 @@ Lo más fácil es asignar arrastrando. Arrastra la pestaña ENV o LFO, o el sele
 Lo que tienes a mano:
 
 - **4 envolventes**, con sincronización al tempo.
-- **Hasta 10 LFO** (del séptimo al décimo aparecen cuando se asigna el sexto), con editor de forma, modos caóticos Lorenz y Rossler y frecuencia de hasta 1000 Hz. Mil hercios significan la modulación a frecuencia de audio del recuadro del [capítulo 9](../chast-2-parametry/09-modulyaciya.md): un LFO sobre la altura del grano empieza a dar timbre.
+- **Hasta 10 LFO** (del séptimo al décimo aparecen cuando se asigna el sexto), con editor de forma, modos caóticos Lorenz y Rossler y frecuencia de hasta 1000 Hz. Mil hercios permiten la modulación a frecuencia de audio del recuadro del [capítulo 9](../chast-2-parametry/09-modulyaciya.md): un LFO sobre la altura del grano empieza a dar timbre.
 - **8 macros.** Una macro puede controlar varios mandos a la vez y puede ser a su vez destino de modulación. Son las combinaciones del [capítulo 9](../chast-2-parametry/09-modulyaciya.md).
 - **Velocidad de pulsación y número de nota** como fuentes aparte.
 - **Cualquier oscilador o filtro** como fuente: arrastra su cabecera sobre un mando.
@@ -238,7 +238,7 @@ Empieza siempre desde un patch limpio: menú principal, **Init Preset**. Despué
 !!! success "Receta 10.4. Nube metálica"
 
     1. El pad de la receta 10.1.
-    2. Activa OSC B, seno, volumen a cero.
+    2. Activa OSC B, onda senoidal, volumen a cero.
     3. En OSC A, en Warp, elige FM (B) y sube la profundidad poco a poco.
     4. OSC B una quinta más arriba, y luego llévalo a intervalos no enteros con el mando FIN. La cucharilla se convierte en una campana de otro mundo.
 
@@ -253,7 +253,7 @@ Empieza siempre desde un patch limpio: menú principal, **Init Preset**. Despué
 1. Toma la receta 10.1, activa el modo de bucle **Manual** y la vista **X|Y Control**.
 2. Asigna el eje Y a Grain Length.
 3. Graba automatización en la DAW: un minuto de movimiento lento del punto.
-4. Arrastra el render a la DAW y escúchalo aparte. Es el primer tema tocado con un solo ratón.
+4. Arrastra el render a la DAW y escúchalo aparte. Es tu primer tema tocado solo con el ratón.
 
 ## Fuentes del capítulo
 

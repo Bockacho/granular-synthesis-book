@@ -30,7 +30,7 @@ Die Quelle ist überall dieselbe: ein Löffel gegen eine Tasse. Die Parameter si
 | --- | --- | --- | --- |
 | 1 | Eisiges Pad | Position im Klingen, Grain 100–150 ms, Wolke, Glockenfenster, etwas Positions- und Tonhöhenstreuung, langsamer Scan | überall: Rezepte 10.1, 11.1, 12.1 |
 | 2 | Ewiges Klingen | Scan auf null, Positionsstreuung 10–30 ms, Grain 80–150 ms | überall: das Einfrieren aus Kapitel 4 |
-| 3 | Ein Schlag von einer Minute | Position am Anfang, Scan etwa 5 % der Originalgeschwindigkeit, Grain 80 ms | überall; prüf die Scan-Skala im Kapitel deines Instruments |
+| 3 | Ein minutenlanger Schlag | Position am Anfang, Scan etwa 5 % der Originalgeschwindigkeit, Grain 80 ms | überall; prüf die Scan-Skala im Kapitel deines Instruments |
 | 4 | Schimmernde Orgel | Wolke plus Stimmen in Oktaven und Quinten | Serum: STACK 12+7, Rezept 10.5 |
 | 5 | Ein Akkord auf einer Taste | Wolke plus Unison, zu einem Akkord quantisiert | Pigments: Modus Chord |
 | 6 | Chor | asynchrone Wolke, Tonhöhenstreuung 10–30 Cent, breites Stereo | Granulator III, Cloud: Rezept 11.4 |

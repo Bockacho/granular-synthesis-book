@@ -9,20 +9,20 @@
 
 El sonido que has grabado está en el ordenador como una larga fila de números. Cada número dice dónde estaba en ese instante la membrana del micrófono: un poco adelante o un poco atrás. En un segundo hay 44 100 o 48 000 de esos números, según cómo se grabó el archivo.
 
-Como es una fila de números, se puede cortar en trozos de cualquier longitud. La síntesis granular corta el sonido en trozos muy cortos, normalmente de 1 a 100 milisegundos. Un milisegundo es una milésima de segundo. Un trozo de 50 ms dura una vigésima de segundo: lo oirás, pero difícilmente reconocerás de dónde se ha cortado.
+Como es una fila de números, se puede cortar en trozos de cualquier longitud. La síntesis granular corta el sonido en fragmentos muy breves, normalmente de 1 a 100 milisegundos. Un milisegundo es una milésima de segundo. Un trozo de 50 ms dura una vigésima de segundo: lo oirás, pero difícilmente reconocerás de dónde se ha cortado.
 
 Un trozo así, con un comienzo suave y un final suave, se llama grano, en inglés grain. Un grano casi no significa nada, igual que una gota todavía no es lluvia. Pero lanza cientos de granos por segundo y nace un sonido nuevo: una nube. Cómo resulte la deciden cuatro cosas: de dónde se toman los granos, cuánto duran, con qué frecuencia vuelan y a qué altura suenan.
 
 ## El superpoder principal
 
-En un magnetófono o en un sampler normal, la velocidad, la altura y la duración del sonido van soldadas. Acelera una grabación al doble y sonará una octava más aguda y durará la mitad. Ralentízala y bajará y durará más. De ahí salen la voz de ardilla y la voz de monstruo ralentizado.
+En un magnetófono o en un sampler normal, la velocidad, la altura y la duración del sonido van soldadas. Acelera una grabación al doble y sonará una octava más aguda y durará la mitad. Ralentízala y sonará más grave y durará más. De ahí salen la voz de ardilla y la voz de monstruo ralentizado.
 
 El granulador rompe ese vínculo. Decide por separado de qué parte del archivo toma los granos y con qué altura los toca. De ahí salen trucos que el sampler no tiene:
 
 - **Congelación.** Te quedas en un punto del archivo y el tintineo de la cucharilla dura todo lo que quieras, incluso diez minutos.
 - **Estiramiento.** Recorres tres segundos de sonido en tres minutos y la altura no cambia.
 - **Transposición sin cambiar la duración.** El tintineo suena una octava más grave y dura exactamente lo mismo.
-- **Mezcla.** Los granos se toman de lugares aleatorios del archivo y el sonido se deshace en un mosaico.
+- **Barajado.** Los granos se toman de lugares aleatorios del archivo y el sonido se deshace en un mosaico.
 
 ??? info "Bajo el capó"
 

@@ -10,7 +10,7 @@ Mit ihm hat alles angefangen ([Kapitel 3](../chast-1-zerno/03-istoriya.md)). Das
 
 ## Curtis Roads
 
-Die erste Granularsynthese am Computer, die Pulsar-Synthese, das Buch „Microsound“. Wie er von den frühen Studien von 1974–1975 zu seiner Musik aus Grains kam, beschreibt Roads ausführlich selbst im Text „Path to Half Life“ ([curtisroads.net](https://www.curtisroads.net/s/04-Path-to-Half-Life.pdf)).
+Die erste Granularsynthese am Computer, die Pulsar-Synthese, das Buch „Microsound“. Wie er von den frühen Studien von 1974–1975 zu seiner Musik aus Grains kam, beschreibt Roads selbst ausführlich im Text „Path to Half Life“ ([curtisroads.net](https://www.curtisroads.net/s/04-Path-to-Half-Life.pdf)).
 
 ## Barry Truax
 

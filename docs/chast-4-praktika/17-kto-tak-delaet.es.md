@@ -2,7 +2,7 @@
 
 # Quién trabaja así
 
-Aquí están músicos que han hablado ellos mismos de su trabajo con granos: en entrevistas, textos y en sus propias páginas. Cada uno tiene un enlace, para que puedas leer sus palabras y escuchar la música.
+Aquí aparecen músicos que han hablado ellos mismos de su trabajo con granos: en entrevistas, textos y en sus propias páginas. Cada uno tiene un enlace, para que puedas leer sus palabras y escuchar la música.
 
 ## Iannis Xenakis
 
@@ -26,7 +26,7 @@ Músico canadiense, autor de discos a caballo entre el ambient y el ruido. En un
 
 ## Carsten Nicolai (Alva Noto)
 
-Músico y artista alemán, cofundador del sello Raster-Noton. Su música está hecha de senos, clics y fallos digitales, y su estudio es deliberadamente mínimo: un ordenador y una tarjeta de sonido. En una entrevista con Sound On Sound, entre sus programas favoritos Nicolai menciona el sintetizador granular Borderlands ([Sound On Sound](https://www.soundonsound.com/people/alva-noto?amp)).
+Músico y artista alemán, cofundador del sello Raster-Noton. Su música está hecha de sinusoides, clics y fallos digitales, y su estudio es deliberadamente mínimo: un ordenador y una tarjeta de sonido. En una entrevista con Sound On Sound, entre sus programas favoritos Nicolai menciona el sintetizador granular Borderlands ([Sound On Sound](https://www.soundonsound.com/people/alva-noto?amp)).
 
 Borderlands lo creó Chris Carlson en el otoño de 2011 como proyecto de estudiante en el CCRMA, el centro de música por ordenador de la Universidad de Stanford, y en 2012 él y Ge Wang lo describieron en un artículo para la conferencia NIME. Los archivos de sonido aparecen en pantalla como rectángulos, las nubes de granos se mueven sobre ellos con el ratón, y una nube puede leer a la vez varios archivos superpuestos.
 
@@ -40,11 +40,11 @@ Músico del sello Ninja Tune. Para el disco «Foley Room» grabó él mismo soni
 
 ## Ludger Brümmer
 
-Compositor alemán que desde 2003 dirigió el Instituto de Música y Acústica del ZKM de Karlsruhe y después su laboratorio Hertz-Lab. La biografía en la web del ZKM describe el método directamente: muchas de sus obras unen la música electrónica con la histórica, por ejemplo con los madrigales de Gesualdo o con Ravel, a través de microestructuras granuladas compuestas ([ZKM](https://zkm.de/en/node/9120)). La nota del doble disco «Spheres of Resonance» (Wergo, Edition ZKM, 2022) precisa que las piezas «Gesualdo», «Carlo», «Glass Harp» y «Falling» están hechas con síntesis granular ([nota de Wergo](https://europadisc.co.uk/classical/227905/Brummer_-_Spheres_of_Resonance.htm)).
+Compositor alemán que desde 2003 dirigió el Instituto de Música y Acústica del ZKM de Karlsruhe y después su laboratorio Hertz-Lab. La biografía en la web del ZKM describe el método directamente: muchas de sus obras unen la música electrónica con la histórica, por ejemplo con los madrigales de Gesualdo o con Ravel, a través de microestructuras granuladas compuestas ([ZKM](https://zkm.de/en/node/9120)). Las notas del doble disco «Spheres of Resonance» (Wergo, Edition ZKM, 2022) precisa que las piezas «Gesualdo», «Carlo», «Glass Harp» y «Falling» están hechas con síntesis granular ([notas de Wergo](https://europadisc.co.uk/classical/227905/Brummer_-_Spheres_of_Resonance.htm)).
 
 ## Simon Stockhausen
 
-Compositor, multiinstrumentista y diseñador de sonido alemán. Para el sintetizador granular Padshop de Steinberg hizo las librerías «Granular Symphonies» (2013) y «Granular Guitars» (2014). Al presentar la primera, dijo él mismo que quería ampliar la paleta de los compositores con las posibilidades de la síntesis granular ([KVR Audio](https://www.kvraudio.com/news/steinberg-releases-granular-symphonies-for-padshop-pro-and-padshop-23367)). El Berliner Zeitung describe su proyecto en vivo con músicos de la Filarmónica de Berlín: transforma instrumentos acústicos en tiempo real con síntesis granular y espectral ([Berliner Zeitung](https://www.berliner-zeitung.de/article/312825)).
+Compositor, multiinstrumentista y diseñador de sonido alemán. Para el sintetizador granular Padshop de Steinberg hizo las librerías «Granular Symphonies» (2013) y «Granular Guitars» (2014). Al presentar la primera, dijo él mismo que quería ampliar la paleta de los compositores con las posibilidades de la síntesis granular ([KVR Audio](https://www.kvraudio.com/news/steinberg-releases-granular-symphonies-for-padshop-pro-and-padshop-23367)). El diario Berliner Zeitung describe su proyecto en vivo con músicos de la Filarmónica de Berlín: transforma instrumentos acústicos en tiempo real con síntesis granular y espectral ([Berliner Zeitung](https://www.berliner-zeitung.de/article/312825)).
 
 ## Granos para los ojos
 

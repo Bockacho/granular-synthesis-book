@@ -11,9 +11,9 @@ Si todos los mandos están quietos, la nube suena bonita pero estática, como un
 
 ## Fuentes de modulación
 
-**LFO, oscilador de baja frecuencia.** Mueve un parámetro de un lado a otro, una y otra vez. Ajustes principales: velocidad (en hercios o en fracciones de compás), forma (seno, triángulo, sierra, cuadrada, escalones aleatorios), profundidad.
+**LFO, oscilador de baja frecuencia.** Mueve un parámetro de un lado a otro, una y otra vez. Ajustes principales: velocidad (en hercios o en fracciones de compás), forma (senoidal, triangular, diente de sierra, cuadrada, escalones aleatorios), profundidad.
 
-- Un seno lento en la posición (0,05–0,2 Hz) hace que la nube derive por el archivo, y el sonido cambia cada pocos segundos.
+- Un LFO senoidal lento en la posición (0,05–0,2 Hz) hace que la nube derive por el archivo, y el sonido cambia cada pocos segundos.
 - Escalones aleatorios (Sample & Hold) en la posición, al ritmo de las negras: en cada tiempo los granos se toman de un lugar nuevo. Un troceado rítmico listo.
 - Un LFO rápido en la altura del grano (5–7 Hz, profundidad de 20–50 cents) da un vibrato.
 

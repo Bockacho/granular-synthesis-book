@@ -9,7 +9,7 @@
 
 ## Size
 
-Size tells how long each grain lasts. It is the second main knob after position, and it decides whether you recognize the source.
+Size is how long each grain lasts. It is the second main knob after position, and it decides whether you recognize the source.
 
 **What it's called:** Size, Length, Duration, Grain Size, Window Size.
 
@@ -40,7 +40,7 @@ The envelope decides how the grain's volume changes from start to end. You alrea
 
 | Shape | What it looks like | What it sounds like |
 | --- | --- | --- |
-| Bell (Hann) | a smooth rise, a smooth fall | soft, no clicks; the default working shape |
+| Bell (Hann) | a smooth rise, a smooth fall | soft, no clicks; the default shape |
 | Gaussian | a narrower bell with long tails | even softer, but a smaller part of the grain is audible; the sound is foggier |
 | Trapezoid (Tukey) | a fast rise, a flat shelf, a fast fall | more of the source, brighter and clearer; on short grains it can tick |
 | Triangle | a straight rise, a straight fall | between the bell and the trapezoid, slightly harsher than the bell |
@@ -66,6 +66,6 @@ The window affects not only the grain's timbre but also the start of every note.
 ## Exercise 5.1. The shape decides { .exercise }
 
 1. The spoon, position on the ring, spread 10 ms, medium density.
-2. Size 80 ms. Switch through all the available envelope shapes and write down one word for each for yourself.
+2. Size 80 ms. Switch through all the available envelope shapes and jot down one word for each.
 3. Size 5 ms. Repeat. Notice that on short grains the difference between shapes is more audible.
 4. Find a percussive shape and set a lower density. The spoon has crumbled into drops.

@@ -64,7 +64,7 @@ Das Loop-Menü entscheidet, wie sich der Granulator durch das Sample bewegt. Die
 | Fwd Loop | vom Startmarker bis zum Loop-Ende, dann wieder ab dem Loop-Anfang |
 | Rev Loop | am Loop-Ende angekommen, läuft es rückwärts |
 | Fwd/Rwd Loop | Pendel-Loop: hin und zurück, ohne harte Übergänge |
-| Tailed | spielt die zweite Hälfte der Datei und loopt die Fahne, während die Lautstärke abklingt |
+| Tailed | spielt die zweite Hälfte der Datei und loopt den Ausklang, während die Lautstärke abklingt |
 | Relative Loop | der Loop wandert mit dem Startmarker mit |
 | Link Loop Length | beim Verschieben des Loop-Anfangs bleibt seine Länge erhalten |
 | Exit Loop on Release | beim Loslassen der Taste verlässt es den Loop und spielt die Datei zu Ende |
@@ -77,7 +77,7 @@ Die Loop-Marker sind blau und erscheinen am oberen Rand des Displays. Sie lassen
 
 ## Modus Manual: Position von Hand
 
-Wähle im Loop-Menü **Manual**. Der Wiedergabecursor wird durch einen roten X|Y-Punkt ersetzt, und der Regler **SCAN** bewegt diesen Punkt waagerecht. Beim Drücken einer Taste wird das Sample nicht mehr gescannt: Die Position bleibt dort, wo der Punkt ist. Das ist die Handbewegung und das Einfrieren aus [Kapitel 4](../chast-2-parametry/04-istochnik-i-poziciya.md) in Reinform.
+Wähle im Loop-Menü **Manual**. Der Wiedergabecursor wird durch einen roten X|Y-Punkt ersetzt, und der Regler **SCAN** bewegt diesen Punkt waagerecht. Beim Drücken einer Taste wird das Sample nicht mehr gescannt: Die Position bleibt dort, wo der Punkt ist. Das sind die Handsteuerung und das Einfrieren aus [Kapitel 4](../chast-2-parametry/04-istochnik-i-poziciya.md) in Reinform.
 
 Die Position lässt sich automatisieren oder modulieren: Zieh eine beliebige Modulationsquelle (einen LFO, eine Hüllkurve, ein Makro) direkt auf den Punkt. Ein langsamer LFO auf dem Punkt ergibt eine Drift durch das Klingen des Löffels.
 
@@ -91,7 +91,7 @@ Leg die Grain-Länge auf Y, schalte Manual ein, und mit einer einzigen Mausbeweg
 
 SCAN legt fest, wie schnell der Wiedergabecursor durch das Sample fährt. Jedes neue Grain startet an der aktuellen Stelle des Cursors. Eine hohe Geschwindigkeit verteilt die Grain-Starts weiter über die Datei, und sie überlappen sich weniger: gut für Rhythmus und Glitch. Eine niedrige Geschwindigkeit dehnt den Klang zu einem Drone. Ein negativer Wert dreht die Bewegung um, null hält den Cursor an: Das ist Einfrieren.
 
-Die Skala ist in Prozent. Um das Originaltempo zu finden, lade eine Sprachaufnahme und stell SCAN so ein, dass die Wörter im normalen Tempo klingen. Ab diesem Punkt gilt die Dehnungsformel aus [Kapitel 4](../chast-2-parametry/04-istochnik-i-poziciya.md).
+Die Skala ist in Prozent angegeben. Um das Originaltempo zu finden, lade eine Sprachaufnahme und stell SCAN so ein, dass die Wörter im normalen Tempo klingen. Ab diesem Punkt gilt die Dehnungsformel aus [Kapitel 4](../chast-2-parametry/04-istochnik-i-poziciya.md).
 
 Ein Rechtsklick auf SCAN öffnet die Einstellungen:
 
@@ -200,7 +200,7 @@ Was dir zur Verfügung steht:
 - **4 Hüllkurven**, mit Tempo-Sync.
 - **Bis zu 10 LFOs** (der siebte bis zehnte erscheinen, wenn der sechste zugewiesen ist), mit Formeditor, den chaotischen Modi Lorenz und Rossler und einer Frequenz bis 1000 Hz. Tausend Hertz bedeuten die Modulation im Audiobereich aus dem Kasten in [Kapitel 9](../chast-2-parametry/09-modulyaciya.md): Ein LFO auf der Grain-Tonhöhe beginnt Klangfarbe zu erzeugen.
 - **8 Makros.** Ein Makro kann mehrere Regler zugleich steuern und selbst Modulationsziel sein. Das sind die Kopplungen aus [Kapitel 9](../chast-2-parametry/09-modulyaciya.md).
-- **Anschlagstärke und Tonnummer** als eigene Quellen.
+- **Anschlagstärke und Notennummer** als eigene Quellen.
 - **Jeder Oszillator oder jedes Filter** als Quelle: Zieh seine Kopfzeile auf einen Regler.
 
 Alle Verbindungen sind in der Modulationsmatrix sichtbar und bearbeitbar (Seite **Matrix**). Fahr mit dem Cursor über eine Quelle, und ein Tooltip zeigt, wohin sie geroutet ist.
@@ -252,8 +252,8 @@ Fang immer mit einem leeren Patch an: Hauptmenü, **Init Preset**. Dann OSC A au
 
 1. Nimm Rezept 10.1, schalte den Loop-Modus **Manual** und die Anzeige **X|Y Control** ein.
 2. Weise die Y-Achse Grain Length zu.
-3. Nimm in der DAW eine Automation auf: eine Minute langsamer Bewegung des Punkts.
-4. Zieh den Render in die DAW und hör ihn dir einzeln an. Das ist der erste Track, der mit einer Maus gespielt wurde.
+3. Nimm in der DAW eine Automation auf: eine Minute langsame Bewegung des Punkts.
+4. Zieh den Render in die DAW und hör ihn dir einzeln an. Das ist dein erster Track, nur mit der Maus gespielt.
 
 ## Quellen zu diesem Kapitel
 

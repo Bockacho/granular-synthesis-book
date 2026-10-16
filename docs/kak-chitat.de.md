@@ -6,7 +6,7 @@ Das Buch geht vom Einfachen zum Komplexen. [Teil 1](chast-1-zerno/index.md) erkl
 
 ## Ein Klang zum Üben
 
-Nimm vor dem ersten Kapitel mit dem Handy auf, wie ein Teelöffel gegen eine Tasse schlägt. Darin steckt ein harter Anschlag, ein klares Klingen und ein leiser, langer Ausklang, deshalb klingt jeder Parameter des Granulators darauf anders.
+Nimm vor dem ersten Kapitel mit dem Handy auf, wie ein Teelöffel gegen eine Tasse schlägt. Darin stecken ein harter Anschlag, ein klares Klingen und ein leiser, langer Ausklang, deshalb klingt jeder Parameter des Granulators darauf anders.
 
 So nimmst du ihn auf: ein ruhiger Raum, das Handy 20–30 cm von der Tasse entfernt, ein einziger Schlag, und lass das Klingen von selbst ausklingen. Übertrag die Datei auf den Computer und schneide die Stille am Anfang ab. Die Stille am Ende lässt du stehen, sie wird in [Kapitel 4](chast-2-parametry/04-istochnik-i-poziciya.md) gebraucht.
 
@@ -14,4 +14,4 @@ So nimmst du ihn auf: ein ruhiger Raum, das Handy 20–30 cm von der Tasse entfe
 
 Eine beliebige DAW: Ableton Live, FL Studio, Logic, Reaper, Bitwig. Eines der drei Instrumente aus [Teil 3](chast-3-instrumenty/index.md). Kopfhörer oder Monitore: Viele Grain-Effekte leben im Stereobild und verschwinden auf Laptop-Lautsprechern. Wenn du das Instrument noch nicht hast, schau auf der Website des Herstellers nach einer Testversion.
 
-Am Ende jedes Kapitels steht eine Übung von 5–15 Minuten. Granularsynthese lernt man mit dem Ohr, nur durch Lesen versteht man sie schwerer.
+Am Ende jedes Kapitels steht eine Übung von 5–15 Minuten. Granularsynthese lernt man mit dem Gehör, allein durch Lesen ist sie schwerer zu verstehen.

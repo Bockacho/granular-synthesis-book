@@ -2,7 +2,7 @@
 
 # Rezepte nach Aufgabe
 
-[Kapitel 14](14-recepty-po-istochniku.md) ging von der Quelle aus. Dieses geht vom Track aus: Du brauchst ein Pad, einen Bass oder einen Übergang und musst wissen, wo du drehen sollst. Die Tabelle unten dient als Spickzettel, die Zone ist nach der Karte aus [Kapitel 13](../chast-4-praktika/13-karta-zvuka.md) angegeben.
+[Kapitel 14](14-recepty-po-istochniku.md) ging von der Quelle aus. Dieses geht vom Track aus: Du brauchst ein Pad, einen Bass oder einen Übergang und musst wissen, an welchem Regler du drehen sollst. Die Tabelle unten dient als Spickzettel, die Zone ist nach der Karte aus [Kapitel 13](../chast-4-praktika/13-karta-zvuka.md) angegeben.
 
 | Aufgabe | Zone auf der Karte | Hauptregler | Modulation | Nach dem Granulator |
 | --- | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ Steht die Aufgabe nicht in der Tabelle, helfen Fragen. Beantworte sie der Reihe 
 
 ## Das Standbild im Detail
 
-Diesen Trick gibt es bei normalen Samplern nicht, und er macht einen Track leicht unvergesslich. Der Klang läuft wie gewohnt, der Scan in Originalgeschwindigkeit, und in einem Moment fällt der Scan auf null. Der Klang bricht nicht ab: Er erstarrt an der Stelle, an der er war, und klingt weiter wie ein angehaltenes Filmbild. Einen Takt später kehrt der Scan zurück, und der Klang läuft weiter.
+Diesen Trick gibt es bei normalen Samplern nicht, und er macht einen Track leicht unvergesslich. Der Klang läuft wie gewohnt, der Scan in Originalgeschwindigkeit, und in einem bestimmten Moment fällt der Scan auf null. Der Klang bricht nicht ab: Er erstarrt an der Stelle, an der er war, und klingt weiter wie ein angehaltenes Filmbild. Einen Takt später kehrt der Scan zurück, und der Klang läuft weiter.
 
 In Serum ist das eine Automation von SCAN, in Granulator III eine Automation von Scan, in Pigments der Regler Scan auf 12 Uhr gestellt. Damit das Standbild nicht mechanisch brummt, behalte eine kleine Positionsstreuung bei.
 

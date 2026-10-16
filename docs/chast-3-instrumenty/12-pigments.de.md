@@ -6,7 +6,7 @@ In Pigments ist der Granulator in die Sample-Engine eingebaut. Der Synthesizer h
 
 !!! note "Zur Version"
 
-    Die Beschreibung entspricht Pigments 7.0.0. Bereiche mit dem Vermerk „laut Handbuch von Pigments 2“ stammen aus der Dokumentation der zweiten Version und können sich in neueren Versionen geändert haben.
+    Die Beschreibung entspricht Pigments 7.0.0. Wertebereiche mit dem Vermerk „laut Handbuch von Pigments 2“ stammen aus der Dokumentation der zweiten Version und können sich in neueren Versionen geändert haben.
 
 <figure markdown="span">
   ![Pigments: die Sample-Engine im Modus Main, unter der Wellenform der eingeschaltete Bereich Granular mit den Reglern Density, Shape und Size, darunter eine Reihe von Zufallsreglern Start, Pitch, Density, Direction, Size, Width und Volume](../images/12-1.jpg)
@@ -136,7 +136,7 @@ Lade sechs verschiedene Aufnahmen in die sechs Slots, und die Wolke flicht sie G
 Wähl mit der Taste A–F einen Slot und stell ein:
 
 - **Tune.** **Transpose** ±36 Halbtöne, **Fine** ±1 Halbton in Cent-Schritten, **Root Note** (Grundton des Samples).
-- **Playback.** **Play Mode**: vorwärts (Normal) oder rückwärts (Reverse). **Loop** schaltet den Loop ein, **Loop Mode** wählt vorwärts (Forward) oder Pendel (F&B), **Loop Fade** blendet den Loop (nur bei Forward), die Taste **r** hält den Loop beim Loslassen des Tons.
+- **Playback.** **Play Mode**: vorwärts (Normal) oder rückwärts (Reverse). **Loop** schaltet den Loop ein, **Loop Mode** wählt vorwärts (Forward) oder Pendel (F&B), **Loop Fade** erzeugt einen Crossfade am Loop-Übergang (nur bei Forward), die Taste **r** hält den Loop beim Loslassen des Tons.
 - **Mix.** **Gain** und **Pan** des Slots.
 - **Slot.** **Copy** kopiert das Sample in einen anderen Slot, um es mit anderen Einstellungen zu halten. **Reset** setzt den Slot zurück, **Clear** leert ihn.
 
@@ -199,7 +199,7 @@ In der Modal-Engine, einem physikalischen Modell resonierender Gegenstände, gib
 
     1. Das Pad aus Rezept 12.1.
     2. Wähl unter Unison/Shaper Resonator, Wet/Dry in der Mitte.
-    3. Dreh Resonance auf für ein langes Klingen.
+    3. Dreh Resonance auf, damit es lange nachklingt.
     4. Zieh Inharm nach oben: Der Löffel klingt nach Glocken. Den Zufallsregler Pitch übernimmt der Resonator.
 
 !!! success "Rezept 12.4. Sechs Löffel"
@@ -221,7 +221,7 @@ In der Modal-Engine, einem physikalischen Modell resonierender Gegenstände, gib
 1. Bau Rezept 12.1 mit dem Löffel.
 2. Vervielfältige den Löffel mit der Taste Copy in die Slots B und C und ändere in jedem Transpose: null, plus eine Quinte, plus eine Oktave.
 3. Modus Map: Round Robin. Die Grains nehmen reihum die drei Transpositionen desselben Klangs.
-4. Vergleiche mit dem Modus Random. Nimm beide Varianten auf und hör sie nacheinander an.
+4. Vergleiche das mit dem Modus Random. Nimm beide Varianten auf und hör sie nacheinander an.
 
 ## Quellen zu diesem Kapitel
 

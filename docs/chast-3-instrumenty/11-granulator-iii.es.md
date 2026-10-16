@@ -2,7 +2,7 @@
 
 # Ableton Granulator III
 
-Granulator III lo escribió Robert Henke, el mismo que creó el primer Granulator, junto con el equipo de Ableton: Marco Tonni (interfaz, implementación, gestión del proyecto), Eric Carl y Kostya Kazhev (diseño de la interfaz). Es el tercer instrumento de la serie, y Henke lo considera completamente nuevo. Henke enumera lo principal: soporte completo de MPE, una matriz de modulación ampliada, una interfaz simplificada, captura de sonido directamente en el instrumento sin dispositivos adicionales y un modo monofónico.
+Granulator III lo desarrolló Robert Henke, el mismo que creó el primer Granulator, junto con el equipo de Ableton: Marco Tonni (interfaz, implementación, gestión del proyecto), Eric Carl y Kostya Kazhev (diseño de la interfaz). Es el tercer instrumento de la serie, y Henke lo considera completamente nuevo. Henke enumera lo principal: soporte completo de MPE, una matriz de modulación ampliada, una interfaz simplificada, captura de sonido directamente en el instrumento sin dispositivos adicionales y un modo monofónico.
 
 !!! note "Sobre la versión"
 
@@ -67,7 +67,7 @@ Es lo primero que hay que elegir: del modo depende cómo funcionan Grain Size, S
 
 Position decide qué parte del sample toca cada grano. La escala va en porcentaje, así que la posición se mantiene relativa al archivo: cargas otro sample y la posición sigue, por ejemplo, en un tercio. Se fija con el mando o con un clic directamente sobre la onda.
 
-A Position la modulan el LFO, la Envelope 2, el número de nota (**Key**), la velocidad de pulsación (**Vel**) y los tres parámetros MPE. Además del azar por grano a través de Variation.
+A Position la modulan el LFO, la Envelope 2, el número de nota (**Key**), la velocidad de pulsación (**Vel**) y los tres parámetros MPE. A esto se suma el azar por grano a través de Variation.
 
 ## Scan
 
@@ -91,9 +91,9 @@ El parámetro principal del motor. Un grano va de 2 ms a 2 s. A 2 ms el sonido e
 
 Grain Size depende de Key, Velocity, MPE Slide y Press, lo modulan el LFO y la Envelope 2, y Variation añade azar al tamaño de cada grano. Cuando el tamaño se modula, el nuevo valor no entra enseguida: el instrumento intenta terminar primero el grano actual para evitar clics. Cómo exactamente, depende del modo.
 
-Un detalle sobre el que advierten los dos videotutoriales: Grain Size mide un trozo del sample, y la duración audible del grano depende de la velocidad de lectura. Nota más aguda, el sample se lee más deprisa y el mismo grano suena más corto. En el segundo tutorial, un grano de 76,1 ms con una transposición de +12 semitonos suena la mitad de largo.
+Un detalle sobre el que advierten los dos videotutoriales: Grain Size mide un trozo del sample, y la duración audible del grano depende de la velocidad de lectura. Cuanto más aguda es la nota, más deprisa se lee el sample y más corto suena el mismo grano. En el segundo tutorial, un grano de 76,1 ms con una transposición de +12 semitonos suena la mitad de largo.
 
-Grain Size no se sincroniza con el tempo. Una solución del segundo tutorial: calcular la duración del tiempo en milisegundos y escribirla a mano. Una negra dura 60 000 / BPM milisegundos: a 120 BPM son 500 ms, una corchea 250 ms. El grano cae exactamente en el tiempo cuando la transposición está a cero y el vínculo de Transpose con las teclas está desactivado (más abajo).
+Grain Size no se sincroniza con el tempo. Una solución del segundo tutorial: calcular la duración de un tiempo del compás en milisegundos y escribirla a mano. Una negra dura 60 000 / BPM milisegundos: a 120 BPM son 500 ms, una corchea 250 ms. El grano cae exactamente en el tiempo cuando la transposición está a cero y el vínculo de Transpose con las teclas está desactivado (más abajo).
 
 En esta misma sección viven dos mandos de modo:
 
@@ -132,7 +132,7 @@ A Variation la modulan MPE Slide y Press, el LFO, la Envelope 2, Key y Velocity.
 
 **Una sola altura en todas las teclas.** Para drones y troceados, la transposición por teclas suele estorbar. Selecciona Transpose y, en la pantalla de modulación, pon Key a 0: todas las notas sonarán a la misma altura. El mismo vínculo Key al 100 % está en la frecuencia del filtro, y también conviene ponerlo a cero, o el filtro se moverá con cada nota. El pitch bend sigue moviendo la altura, y se puede dibujar como automatización en un clip.
 
-Henke explica la afinación aparte, y vale la pena contarlo. Un sample en la nota C3 suena a su velocidad original. Si en él suena C3, todo es sencillo. Si suena C#3, bájalo un semitono. Pero en la síntesis granular los trozos cortos se repiten muy a menudo, y la altura audible se convierte en una extraña mezcla de la altura de la fuente y el tamaño del grano. No se puede predecir de forma sencilla, hay que probar. Los mandos que necesitas están en las secciones Transpose y Grain Size.
+Henke explica la afinación aparte, y vale la pena contarlo. En la tecla C3, un sample suena a su velocidad original. Si en él suena C3, todo es sencillo. Si suena C#3, bájalo un semitono. Pero en la síntesis granular los trozos cortos se repiten muy a menudo, y la altura audible se convierte en una extraña mezcla de la altura de la fuente y el tamaño del grano. No se puede predecir de forma sencilla, hay que probar. Los mandos que necesitas están en las secciones Transpose y Grain Size.
 
 **El truco de Henke: la altura a partir del tamaño del grano.** Pon **Transpose Key** a 0 y **Grain Size Key** a 100. Ahora todas las notas tocan el sample a la misma altura, pero el tamaño del grano cambia con la nota, y nace una sensación clara de altura. Para quedar afinado, Henke aconseja un tamaño de exactamente 3,822 ms. El número no es casual: un periodo de 3,822 ms corresponde a una frecuencia de unos 261,6 Hz, el do central (en Live se llama C3). Es una demostración directa del [capítulo 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): la nota nace de la frecuencia de los granos.
 
@@ -155,7 +155,7 @@ Formas: Sine, Triangle, Up, Down, Rect, Sample & Hold (escalones aleatorios) y d
 - **Stereo.** El desfase entre canales: 0° (mono), 90° (los canales se mueven desacompasados; Henke lo llama «completamente fuera de fase»), 180° (mono invertido).
 - **La frecuencia del LFO** la modulan Note Pitch Bend y Slide, la Envelope 2, Key, Velocity y un valor aleatorio al pulsar la nota.
 - **La profundidad del LFO** la modulan Slide y Pressure, la Envelope 2, Key y Velocity. La opción **Use Mod Wheel** añade escalado por la rueda de modulación. Henke indica MIDI CC 2, aunque según el estándar MIDI la rueda de modulación es CC 1.
-- **Quant.** Cuantiza la salida del LFO antes del ajuste de profundidad y produce una modulación escalonada. El ejemplo de Henke: con Quant 0,5, una rampa da tres valores (0; 0,5; 1) y un seno cinco (de −1 a 1 en pasos de 0,5). La diferencia se debe a que las rampas Up y Down son unipolares (de 0 a 1), y las demás formas, bipolares (de −1 a 1).
+- **Quant.** Cuantiza la salida del LFO antes del ajuste de profundidad y produce una modulación escalonada. El ejemplo de Henke: con Quant 0,5, una rampa da tres valores (0; 0,5; 1) y una sinusoide cinco (de −1 a 1 en pasos de 0,5). La diferencia se debe a que las rampas Up y Down son unipolares (de 0 a 1), y las demás formas, bipolares (de −1 a 1).
 
 El mando Stereo funciona especialmente bien sobre Position y Grain Size: con desfase, el LFO mueve la posición y el tamaño del grano de forma distinta en el oído izquierdo y en el derecho, y la nube se desdobla en dos.
 

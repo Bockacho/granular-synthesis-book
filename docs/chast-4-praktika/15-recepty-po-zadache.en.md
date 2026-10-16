@@ -2,12 +2,12 @@
 
 # Recipes by task
 
-[Chapter 14](14-recepty-po-istochniku.md) started from the source. This one starts from the track: you need a pad, a bass or a transition, and you have to work out where to turn. The table below works as a cheat sheet, the zone is given by the map from [chapter 13](../chast-4-praktika/13-karta-zvuka.md).
+[Chapter 14](14-recepty-po-istochniku.md) started from the source. This one starts from the track: you need a pad, a bass or a transition, and you need to know which knobs to turn. The table below works as a cheat sheet; the zone is given by the map from [chapter 13](../chast-4-praktika/13-karta-zvuka.md).
 
 | Task | Map zone | Main knobs | Modulation | After the granulator |
 | --- | --- | --- | --- | --- |
-| Pad | cloud | grain 80–200 ms, a dense cloud, a bell window, position and pitch spreads a little | a slow LFO on position, a long volume attack | chorus or reverb |
-| Drone | cloud or wall | freeze, long grains 200–500 ms, zero pitch tracking by keys | a very slow LFO on position and filter | a long reverb, saturation |
+| Pad | cloud | grain 80–200 ms, a dense cloud, a bell window, a little position and pitch spread | a slow LFO on position, a long volume attack | chorus or reverb |
+| Drone | cloud or wall | freeze, long grains 200–500 ms, key tracking of pitch at zero | a very slow LFO on position and filter | a long reverb, saturation |
 | Background layer, ambient | wall | long grains, high density, strong position spread | a random LFO on position | a high-pass filter, reverb |
 | Rhythm, glitch | slicing, drops | density and length by tempo, reversed grains, a stepped random LFO on position | automation of grain reversal | compressor, sidechain |
 | Percussion | clicks, drops | position on the attack, grain 5–30 ms, a percussive window, density by tempo | an envelope on grain length and shape | filter, transient shaper |
@@ -26,11 +26,11 @@ When the task isn't in the table, questions help. Answer them in order, and most
 2. **Is the sound rhythmic?** Yes: density and length by tempo, the slicing or drops zone. No: a cloud.
 3. **Must the source be recognizable?** Yes: grains longer than 30–50 ms and small spreads. No: short grains, strong spreads.
 4. **Does the sound move by itself or is it played?** By itself: LFOs and envelopes ([chapter 9](../chast-2-parametry/09-modulyaciya.md)). Played: a macro, the modulation wheel, MPE.
-5. **Where is it in the mix?** At the bottom: cut the top and narrow the stereo. At the top: cut the low end, widen the stereo. In the center of attention: keep the spreads smaller so the sound stays compact.
+5. **Where is it in the mix?** At the bottom: cut the top and narrow the stereo. At the top: cut the low end, widen the stereo. In the spotlight: keep the spreads smaller so the sound stays compact.
 
 ## The freeze-frame in detail
 
-You won't find this trick in ordinary samplers, and it easily makes a track memorable. The sound goes as usual, the scan at the original speed, and at one moment the scan drops to zero. The sound doesn't cut off: it freezes at the point where it was and keeps sounding, like a frame put on pause. A bar later the scan returns, and the sound moves on.
+You won't find this trick in ordinary samplers, and it easily makes a track memorable. The sound plays as usual, the scan at the original speed, and at a chosen moment the scan drops to zero. The sound doesn't cut off: it freezes at the point where it was and keeps sounding, like a frame put on pause. A bar later the scan returns, and the sound moves on.
 
 In Serum it is automation of SCAN, in Granulator III automation of Scan, in Pigments the Scan knob moved to 12 o'clock. To keep the freeze-frame from humming mechanically, keep a small position spread.
 

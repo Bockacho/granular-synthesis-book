@@ -21,7 +21,7 @@ Los ejercicios se dividen en tres niveles. El primero está al alcance de un esc
 ## Nivel 3. Bajo el capó
 
 9. **Calcular una nota.** Un flujo síncrono debe sonar en la nota La4 (440 Hz) con un solapamiento de 2. ¿Qué duración de grano hace falta? La respuesta está al final del capítulo.
-10. **La incertidumbre de oído.** Genera un seno de 440 Hz. Corta de él un grano de 2 ms y otro de 100 ms y mira los dos en cualquier analizador de espectro. Explica la diferencia con la fórmula del recuadro del [capítulo 5](../chast-2-parametry/05-razmer-i-ogibayushchaya.md).
+10. **La incertidumbre de oído.** Genera una sinusoide de 440 Hz. Corta de ella un grano de 2 ms y otro de 100 ms y mira los dos en cualquier analizador de espectro. Explica la diferencia con la fórmula del recuadro del [capítulo 5](../chast-2-parametry/05-razmer-i-ogibayushchaya.md).
 11. **Un granulador en código.** Repite el ejercicio 1.1 en Pure Data, SuperCollider o Max: un grano con ventana, luego un flujo de granos con una posición controlable.
 12. **El volumen de una nube.** Mide cuántos decibelios sube el nivel al duplicar la densidad con una dispersión de posición nula y con una grande. Compara con lo esperado según el recuadro del [capítulo 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): de +3 a +6 dB.
 

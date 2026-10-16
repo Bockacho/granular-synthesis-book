@@ -47,7 +47,7 @@ Je mehr Grains gleichzeitig klingen, desto lauter die Wolke. Verdopple die Dicht
 **So heißt sie:** Sync, Async, Random Rate, Rate Jitter, Spray (zeitlich), Irregularity, Chaos.
 
 - **Zeitstreuung 0.** Die Grains laufen wie ein Metronom. Über 20 Grains pro Sekunde entsteht ein Ton.
-- **Zeitstreuung mittel.** Der Ton ist rau und lebendig, wie ein Chor oder ein Bogen.
+- **Zeitstreuung mittel.** Der Ton ist rau und lebendig, wie ein Chor oder ein gestrichenes Instrument.
 - **Zeitstreuung maximal.** Es gibt keinen Ton, sondern eine Wolke, ein Rascheln, einen Schwarm.
 
 Neben der Synchronität steht manchmal noch ein Regler: die Intermittenz (Intermittency). Sie legt die Wahrscheinlichkeit fest, dass das nächste Grain einfach nicht entsteht. Der Strom folgt weiter seinem Raster, gleichmäßig oder zufällig, aber es entstehen Lücken, und die Wolke wird dünner, ohne dass sich die Dichte am Regler ändert. So arbeitet dieser Regler im kostenlosen EmissionControl2 ([Kapitel 21](../chast-5-dalshe-sam/21-chto-dalshe.md)).
@@ -64,7 +64,7 @@ Diesen Modus gibt es auch in fertigen Instrumenten. In Grain von Reason Studios 
 
 ??? info "Unter der Haube"
 
-    Dieses Prinzip liegt der FOF-Synthese und der Pulsar-Synthese zugrunde. Die Rate r, mit der die Grains aufeinander folgen, bestimmt den Grundton. Dauer und Inhalt des Grains bestimmen die spektrale Hüllkurve: Wo das Spektrum ansteigt, liegt ein Formant. Ist die Grain-Größe länger als die Periode 1/r, überlappen sich die Grains und die Formanten werden schmaler; ist sie kürzer, herrscht zwischen den Grains Stille, und das Spektrum wird breiter und „pulsarartiger“.
+    Dieses Prinzip liegt der FOF-Synthese und der Pulsar-Synthese zugrunde. Die Rate r, mit der die Grains aufeinander folgen, bestimmt den Grundton. Dauer und Inhalt des Grains bestimmen die spektrale Hüllkurve: Wo das Spektrum ansteigt, liegt ein Formant. Ist das Grain länger als die Periode 1/r, überlappen sich die Grains und die Formanten werden schmaler; ist sie kürzer, herrscht zwischen den Grains Stille, und das Spektrum wird breiter und „pulsarartiger“.
 
 ??? info "Unter der Haube"
 

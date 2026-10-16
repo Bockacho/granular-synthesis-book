@@ -10,7 +10,7 @@ It all began with him ([chapter 3](../chast-1-zerno/03-istoriya.md)). The piece 
 
 ## Curtis Roads
 
-The first granular synthesis on a computer, pulsar synthesis, the book "Microsound". How he got from the early studies of 1974–1975 to his music made of grains, Roads writes about in detail himself in the text "Path to Half Life" ([curtisroads.net](https://www.curtisroads.net/s/04-Path-to-Half-Life.pdf)).
+The first granular synthesis on a computer, pulsar synthesis, the book "Microsound". In the text "Path to Half Life" Roads himself describes in detail how he got from the early studies of 1974–1975 to his music made of grains ([curtisroads.net](https://www.curtisroads.net/s/04-Path-to-Half-Life.pdf)).
 
 ## Barry Truax
 
@@ -18,7 +18,7 @@ The first real-time granular synthesis. His piece "Riverrun" (1986) is made enti
 
 ## Robert Henke (Monolake)
 
-The author of Granulator, a co-founder of Ableton, a musician of the Monolake project. Describing Granulator II, Henke called it the latest incarnation of a series of granular synthesizers that he had been writing for himself since the arrival of Max/MSP in 1997, and specified the technique: quasi-synchronous granular synthesis, the very mode from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md) ([Synthtopia, Henke's quote](https://synthtopia.com/?p=48204)). The biography on the IRCAM site includes Granulator II in the list of his works on a par with music ([IRCAM](https://brahms.ircam.fr/robert-henke)). His Granulator III is covered in detail in [chapter 11](../chast-3-instrumenty/11-granulator-iii.md).
+The author of Granulator, a co-founder of Ableton, a musician of the Monolake project. Describing Granulator II, Henke called it the latest incarnation of a series of granular synthesizers that he had been writing for himself since the arrival of Max/MSP in 1997, and specified the technique: quasi-synchronous granular synthesis, the very mode from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md) ([Synthtopia, Henke's quote](https://synthtopia.com/?p=48204)). The biography on the IRCAM site includes Granulator II in the list of his works on a par with his music ([IRCAM](https://brahms.ircam.fr/robert-henke)). His Granulator III is covered in detail in [chapter 11](../chast-3-instrumenty/11-granulator-iii.md).
 
 ## Tim Hecker
 
@@ -26,17 +26,17 @@ A Canadian musician, the author of albums on the border of ambient and noise. In
 
 ## Carsten Nicolai (Alva Noto)
 
-A German musician and artist, a co-founder of the Raster-Noton label. His music is assembled from sines, clicks and digital glitches, and his studio is emphatically minimal: a computer and an audio interface. In an interview with Sound On Sound, among his favorite programs Nicolai names the granular synthesizer Borderlands ([Sound On Sound](https://www.soundonsound.com/people/alva-noto?amp)).
+A German musician and artist, a co-founder of the Raster-Noton label. His music is built from sine tones, clicks and digital glitches, and his studio is emphatically minimal: a computer and an audio interface. In an interview with Sound On Sound, among his favorite programs Nicolai names the granular synthesizer Borderlands ([Sound On Sound](https://www.soundonsound.com/people/alva-noto?amp)).
 
 Borderlands was created by Chris Carlson in the autumn of 2011 as a student project at CCRMA, the computer music center of Stanford University, and in 2012 he and Ge Wang described it in a paper for the NIME conference. The sound files lie on the screen as rectangles, clouds of grains are moved over them with a mouse, and one cloud can read several overlaid files at once.
 
 ## Richard Devine
 
-An American musician and sound designer from Atlanta: he started with IDM and glitch, and made sounds for Native Instruments and many other manufacturers. In an interview with Designing Sound he explains how he chooses a synthesis method: for a grainy texture he goes to granular, for smooth electronic tones to FM ([Designing Sound](https://designingsound.org/2010/01/07/richard-devine-special-exclusive-interview/)). In another interview he names Reaktor as his favorite environment for granular work ([Black Rhino Radio](https://blackrhinoradio.com/interviews/an-interview-with-the-idm-and-sound-designer-artist-richard-devine)).
+An American musician and sound designer from Atlanta: he started with IDM and glitch, and has made sounds for Native Instruments and many other manufacturers. In an interview with Designing Sound he explains how he chooses a synthesis method: for a grainy texture he turns to granular synthesis, for smooth electronic tones to FM ([Designing Sound](https://designingsound.org/2010/01/07/richard-devine-special-exclusive-interview/)). In another interview he names Reaktor as his favorite environment for granular work ([Black Rhino Radio](https://blackrhinoradio.com/interviews/an-interview-with-the-idm-and-sound-designer-artist-richard-devine)).
 
 ## Amon Tobin
 
-A musician on the Ninja Tune label. For the album "Foley Room" he recorded field sounds himself, and on "ISAM" (2011) he ran them through heavy digital processing, inflating a tiny sound into a whole palette ([Future Music](https://www.pressreader.com/australia/future-music-9629/20190502/281505047629215)). In an interview with MusicTech Tobin describes how his work with samples was gradually split into ever smaller fragments, which he rearranged and processed until the source no longer mattered. He himself calls this almost granular synthesis ([MusicTech](https://musictech.com/features/interviews/video-amon-tobin-monitors-distortion-isam/)). A good example of the fact that the granular approach can also be manual, without a granulator as a device.
+A musician on the Ninja Tune label. For the album "Foley Room" he recorded field sounds himself, and on "ISAM" (2011) he ran them through heavy digital processing, inflating a tiny sound into a whole palette ([Future Music](https://www.pressreader.com/australia/future-music-9629/20190502/281505047629215)). In an interview with MusicTech Tobin describes how his work with samples gradually broke down into ever smaller fragments, which he rearranged and processed until the source no longer mattered. He himself calls this almost granular synthesis ([MusicTech](https://musictech.com/features/interviews/video-amon-tobin-monitors-distortion-isam/)). A good example of how the granular approach can also be done by hand, without a granulator as such.
 
 ## Ludger Brümmer
 
@@ -44,7 +44,7 @@ A German composer who, from 2003, headed the Institute for Music and Acoustics a
 
 ## Simon Stockhausen
 
-A German composer, multi-instrumentalist and sound designer. For Steinberg's granular synthesizer Padshop he made the libraries "Granular Symphonies" (2013) and "Granular Guitars" (2014). Presenting the first, he himself said that he wants to widen composers' palette with the possibilities of granular synthesis ([KVR Audio](https://www.kvraudio.com/news/steinberg-releases-granular-symphonies-for-padshop-pro-and-padshop-23367)). The Berliner Zeitung describes his live project with musicians of the Berlin Philharmonic: he reworks acoustic instruments in real time with granular and spectral synthesis ([Berliner Zeitung](https://www.berliner-zeitung.de/article/312825)).
+A German composer, multi-instrumentalist and sound designer. For Steinberg's granular synthesizer Padshop he made the libraries "Granular Symphonies" (2013) and "Granular Guitars" (2014). When presenting the first, he said he wanted to widen composers' palette with the possibilities of granular synthesis ([KVR Audio](https://www.kvraudio.com/news/steinberg-releases-granular-symphonies-for-padshop-pro-and-padshop-23367)). The Berliner Zeitung describes his live project with musicians of the Berlin Philharmonic: he reworks acoustic instruments in real time with granular and spectral synthesis ([Berliner Zeitung](https://www.berliner-zeitung.de/article/312825)).
 
 ## Grains for the eyes
 
@@ -68,4 +68,4 @@ The logic is simple: reverb smears sound by overlaying shifted copies, and blur 
 
 1. Listen to Xenakis's "Analogique B", Truax's "Riverrun" and any piece from Hecker's "Love Streams". Notes on "Riverrun" from the author himself are on [Truax's page](https://www.sfu.ca/~truax/river.html).
 2. For each, mark on the map from [chapter 13](../chast-4-praktika/13-karta-zvuka.md) which zones it lives in and how it moves through them.
-3. Try to build from the spoon a sound that stands in the same zone. A copy isn't needed here. The task is to understand which knobs give such a character.
+3. Try to build from the spoon a sound that stands in the same zone. You don't need a copy. The point is to understand which knobs create that character.

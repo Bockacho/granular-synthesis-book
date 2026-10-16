@@ -77,7 +77,7 @@ Un consejo del manual: aprende con poca densidad, donde se oye mejor lo que pasa
 
 ## Shape: la envolvente del grano
 
-Un clic en el icono de forma sobre el tercer mando abre el menú **Grain Envelope Shape**: Triangle, Trapezoid, Tukey, Gaussian, Sinc, Expodec, Rexpodec, Smooth Exp. El menú elige la forma, y el mando **Shape** la dobla aún más. Según el manual de Pigments 2, el mando lleva la forma de «suave» a «con clics», y se puede modular.
+Un clic en el icono de forma sobre el tercer mando abre el menú **Grain Envelope Shape**: Triangle, Trapezoid, Tukey, Gaussian, Sinc, Expodec, Rexpodec, Smooth Exp. El menú elige la forma, y el mando **Shape** la deforma aún más. Según el manual de Pigments 2, el mando lleva la forma de «suave» a «con clics», y se puede modular.
 
 | Forma | Cómo es | Capítulo 5 |
 | --- | --- | --- |
@@ -119,7 +119,7 @@ La fila inferior de mandos añade azar. La mayoría tiene un menú de dirección
 
 Dos detalles:
 
-- **Direction**, según el manual de Pigments 2: la posición del todo a la derecha toca los granos hacia delante, la del todo a la izquierda al revés, y el centro da cincuenta y cincuenta.
+- **Direction**, según el manual de Pigments 2: la posición del todo a la derecha toca los granos hacia delante, la del todo a la izquierda al revés, y el centro da mitad y mitad.
 - **Stereo en modo Width** reparte por el estéreo los granos ya aleatorizados. Si no hay otras dispersiones, todos los granos se quedan en el centro aunque Width esté al máximo. El manual de Pigments 2 precisa: Width añade una diferencia entre los canales izquierdo y derecho para las dispersiones de Size, Pitch y Start. Así que Width solo funciona junto con otros aleatorizadores.
 
 ## Seis samples y granos
@@ -221,7 +221,7 @@ En todas: el motor Sample en la ranura 1, la cucharilla cargada con Add Folder, 
 1. Monta la receta 12.1 con la cucharilla.
 2. Con el botón Copy duplica la cucharilla en las ranuras B y C, y en cada una cambia Transpose: cero, más una quinta, más una octava.
 3. Modo Map: Round Robin. Los granos tomarán por turnos las tres transposiciones del mismo sonido.
-4. Compara con el modo Random. Graba las dos versiones y escúchalas una tras otra.
+4. Compáralo con el modo Random. Graba las dos versiones y escúchalas una tras otra.
 
 ## Fuentes del capítulo
 

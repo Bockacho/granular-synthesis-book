@@ -23,4 +23,4 @@ Fast alle Probleme mit einem Granulator lassen sich auf etwa fünfzehn Symptome 
 
 ## Die Reihenfolge der Fehlersuche
 
-Wenn unklar ist, woran es liegt, geh von oben nach unten vor. Stell zuerst alle Streuungen und Modulationen auf null. Prüf dann die Quelle: Hör sie dir ohne Granulator an. Bring danach Grain-Länge und Dichte in die Mitte der Wolke auf der Karte zurück (100 ms, 30 Grains pro Sekunde). Klingt es an diesem Punkt normal, dreh die Regler einzeln zurück, bis das Problem auftaucht. Der Regler, der es zurückgebracht hat, ist der Schuldige.
+Wenn unklar ist, woran es liegt, geh von oben nach unten vor. Stell zuerst alle Streuungen und Modulationen auf null. Prüf dann die Quelle: Hör sie dir ohne Granulator an. Bring danach Grain-Länge und Dichte in die Mitte der Wolke auf der Karte zurück (100 ms, 30 Grains pro Sekunde). Klingt es an diesem Punkt normal, stell die Regler einen nach dem anderen wieder auf ihre vorherigen Werte, bis das Problem auftaucht. Der Regler, mit dem es zurückkam, ist der Schuldige.

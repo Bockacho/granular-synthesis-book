@@ -2,7 +2,7 @@
 
 # Xfer Serum 2
 
-In Serum 2 the granulator lives inside the oscillator. Any of the three main oscillators (OSC A, OSC B, OSC C) switches into one of five modes: Wavetable, Multisample, Sample, Granular, Spectral. That means you can keep up to three independent granulators in one patch, with a sub and a noise oscillator alongside.
+In Serum 2 the granulator lives inside the oscillator. Any of the three main oscillators (OSC A, OSC B, OSC C) can be switched to one of five modes: Wavetable, Multisample, Sample, Granular, Spectral. So a single patch can hold up to three independent granulators, with a sub and a noise oscillator alongside.
 
 !!! note "About the version"
 
@@ -45,8 +45,8 @@ Right-clicking the waveform opens the operations menu. According to the manual, 
 
 - **Snap Off / Snap to Zero / Snap to Beats / Snap to Loop.** What the markers stick to: nothing, the waveform's zero crossings, tempo beats, loop points. Snap to Zero saves you from clicks at the edges.
 - **Fade Edges.** Fades at the edges of the sample, from 1 to 128 ms.
-- **Normalize.** Raises the volume to the peak without distortion.
-- **Reverse.** Turns the whole sample backwards.
+- **Normalize.** Raises the level to full scale without clipping.
+- **Reverse.** Reverses the whole sample.
 - **Trim.** Cuts the sample to the markers.
 - **Slice Auto / Slice Manual.** Cuts the sample at attacks and lays the pieces out across the keys. The yellow line on the waveform sets the threshold: the lower the line, the more pieces. In manual mode an Alt-click (Option-click on Mac) adds or removes a cut. In Manual loop mode slicing is unavailable.
 - **Show Marker Animation.** The markers move along with modulation, so you can see where the LFO drives the window.
@@ -71,7 +71,7 @@ The loop menu decides how the granulator moves through the sample. Most items ar
 | **Loop Grains** | Granular only: grains respect the loop markers |
 | **Manual** | Granular only: the position is set by hand (below) |
 
-The loop markers are blue, and they appear at the top edge of the display. They can be dragged separately, together (by the span between them) or set as numbers in the **LS** and **LE** fields. The loop doesn't go beyond the sample's start and end markers. But if modulation or automation brings the loop end ahead of the start, the direction of the loop turns around. A ready-made trick for grains that go now forwards, now backwards.
+The loop markers are blue, and they appear at the top edge of the display. They can be dragged separately, together (by the span between them) or set as numbers in the **LS** and **LE** fields. The loop doesn't go beyond the sample's start and end markers. But if modulation or automation brings the loop end ahead of the start, the direction of the loop turns around. A ready-made trick for grains that alternate between forwards and backwards.
 
 **Loop crossfade** in Granular mode applies to the grains themselves and works only when Loop Grains is on. The crossfade knob is dragged upwards with the mouse, and the light blue curve shows its shape.
 
@@ -85,7 +85,7 @@ The position can be automated or modulated: drag any modulation source (an LFO, 
 
 In the display's context menu switch on the **X|Y Control** view. A red dot appears on the waveform, and the menu gets a new item for choosing the parameter of the Y axis. The options: Level, Warp, Warp 2, Density, Grain Length, Window Amt, Window Skew, and also the randomness of almost everything: Rand Offset, Rand Dir, Rand Pitch, Rand Length, Rand Pan, Rand Gain, Rand Window, Rand Skew, Rand Warp, Rand Warp 2. After you choose a parameter, one more item appears: how exactly the Y axis modulates it.
 
-Hang grain length on Y, switch on Manual, and with one mouse movement you wander through the spoon and change its graininess. On stage it is almost a ready-made instrument.
+Put grain length on Y, switch on Manual, and with one mouse movement you wander through the spoon and change its graininess. On stage it is almost a ready-made instrument.
 
 ## SCAN: scan speed
 
@@ -112,7 +112,7 @@ DENS sets how often grains are born. A right-click chooses one of three modes:
 Two more settings in the same menu:
 
 - **Jump Start.** On: at the start of the note many grains are born at once, and the full density is heard instantly. Off: at the start there is one grain, the cloud builds up gradually, and the note's attack is softer.
-- **Max Grains.** The ceiling of simultaneously sounding grains, unison grains included. When the ceiling is reached, a new grain is skipped until room frees up. The main knob for saving processor power. In total Serum can do up to 256 grains ([What's New](https://static.xferrecords.com/Serum%202%20What's%20New.pdf)).
+- **Max Grains.** The ceiling of simultaneously sounding grains, unison grains included. When the ceiling is reached, a new grain is skipped until room frees up. The main knob for saving processor power. Serum handles up to 256 grains in total ([What's New](https://static.xferrecords.com/Serum%202%20What's%20New.pdf)).
 
 In Free mode the grain rate reaches the audio range ([Databroth](https://www.databroth.com/blog/serum-2-review)), so the synchronous stream with a tone from [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md) is achievable here.
 
@@ -124,7 +124,7 @@ LENGTH sets the duration of a grain. A right-click chooses the mode:
 - **BPM Sync.** The length in note divisions, with Triplet and Dotted.
 - **Percent.** The length as a percentage of the period between grains. Unavailable if DENS is set to Grains mode.
 
-Percent is handy for rhythm. The length as a percentage of the period is the overlap from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md) multiplied by a hundred: 50% gives grains with gaps, 100% end to end, 200% two grains at once. Change the density as much as you like, and the character of the slicing is kept.
+Percent is handy for rhythm. The length as a percentage of the period is the overlap from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md) multiplied by a hundred: 50% gives grains with gaps, 100% end to end, 200% two grains at once. Change the density as much as you like, and the character of the slicing stays the same.
 
 ## The grain window
 
@@ -132,11 +132,11 @@ The window button opens the settings of the grain envelope. Alt-dragging the but
 
 - **AMOUNT.** How strongly the window shape affects the grain. Next to it is a per-grain randomness field.
 - **SKEW.** The window skew from [chapter 5](../chast-2-parametry/05-razmer-i-ogibayushchaya.md). Also with per-grain randomness.
-- **SHAPE.** The window shape, its picture is visible on the left.
+- **SHAPE.** The window shape, shown in the picture on the left.
 
 | Shape | How it is built | Where it's useful |
 | --- | --- | --- |
-| Hann | a smooth cosine rise and fall | the working shape for clouds and pads |
+| Hann | a smooth cosine rise and fall | the go-to shape for clouds and pads |
 | Welch | a parabolic dome | a compact, dense grain with a strong middle |
 | Gaussian | a bell | soft, flowing textures |
 | Blackman-Harris | steep slopes, a smooth peak, edges strongly damped | the cleanest sound at heavy overlap |
@@ -160,7 +160,7 @@ The bottom row of knobs is responsible for the spread per grain. It is a set fro
 | RAND (PAN) | pan | 8 |
 | RAND (LEVEL) | volume | 8 |
 
-A right-click on **DIR** switches on **Reverse Grains**: all the grains turn backwards at once. The switch can be automated, and then the cloud goes now forwards, now backwards on command. Two more spreads live in the window settings (AMOUNT and SKEW), and both Warp slots also have per-grain randomness (Rand Warp and Rand Warp 2 in the Y-axis list).
+A right-click on **DIR** switches on **Reverse Grains**: all the grains turn backwards at once. The switch can be automated, and then the cloud switches between forwards and backwards on command. Two more spreads live in the window settings (AMOUNT and SKEW), and both Warp slots also have per-grain randomness (Rand Warp and Rand Warp 2 in the Y-axis list).
 
 ## Pitch
 
@@ -172,7 +172,7 @@ A tip from the section on Sample mode: if a sample doesn't sound on the note C3,
 
 The Warp button opens and hides the distortion settings. By default Warp is off, the mode is chosen from the menu or with the < > arrows, the depth with a knob. The modes are the same as for wavetables: sync, shape bends, filters, some fifteen kinds of distortion, and also FM, PD, AM and ring modulation from another oscillator or filter. There are two slots (in the Y-axis list they are named Warp and Warp 2).
 
-That means a cloud from the spoon can be frequency-modulated by a sine from OSC B. The second oscillator must be switched on for this, but its volume can be turned to zero. That gives bell-like and metallic clouds that an ordinary granulator won't give.
+That means a cloud from the spoon can be frequency-modulated by a sine from OSC B. The second oscillator must be switched on for this, but its volume can be turned to zero. That gives bell-like and metallic clouds that an ordinary granulator can't produce.
 
 ## Unison
 
@@ -185,7 +185,7 @@ UNISON stacks several granular oscillators on one note, each slightly detuned. A
 - **WIDTH.** The width of the unison in stereo.
 - **START.** A random shift of the start position for each voice. The voices take grains from different places, and the sound comes alive.
 - **SPAN.** A fixed shift of the start position between voices.
-- **SPAWN PATTERN.** When the unison voices give birth to their grains. **Together** (default): all at once. **Even**: evenly in the gap until the next grain. **Exp**: with growing intervals. **Random**: randomly.
+- **SPAWN PATTERN.** When the unison voices spawn their grains. **Together** (default): all at once. **Even**: evenly in the gap until the next grain. **Exp**: with growing intervals. **Random**: randomly.
 
 SPAWN PATTERN is worth remembering. With Together, four voices give four grains in the same millisecond. With Even, the same four voices fill the pauses between grains, and the cloud becomes four times thicker without a single change to DENS.
 
@@ -198,7 +198,7 @@ The easiest way to assign is by dragging. Drag an ENV or LFO tab, or a macro sel
 What you have at your disposal:
 
 - **4 envelopes**, with tempo sync.
-- **Up to 10 LFOs** (the seventh to the tenth appear when the sixth is assigned), with a shape editor, the chaotic Lorenz and Rossler modes, and a frequency of up to 1000 Hz. A thousand hertz means the audio-rate modulation from the box in [chapter 9](../chast-2-parametry/09-modulyaciya.md): an LFO on grain pitch starts to give timbre.
+- **Up to 10 LFOs** (the seventh to the tenth appear when the sixth is assigned), with a shape editor, the chaotic Lorenz and Rossler modes, and a frequency of up to 1000 Hz. A thousand hertz puts you in the audio-rate territory from the box in [chapter 9](../chast-2-parametry/09-modulyaciya.md): an LFO on grain pitch starts to shape the timbre.
 - **8 macros.** A macro can control several knobs at once and can itself be a modulation target. These are the links from [chapter 9](../chast-2-parametry/09-modulyaciya.md).
 - **Key velocity and note number** as separate sources.
 - **Any oscillator or filter** as a source: drag its header onto a knob.
@@ -253,7 +253,7 @@ Always start from a clean patch: the main menu, **Init Preset**. Then OSC A in G
 1. Take recipe 10.1, switch on the **Manual** loop mode and the **X|Y Control** view.
 2. Assign the Y axis to Grain Length.
 3. Record automation in the DAW: a minute of slow movement of the dot.
-4. Drag the render into the DAW and listen to it separately. This is the first track played with one mouse.
+4. Drag the render into the DAW and listen to it separately. That's your first track played with nothing but a mouse.
 
 ## Sources for this chapter
 

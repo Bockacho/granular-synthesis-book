@@ -8,7 +8,7 @@ Granulator III was written by Robert Henke, the very person who created the firs
 
     Granulator III keeps being updated together with Live, so in newer versions the details may differ from those described.
 
-**What you need to run it.** Henke writes that the instrument needs Live 12 Suite, and that it is downloaded from ableton.com from your account. The pack page on the Ableton site gives wider requirements: Live 12 Standard with Max for Live, version 12.0 or newer. The pack includes 59 presets, a Live set and a selection of samples suitable for granulating. The old Granulator II is still available, but according to Henke it most likely won't be updated any more.
+**What you need to run it.** Henke writes that the instrument needs Live 12 Suite, and is downloaded from your account on ableton.com. The pack page on the Ableton site gives wider requirements: Live 12 Standard with Max for Live, version 12.0 or newer. The pack includes 59 presets, a Live set and a selection of samples suitable for granulating. The old Granulator II is still available, but according to Henke it most likely won't be updated any more.
 
 **Installation.** In the Live browser open the Packs section, find Granulator III among the available packs (Available Packs) and install it. After installation it will appear in the Packs section at the top of the browser.
 
@@ -31,7 +31,7 @@ You can switch the main display with the **Display Selector** buttons on the lef
 
 ## Loading a sound
 
-Drag the spoon onto the instrument from the Live browser, from Session or from Arrangement. This works even when the main display shows the envelopes, there just won't be a picture.
+Drag the spoon onto the instrument from the Live browser, from Session or from Arrangement. This works even when the main display shows the envelopes; there just won't be a picture.
 
 On loading and on capture the sound is normalized: the loudest spot is raised to 0 dB. A quiet recording of the spoon will sound at full strength without any extra steps.
 
@@ -57,7 +57,7 @@ On loading and on capture the sound is normalized: the loudest spot is raised to
 
 This is the first thing to choose: the mode determines how Grain Size, Shape and Variation work.
 
-**Classic.** Based on Granulator II, the most flexible and expressive. Two overlapping grains per stereo channel with a very flexible envelope. Density isn't set by a separate knob here: the shorter the grain, the more often they go. According to Henke, a 2 ms grain means a thousand or more overlapping grains per second, and the sound turns into noise or a high tone. This is the synchronous stream from [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md).
+**Classic.** Based on Granulator II, the most flexible and expressive. Two overlapping grains per stereo channel with a very flexible envelope. Density isn't set by a separate knob here: the shorter the grains, the more often they come. According to Henke, a 2 ms grain means a thousand or more overlapping grains per second, and the sound turns into noise or a high tone. This is the synchronous stream from [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md).
 
 **Loop.** The closest to an ordinary sampler: playback with crossfades and random modulation of position. It can play long pieces of the source unchanged. Suitable for rhythmic material.
 
@@ -71,7 +71,7 @@ Position is modulated by the LFO, Envelope 2, the note number (**Key**), key vel
 
 ## Scan
 
-In Granulator III scan is built differently than in Serum. It is a ramp that moves the position from the moment a note is pressed.
+In Granulator III scan works differently than in Serum. It is a ramp that moves the position from the moment a note is pressed.
 
 - **Loop off.** The ramp stops at the end point.
 - **Loop on.** Having reached the end, the ramp starts again.
@@ -91,7 +91,7 @@ The main parameter of the engine. A grain ranges from 2 ms to 2 s. At 2 ms the s
 
 Grain Size depends on Key, Velocity, MPE Slide and Press, is modulated by the LFO and Envelope 2, and Variation adds randomness to the size of each grain. When the size is being modulated, the new value doesn't take effect at once: the instrument tries to play out the current grain first, to avoid clicks. Exactly how depends on the mode.
 
-A subtlety that both video tutorials warn about: Grain Size measures a piece of the sample, while the audible length of the grain depends on the reading speed. A higher note, the sample is read faster, and the same grain sounds shorter. In the second tutorial a 76.1 ms grain at a transposition of +12 semitones sounds half as long.
+A subtlety that both video tutorials warn about: Grain Size measures a piece of the sample, while the audible length of the grain depends on the reading speed. The higher the note, the faster the sample is read and the shorter the same grain sounds. In the second tutorial a 76.1 ms grain at a transposition of +12 semitones sounds half as long.
 
 Grain Size has no tempo sync. A workaround from the second tutorial: calculate the beat length in milliseconds and type it in by hand. A quarter note lasts 60,000 / BPM milliseconds: at 120 BPM that is 500 ms, an eighth 250 ms. The grain lands exactly on the beat when the transposition is at zero and the link of Transpose to the keys is off (more on that below).
 
@@ -114,7 +114,7 @@ Shape is modulated by MPE Slide and Press, the LFO and Envelope 2. An important 
 
 Variation is responsible for per-grain randomness. The common knob sets how much randomness there is at all, and the separate parameters decide what it touches: **Position**, **Grain Size**, **Transpose** and **Volume**. Henke describes what comes out: static loops come alive, on small grains the sound becomes noisy, rhythmic loops crumble into granular madness.
 
-Select the Variation knob, and orange target knobs appear on the modulation display. By default only Position is raised. Transpose is labeled there in short: TR.
+Select the Variation knob, and orange target knobs appear on the modulation display. By default only Position is raised. Transpose is abbreviated there as TR.
 
 Subtleties worth knowing:
 
@@ -126,17 +126,17 @@ Variation is modulated by MPE Slide and Press, the LFO, Envelope 2, Key and Velo
 
 ## Transpose, Tune and the subtleties of tuning
 
-**Transpose** sets the overall tuning of the grains, **Tune** the fine adjustment. Usually pitch follows the notes with **Key** at 100%, but the scale can be changed. Pitch is modulated by Note Pitch Bend, MPE Press, Envelope 2, the LFO and a random value at the moment of the note press. The per-grain pitch spread is duplicated here for convenience.
+**Transpose** sets the overall tuning of the grains, **Tune** the fine adjustment. Usually pitch follows the notes with **Key** at 100%, but the amount can be changed. Pitch is modulated by Note Pitch Bend, MPE Press, Envelope 2, the LFO and a random value at the moment of the note press. The per-grain pitch spread is duplicated here for convenience.
 
-**The tuning of the sample.** Granulator, like any sampler, assumes that the loaded file sounds the note C. Press C, and the sample plays at its original speed. If the spoon sounds at E, lower Transpose by −4 semitones and fine-tune with Tune. The easiest way to find the spoon's note is with a tuner: put Live's Tuner right after Granulator III and play C.
+**The tuning of the sample.** Granulator, like any sampler, assumes that the loaded file is pitched at C. Press C, and the sample plays at its original speed. If the spoon sounds at E, lower Transpose by −4 semitones and fine-tune with Tune. The easiest way to find the spoon's note is with a tuner: put Live's Tuner right after Granulator III and play C.
 
 **One pitch on all keys.** For drones and slicing, transposition by keys often gets in the way. Select Transpose, and on the modulation display set Key to 0: all notes will sound at one pitch. The same Key link at 100% is set on the filter frequency, and it too is worth zeroing, otherwise the filter will travel with every note. Pitch bend still moves the pitch, and it can be drawn as automation in a clip.
 
-Henke explains tuning separately, and it is worth retelling. A sample on the note C3 plays at its original speed. If it sounds C3, everything is simple. If C#3, lower it by a semitone. But in granular synthesis short pieces are repeated very often, and the audible pitch becomes a strange mix of the pitch of the source and the grain size. It can't be predicted in a simple way, you have to try. The knobs you need are in the Transpose and Grain Size sections.
+Henke explains tuning separately, and it is worth retelling. On the C3 key, a sample plays at its original speed. If the sample is pitched at C3, everything is simple. If C#3, lower it by a semitone. But in granular synthesis short pieces are repeated very often, and the audible pitch becomes a strange mix of the pitch of the source and the grain size. It can't be predicted in a simple way, you have to try. The knobs you need are in the Transpose and Grain Size sections.
 
-**Henke's trick: pitch from grain size.** Set **Transpose Key** to 0 and **Grain Size Key** to 100. Now all notes play the sample at one pitch, but the grain size changes with the note, and a distinct sense of pitch is born. To land in tune, Henke advises a size of exactly 3.822 ms. The number isn't random: a period of 3.822 ms corresponds to a frequency of about 261.6 Hz, the note middle C (in Live it is called C3). This is a direct demonstration of [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): a note is born from the grain rate.
+**Henke's trick: pitch from grain size.** Set **Transpose Key** to 0 and **Grain Size Key** to 100. Now all notes play the sample at one pitch, but the grain size changes with the note, and a distinct sense of pitch is born. To land in tune, Henke advises a size of exactly 3.822 ms. The number isn't random: a period of 3.822 ms corresponds to a frequency of about 261.6 Hz, middle C (in Live it is called C3). This is a direct demonstration of [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): a note is born from the grain rate.
 
-**MPE and microtonality.** If you work with tonal material and want the instrument to correctly accept MPE pitch bend and Live 12's tunings, set **Note Pitch Bend** in the Transpose section to 48 semitones.
+**MPE and microtonality.** If you work with tonal material and want the instrument to respond correctly to MPE pitch bend and Live 12's tunings, set **Note Pitch Bend** in the Transpose section to 48 semitones.
 
 ## Spread
 
@@ -157,7 +157,7 @@ Shapes: Sine, Triangle, Up, Down, Rect, Sample & Hold (random steps) and two kin
 - **LFO depth** is modulated by Slide and Pressure, Envelope 2, Key and Velocity. The **Use Mod Wheel** option adds scaling by the modulation wheel. Henke gives MIDI CC 2, though by the MIDI standard the modulation wheel is CC 1.
 - **Quant.** Quantizes the LFO output before the depth adjustment and makes stepped modulation. Henke's example: with Quant 0.5 a ramp gives three values (0; 0.5; 1), and a sine five (from −1 to 1 in steps of 0.5). The difference is because the Up and Down ramps are unipolar (from 0 to 1), while the other shapes are bipolar (from −1 to 1).
 
-The Stereo knob is especially good on Position and Grain Size: with a phase shift the LFO moves position and grain size differently in the left and right ear, and the cloud splits into two.
+The Stereo knob works especially well on Position and Grain Size: with a phase shift the LFO moves position and grain size differently in the left and right ear, and the cloud splits into two.
 
 ## Filter
 
@@ -173,7 +173,7 @@ By default the filter frequency is tied to Key at 100%: the filter travels with 
 
 Volume is modulated by Key, Velocity, MPE Slide and Press and the LFO. The per-grain volume spread is duplicated here.
 
-There are two envelopes. **Envelope 1** controls volume and can move the filter frequency. **Envelope 2** is a general source for a multitude of parameters. Both have very long attack, decay and release, for slowly changing sounds. Each has its own **Key** parameter: the envelope's speed depends on the pitch of the note, and high notes can die away faster, as in live instruments.
+There are two envelopes. **Envelope 1** controls volume and can move the filter frequency. **Envelope 2** is a general source for a multitude of parameters. Both have very long attack, decay and release, for slowly changing sounds. Each has its own **Key** parameter: the envelope's speed depends on the pitch of the note, and high notes can die away faster, as with acoustic instruments.
 
 A trick from the second tutorial: Envelope 2 with a decay of about a second and negative depth straight onto Shape and Grain Size. At the attack of the note the grains are sharp and small, then return to normal. The sound gets a click at the start, like plucked instruments.
 
@@ -189,7 +189,7 @@ Capture turns Granulator III into a live-sound granulator.
 
 1. Switch on capture with the **I/O** button. The sample doesn't change yet, only the recording interface appears.
 2. Choose a source with the two **Source** menus. You can even take the output of Granulator III itself and resample yourself.
-3. The instrument constantly records the last few seconds of sound, how many is set by the **Length** menu.
+3. The instrument constantly records the last few seconds of sound; how many is set by the **Length** menu.
 4. Press **Capture**: the current sample is replaced by a snapshot of the last seconds. The knob settings don't change.
 5. **Cancel** returns the last loaded sample, even if you pressed Capture many times.
 6. **Save** opens a save dialog: the instrument will write the file and reload it as an ordinary sample.
@@ -198,7 +198,7 @@ Important: an unsaved capture will vanish the next time the project is opened, a
 
 The capture source can be another Live track or an external input: a microphone, a hardware synthesizer. The second Source menu chooses the point where the signal is taken, and in the second tutorial the signal after effects is chosen.
 
-**Generative resampling** (second tutorial). Granulator III sits on its own track and captures a neighboring track with drums. An LFO device in square mode is assigned to the Capture button and presses it every two bars, so the granulator updates its material by itself. At Scan 1 the captured sound is almost as it is, at Scan 0.25 it turns into a texture. Add an LFO to Grain Size and Shape, and you get an instrument for live performance that feeds itself.
+**Generative resampling** (second tutorial). Granulator III sits on its own track and captures a neighboring track with drums. An LFO device in square mode is assigned to the Capture button and presses it every two bars, so the granulator updates its material by itself. At Scan 1 the captured sound is almost unchanged, at Scan 0.25 it turns into a texture. Add an LFO to Grain Size and Shape, and you get an instrument for live performance that feeds itself.
 
 ## Spoon recipes
 
@@ -237,7 +237,7 @@ A tip from the first tutorial: set the knobs on one sample, and then swap sample
 
     1. Load a long sound: a phrase, a field recording, a session of improvisation with a synth.
     2. Transpose Key at 0, the filter frequency's Key at 0.
-    3. Select Position and on the modulation display raise Key. Now each key takes its own piece of the sample. Similar to Simpler's slicing, only without a tie to attacks. How far the position shifts per key can't be told from the scale: adjust by ear.
+    3. Select Position and on the modulation display raise Key. Now each key takes its own piece of the sample. Similar to slicing in Simpler, but not tied to transients. How far the position shifts per key can't be told from the scale: adjust by ear.
     4. Switch on mono and Glide. When playing legato the position will drift from piece to piece.
     5. Cloud mode and a smaller Grain Size: the position change becomes audible sooner.
 

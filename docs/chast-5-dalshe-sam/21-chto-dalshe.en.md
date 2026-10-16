@@ -6,11 +6,11 @@
 
 Prices and terms of free plugins change often, so check the developer's page before downloading.
 
-**Ribs, Hvoya Audio.** A granular effect and synthesizer in one, by Eugene Yakshin. On the developer's page it is distributed on a "pay what you want" basis, and zero is allowed. Modes: a synthesizer played by notes, a "scratch" with precise control of the head, a rhythmic mode with polyrhythms, plus an effect mode. An important feature: you can't load your own WAV file into Ribs, it fills its buffers with sound from the track it sits on. In Ableton Live a routing setup is needed, and the author shows it in a video ([hvoyaaudio.itch.io](https://hvoyaaudio.itch.io/ribs)).
+**Ribs, Hvoya Audio.** A granular effect and synthesizer in one, by Eugene Yakshin. On the developer's page it is distributed on a "pay what you want" basis, and zero is allowed. Modes: a synthesizer played from the keyboard, a "scratch" with precise control of the head, a rhythmic mode with polyrhythms, plus an effect mode. An important feature: you can't load your own WAV file into Ribs, it fills its buffers with sound from the track it sits on. In Ableton Live this requires some routing, which the author shows in a video ([hvoyaaudio.itch.io](https://hvoyaaudio.itch.io/ribs)).
 
-**Argotlunar, Michael Ourednik.** A live-sound granulator built on a delay line: each grain gets a random volume, pan, duration, delay, pitch, glissando, filter and envelope. Open source under the GPLv2 license, versions for Windows, macOS and Linux ([GitHub](https://github.com/mourednik/argotlunar)). The plugin is old, the latest version 2.0.6 was built on the 2013 JUCE library, so it may not run on newer systems.
+**Argotlunar, Michael Ourednik.** A live-sound granulator built on a delay line: each grain gets a random volume, pan, duration, delay, pitch, glissando, filter and envelope. Open source under the GPLv2 license, versions for Windows, macOS and Linux ([GitHub](https://github.com/mourednik/argotlunar)). The plugin is old: the latest version, 2.0.6, was built with the 2013 JUCE library, so it may not run on newer systems.
 
-**Emergence, Daniel Gergely.** A live-sound granulator: up to 600 grains in four independent streams, buffer freeze, transposition ±24 semitones. The early version 0.3 was given away for free, but version 1.0 on the author's page is already paid, from 20 dollars ([itch.io](https://daniel-gergely.itch.io/emergence1)). It is an effect: you don't load your own file into it, it granulates the sound that passes through it.
+**Emergence, Daniel Gergely.** A live-sound granulator: up to 600 grains in four independent streams, buffer freeze, transposition ±24 semitones. The early version 0.3 was given away for free, but version 1.0 is now paid, from 20 dollars on the author's page ([itch.io](https://daniel-gergely.itch.io/emergence1)). It is an effect: you don't load your own file into it, it granulates the sound that passes through it.
 
 **Granulator II, Robert Henke.** The predecessor of Granulator III, free, under a non-commercial Creative Commons license ([Synthtopia, Henke's quote](https://synthtopia.com/?p=48204)). It needs Max for Live. Henke writes that Granulator II is still available but most likely won't be updated any more.
 
@@ -22,7 +22,7 @@ Prices and terms of free plugins change often, so check the developer's page bef
 
 Grain Sample Manipulator is included in Reason, in the Reason Rack plugin (VST3, AU and AAX, so it works in any DAW) and in the Reason+ subscription. You load your sound into it by dragging or record straight into the instrument with the Start sampling button. After that comes the usual set: up to 12 voices, four envelopes, three LFOs, eight modulation buses and six effects whose order is changed by dragging.
 
-The peculiarity of Grain is that it has four algorithms, and each reads the same file in its own way.
+What makes Grain special is that it has four algorithms, and each reads the same file in its own way.
 
 | Algorithm | What it does |
 | --- | --- |
@@ -31,7 +31,7 @@ The peculiarity of Grain is that it has four algorithms, and each reads the same
 | Long Grains | long grains with knobs for length, speed, crossfade and pitch spread |
 | Tape | like a tape recorder: speed and pitch are linked, at speed 0 the tape stops |
 
-**Spectral Grains.** The algorithm analyzes the frequencies of the recording and finds partials in it. The Snap knob pulls inharmonic partials to the nearest harmonic ones: at zero the sound barely changes, at 100% only harmonic ones remain. The Filter knob does the same by cutting: inharmonic partials are suppressed, harmonic ones remain. The ring of a spoon against a cup is just inharmonic, so this algorithm is most audible on it. The Curve knob lets you draw your own formant curve: above the pink zone the partials are boosted, below it they are attenuated, and Amount sets the strength.
+**Spectral Grains.** The algorithm analyzes the frequencies of the recording and finds partials in it. The Snap knob pulls inharmonic partials to the nearest harmonic ones: at zero the sound barely changes, at 100% only harmonic ones remain. The Filter knob does the same by cutting: inharmonic partials are suppressed, harmonic ones remain. The ring of a spoon against a cup is distinctly inharmonic, so this algorithm is most audible on it. The Curve knob lets you draw your own formant curve: above the pink zone the partials are boosted, below it they are attenuated, and Amount sets the strength.
 
 **Motion modes.** They are responsible for how the head moves through the file: Freeze (stands at the start), One Shot (a single pass), FW Loop and FW-BW Loop (a loop forwards or as a pendulum), End Freeze (a pass and a stop at the end) and Envelope 1. In the last one the path through the file is drawn by an envelope: the bottom of the curve means the start of the selected section, the top means the end. If you choose a straight upward ramp, switch on the loop and sync to the beat, the sample will run exactly in time with the project.
 
@@ -53,7 +53,7 @@ The peculiarity of Grain is that it has four algorithms, and each reads the same
 
 Quanta 2 from Audio Damage is a synthesizer with the granulator in the place of the oscillator. It is built like a classic subtractive one: the granulator, two analog oscillators and noise go into two filters (in series or in parallel), and then through chorus, delay and reverb. Up to 15 voices. Formats: on macOS AU, VST3 and AAX, on Windows VST3 and AAX, on Ubuntu VST3. There is a demo version: it works like the full one, but doesn't save presets and project state and stops sounding 20 minutes after being added to a session.
 
-You load your own file by dragging it onto the window. Quanta accepts WAV, AIFF, MP3, Ogg and FLAC of any sample rate and bit depth, takes the first two channels, normalizes the recording on loading and stores it right inside the preset. So a preset moves to another computer without the original file, but is heavy. Quanta determines the root note itself by measuring pitch in four places of the recording. For a simple steady sound this is usually accurate, while for a complex one, such as a drum loop, it sets C4. Correct an error with the mouse in the ROOT NOTE field.
+You load your own file by dragging it onto the window. Quanta accepts WAV, AIFF, MP3, Ogg and FLAC of any sample rate and bit depth, takes the first two channels, normalizes the recording on loading and stores it right inside the preset. So a preset can be moved to another computer without the original file, but it is large. Quanta determines the root note itself by measuring pitch in four places of the recording. For a simple steady sound this is usually accurate, while for a complex one, such as a drum loop, it sets C4. If it's wrong, correct it with the mouse in the ROOT NOTE field.
 
 | Parameter from Part 2 | Where in Quanta 2 |
 | --- | --- |
@@ -87,7 +87,7 @@ On the waveform an orange oval shows where the granulator is reading from right 
 
 - **Curtis Roads, "Microsound"** (MIT Press, 2001). The main textbook on granular synthesis and microsound: theory, history, methods, pulsar synthesis.
 - **Curtis Roads, "Introduction to Granular Synthesis"** (Computer Music Journal, 1988). A short introduction to the subject from the author of "Microsound".
-- **Chris Carlson, Ge Wang, "Borderlands: An Audiovisual Interface for Granular Synthesis"** (NIME conference, 2012). How a granulator in which the grains are visible on the screen is built.
+- **Chris Carlson, Ge Wang, "Borderlands: An Audiovisual Interface for Granular Synthesis"** (NIME conference, 2012). How a granulator that shows its grains on screen is built.
 - **Iannis Xenakis, "Formalized Music"** (English edition of 1971). The theory on which granular composition grew.
 - **Dennis Gabor, "Acoustical Quanta and the Theory of Hearing"** (Nature, 1947). The paper where sound is first described as a stream of quanta.
 - **Barry Truax, Granular Synthesis** ([sfu.ca](https://www.sfu.ca/~truax/gran.html)). A short text by the author of the first real-time granulator.

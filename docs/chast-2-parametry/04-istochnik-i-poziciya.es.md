@@ -13,14 +13,14 @@ El granulador no se inventa nada: todo lo que toca viene de una fuente, casi sie
 
 Qué hace que un sonido sea una buena fuente:
 
-- **Un espectro rico.** Un tintineo, una voz, una cuerda, el ruido de la calle dan a los granos mucho material. Un seno puro da un seno aburrido.
+- **Un espectro rico.** Un tintineo, una voz, una cuerda, el ruido de la calle dan a los granos mucho material. Una sinusoide pura da una sinusoide aburrida.
 - **Cambio en el tiempo.** Si el sonido cambia a lo largo de su duración, cada posición del archivo suena distinta, y mover la posición se convierte en música. La cucharilla es así: el golpe, el tintineo, la cola.
 - **Una grabación limpia.** El granulador multiplicará la saturación y los clics digitales en cientos de copias.
 - **Sin silencio de sobra.** Un grano tomado del silencio suena a silencio. La nube empezará a caer en agujeros.
 
 ¿Estéreo o mono? Una fuente estéreo da a los granos su propia anchura; una mono la deja en manos del mando de panorama ([capítulo 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)). Empieza en mono: así se entiende mejor qué hace cada mando.
 
-La fuente no tiene por qué ser una grabación. En Quanta 2, a la entrada del granulador llegan las señales de dos osciladores integrados, del ruido y de un archivo cargado: cuatro deslizadores INPUT LEVELS las mezclan, y la mezcla se corta en granos. Por eso el granulador suena incluso sin archivo. Las ondas simples con dispersiones se convierten en una capa densa tipo «supersierra». El ruido suele dar solo más ruido, pero conviene mezclar un poquito con una grabación para darle densidad, o construir percusión con él. En Serum 2 también se pueden granular no solo grabaciones, sino tablas de ondas ([capítulo 10](../chast-3-instrumenty/10-serum-2.md)).
+La fuente no tiene por qué ser una grabación. En Quanta 2, a la entrada del granulador llegan las señales de dos osciladores integrados, del ruido y de un archivo cargado: cuatro deslizadores INPUT LEVELS las mezclan, y la mezcla se corta en granos. Por eso el granulador suena incluso sin archivo. Las ondas simples con dispersiones se convierten en una capa densa tipo «supersierra». El ruido suele dar solo más ruido, pero conviene mezclar un poco de ruido con una grabación para darle densidad, o construir percusión con él. En Serum 2 también se pueden granular no solo grabaciones, sino tablas de ondas ([capítulo 10](../chast-3-instrumenty/10-serum-2.md)).
 
 ## Posición
 
@@ -30,9 +30,9 @@ La posición dice de qué lugar del archivo se toma el siguiente grano. Es el ma
 
 La posición se fija en porcentaje de la duración del archivo, en milisegundos o con un cursor directamente sobre el dibujo de la onda. Se puede mover de tres maneras.
 
-**Quedarse quieto (congelación).** La posición no se mueve y todos los granos se toman del mismo punto. El sonido en ese punto se prolonga sin fin. Lo que mejor se congela son los lugares estables: una vocal en una voz, el centro de un tintineo, una nota sostenida de una cuerda. El ataque se congela peor: los granos del golpe dan un zumbido parecido a un motor.
+**Quedarse quieto (congelación).** La posición no se mueve y todos los granos se toman del mismo punto. El sonido en ese punto se prolonga sin fin. Lo que mejor se congela son los lugares estables: una vocal en una voz, el centro de un tintineo, una nota sostenida de una cuerda. El ataque se congela peor: los granos del golpe dan un zumbido parecido al de un motor.
 
-**Moverla a mano.** Giras el mando y recorres el archivo a cualquier velocidad, hacia delante y hacia atrás. El sonido se convierte en un instrumento que tocas con el tiempo.
+**Moverla a mano.** Giras el mando y recorres el archivo a cualquier velocidad, hacia delante y hacia atrás. El sonido se convierte en un instrumento en el que tocas el propio tiempo.
 
 **Moverla automáticamente (escaneo).** La posición avanza sola por el archivo a una velocidad dada. Una velocidad del 100 % es el tempo original. El 50 % es la mitad de rápido, el 0 % es una congelación y una velocidad negativa es hacia atrás.
 
@@ -40,7 +40,7 @@ $$
 T_{\text{new}} = \frac{T_{\text{source}}}{s}
 $$
 
-Aquí s es la velocidad de escaneo (1 = 100 %) y T es la duración. Una cucharilla de 3 segundos a una velocidad del 1 % suena 300 segundos, es decir, 5 minutos, a la misma altura.
+Aquí s es la velocidad de escaneo (1 = 100 %) y T es la duración. Un sonido de cucharilla de 3 segundos a una velocidad del 1 % suena 300 segundos, es decir, 5 minutos, a la misma altura.
 
 ## Ventana de lectura
 

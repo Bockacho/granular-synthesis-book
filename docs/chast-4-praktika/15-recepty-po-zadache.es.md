@@ -6,7 +6,7 @@ El [capítulo 14](14-recepty-po-istochniku.md) partía de la fuente. Este parte 
 
 | Tarea | Zona del mapa | Mandos principales | Modulación | Después del granulador |
 | --- | --- | --- | --- | --- |
-| Pad | nube | grano de 80–200 ms, nube densa, ventana de campana, dispersiones de posición y de altura un poco | un LFO lento en la posición, un ataque de volumen largo | chorus o reverb |
+| Pad | nube | grano de 80–200 ms, nube densa, ventana de campana, un poco de dispersión de posición y de altura | un LFO lento en la posición, un ataque de volumen largo | chorus o reverb |
 | Drone | nube o muro | congelación, granos largos de 200–500 ms, seguimiento de altura por teclas a cero | un LFO muy lento en la posición y en el filtro | reverb larga, saturación |
 | Capa de fondo, ambient | muro | granos largos, densidad alta, mucha dispersión de posición | un LFO aleatorio en la posición | filtro paso alto, reverb |
 | Ritmo, glitch | troceado, gotas | densidad y duración por tempo, granos invertidos, un LFO aleatorio escalonado en la posición | automatización de la inversión de los granos | compresor, sidechain |
