@@ -1,5 +1,5 @@
 ---
-title: "Part 5. On Your Own"
+title: "Part 5. On your own"
 ---
 
 <p class="eyebrow">Part 5</p>

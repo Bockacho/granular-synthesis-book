@@ -2,7 +2,7 @@
 
 # Common mistakes
 
-Almost all problems with a granulator come down to a dozen and a half symptoms. Find yours in the left column.
+Almost all problems with a granulator come down to about fifteen symptoms. Find yours in the left column.
 
 | Symptom | Cause | What to do | Chapter |
 | --- | --- | --- | --- |

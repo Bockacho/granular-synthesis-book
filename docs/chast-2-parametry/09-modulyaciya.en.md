@@ -11,7 +11,7 @@ If all the knobs stand still, the cloud sounds beautiful but static, like a phot
 
 ## Modulation sources
 
-**LFO, low-frequency oscillator.** Swings a parameter back and forth in a circle. The main settings: speed (in hertz or in note divisions), shape (sine, triangle, saw, square, random steps), depth.
+**LFO, low-frequency oscillator.** Swings a parameter back and forth, over and over. The main settings: speed (in hertz or in note divisions), shape (sine, triangle, saw, square, random steps), depth.
 
 - A slow sine on position (0.05–0.2 Hz) makes the cloud drift through the file, and the sound changes every few seconds.
 - Random steps (Sample & Hold) on position, in time with quarter notes: on every beat the grains are taken from a new place. A ready-made rhythmic slicing.
@@ -20,7 +20,7 @@ If all the knobs stand still, the cloud sounds beautiful but static, like a phot
 **Envelope, ADSR.** Changes a parameter once per note: from key press to release.
 
 - An envelope on position: each note starts with the spoon's knock and slides into the ring. The sound plays like a sample, but with a granular character.
-- An envelope on size: at the start of the note the grains are short and click, towards the end they are long and smooth. A crunchy attack, a soft tail.
+- An envelope on size: at the start of the note the grains are short and click, toward the end they are long and smooth. A crunchy attack, a soft tail.
 - An envelope on density: the cloud flares up and dies away together with the note.
 
 **Performance.** Parameters that you control by hand as you play:
@@ -46,7 +46,7 @@ The most expressive sounds come when one knob moves several parameters at once, 
 | --- | --- |
 | size down + density up | the cloud becomes finer and thicker without falling into holes |
 | position spread up + pitch spread up | the source dissolves into a haze |
-| position along the file + filter brightness | the sound "wakes up" towards the end of the file |
+| position along the file + filter brightness | the sound "wakes up" toward the end of the file |
 | density down + reverb up | drops fall into an empty big hall |
 | scan down + size up | time freezes, the sound turns into a long pad |
 

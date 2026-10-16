@@ -56,7 +56,7 @@ The top row of knobs sets the main things in the grains, the bottom row scatters
 
 In Pigments, position lives next to the granular section, in the **Sample/Grain** section. The **Start** knob sets the point from which the sample plays or the grains are born, within the limits between the trim markers. On the waveform it is a vertical blue line. The **Volume** knob is there too: the volume of the sample or grain.
 
-The neighbouring **Output** section is responsible for the engine as a whole: the overall volume and **Filter Mix**, the distribution of the signal between filters 1 and 2.
+The neighboring **Output** section is responsible for the engine as a whole: the overall volume and **Filter Mix**, the distribution of the signal between filters 1 and 2.
 
 ## Scan
 
@@ -84,8 +84,8 @@ A click on the shape icon above the third knob opens the **Grain Envelope Shape*
 | Triangle | a straight rise, a straight fall | triangle |
 | Trapezoid | a rise, a shelf, a fall | trapezoid |
 | Tukey | a flat middle, rounded edges | trapezoid with soft edges |
-| Gaussian | a bell | Gauss |
-| Sinc | a sharp centre, oscillating tails | a special colour |
+| Gaussian | a bell | Gaussian |
+| Sinc | a sharp center, oscillating tails | a special color |
 | Expodec | a sharp attack, an exponential decay | percussive |
 | Rexpodec | an exponential rise, a sharp end | reverse percussive |
 | Smooth Exp. | a smoothed exponential | soft percussive |
@@ -120,7 +120,7 @@ The bottom row of knobs adds randomness. Most have a direction menu: a button or
 Two subtleties:
 
 - **Direction**, per the Pigments 2 manual: the far right position plays grains forwards, the far left backwards, the middle gives fifty-fifty.
-- **Stereo in Width mode** spreads grains that are already randomized across the stereo field. If there are no other spreads, all grains stay in the centre even with Width at maximum. The Pigments 2 manual clarifies: Width adds a difference between the left and right channels for the Size, Pitch and Start spreads. So Width works only in a pair with other randomizers.
+- **Stereo in Width mode** spreads grains that are already randomized across the stereo field. If there are no other spreads, all grains stay in the center even with Width at maximum. The Pigments 2 manual clarifies: Width adds a difference between the left and right channels for the Size, Pitch and Start spreads. So Width works only in a pair with other randomizers.
 
 ## Six samples and grains
 
@@ -159,7 +159,7 @@ Under the Tune section sits the Unison/Shaper section. A click on its name opens
 
 ## Modulation
 
-Modulation is assigned by dragging. In the modulation overview strip, hover over a source's name and it changes to **Assign**. Drag it onto the knob you need: all valid targets are outlined in grey. Then you change the depth on the ring around the knob.
+Modulation is assigned by dragging. In the modulation overview strip, hover over a source's name and it changes to **Assign**. Drag it onto the knob you need: all valid targets are outlined in gray. Then you change the depth on the ring around the knob.
 
 Sources by tab:
 
@@ -177,7 +177,7 @@ The main granular feature of modulation: for LFOs and Functions the restart menu
 
 In the Modal engine, a physical model of resonating objects, there is a Friction exciter with a **Granular** mode. It takes some of the Sample granulator's settings with fixed values and strikes the resonator with grains. You choose the type of source sample, the volume (**Volume**), the pitch shift (**Tune**) and the grain rate (**Rate**, in hertz or by tempo). The manual advises modulating Rate through an LFO, Function or Random. A whole synthesizer is built on this principle: Kaivo by Madrona Labs, where the granulator works as the performer's "touch" and excites physical models of resonators and a common body ([madronalabs.com](https://madronalabs.com/products/kaivo)).
 
-## Recipes on the spoon
+## Spoon recipes
 
 Everywhere: the Sample engine in slot 1, the spoon loaded through Add Folder, Main mode, the granular section on, the trim markers on the ring.
 
@@ -226,4 +226,4 @@ Everywhere: the Sample engine in slot 1, the spoon loaded through Add Folder, Ma
 ## Sources for this chapter
 
 - The Pigments 7 manual, Arturia (product version 7.0.0, revision of 15 December 2025): chapter 9 on the Sample engine (pp. 105–121), section 11.4.3 on the granular exciter (pp. 142–143), chapters 19–20 on modulation, section 7.2 on unison modes, section 1.1.2 on the structure of the synthesizer.
-- The Pigments 2 manual, Arturia: section 5.4.7 Granular Section (pp. 77–78): the ranges of Limit, Size and Pitch, the behaviour of Direction and Width.
+- The Pigments 2 manual, Arturia: section 5.4.7 Granular Section (pp. 77–78): the ranges of Limit, Size and Pitch, the behavior of Direction and Width.

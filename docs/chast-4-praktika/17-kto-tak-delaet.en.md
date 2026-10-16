@@ -26,13 +26,13 @@ A Canadian musician, the author of albums on the border of ambient and noise. In
 
 ## Carsten Nicolai (Alva Noto)
 
-A German musician and artist, a co-founder of the Raster-Noton label. His music is assembled from sines, clicks and digital glitches, and his studio is emphatically minimal: a computer and an audio interface. In an interview with Sound On Sound, among his favourite programs Nicolai names the granular synthesizer Borderlands ([Sound On Sound](https://www.soundonsound.com/people/alva-noto?amp)).
+A German musician and artist, a co-founder of the Raster-Noton label. His music is assembled from sines, clicks and digital glitches, and his studio is emphatically minimal: a computer and an audio interface. In an interview with Sound On Sound, among his favorite programs Nicolai names the granular synthesizer Borderlands ([Sound On Sound](https://www.soundonsound.com/people/alva-noto?amp)).
 
-Borderlands was created by Chris Carlson in the autumn of 2011 as a student project at CCRMA, the computer music centre of Stanford University, and in 2012 he and Ge Wang described it in a paper for the NIME conference. The sound files lie on the screen as rectangles, clouds of grains are moved over them with a mouse, and one cloud can read several overlaid files at once.
+Borderlands was created by Chris Carlson in the autumn of 2011 as a student project at CCRMA, the computer music center of Stanford University, and in 2012 he and Ge Wang described it in a paper for the NIME conference. The sound files lie on the screen as rectangles, clouds of grains are moved over them with a mouse, and one cloud can read several overlaid files at once.
 
 ## Richard Devine
 
-An American musician and sound designer from Atlanta: he started with IDM and glitch, and made sounds for Native Instruments and many other manufacturers. In an interview with Designing Sound he explains how he chooses a synthesis method: for a grainy texture he goes to granular, for smooth electronic tones to FM ([Designing Sound](https://designingsound.org/2010/01/07/richard-devine-special-exclusive-interview/)). In another interview he names Reaktor as his favourite environment for granular work ([Black Rhino Radio](https://blackrhinoradio.com/interviews/an-interview-with-the-idm-and-sound-designer-artist-richard-devine)).
+An American musician and sound designer from Atlanta: he started with IDM and glitch, and made sounds for Native Instruments and many other manufacturers. In an interview with Designing Sound he explains how he chooses a synthesis method: for a grainy texture he goes to granular, for smooth electronic tones to FM ([Designing Sound](https://designingsound.org/2010/01/07/richard-devine-special-exclusive-interview/)). In another interview he names Reaktor as his favorite environment for granular work ([Black Rhino Radio](https://blackrhinoradio.com/interviews/an-interview-with-the-idm-and-sound-designer-artist-richard-devine)).
 
 ## Amon Tobin
 

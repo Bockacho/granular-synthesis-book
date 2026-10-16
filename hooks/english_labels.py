@@ -1,7 +1,7 @@
 """Подписи интерфейса, заданные в mkdocs.yml по-русски, на английских страницах заменяются английскими."""
 
 LABELS = {
-    "Тема как в системе": "Theme as in the system",
+    "Тема как в системе": "System theme",
     "Светлая тема": "Light theme",
     "Тёмная тема": "Dark theme",
     "Исходники книги на GitHub": "Book source on GitHub",

@@ -15,7 +15,7 @@ Two knobs decide the character of granular sound more than all the others: grain
 
 The lines on the map are the overlap from [chapter 2](../chast-1-zerno/02-anatomiya-zerna.md), O = length × density. Everything to the left of and below the solid line sounds dotted: the grains go with gaps. Everything to the right and above merges into a cloud, and beyond the dashed line the cloud thickens into a wall. The tone zone in the top left corner lives by the rules of [chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md): an even stream of short grains gives a note, an uneven one gives a hiss.
 
-How to use the map. Start from the middle of the cloud: a grain of about 100 ms, 30 grains a second. This is a safe point where almost any source sounds beautiful. Then move one knob and watch which zone you have gone into. The other knobs (position, pitch, spreads, window) change the colour inside a zone, but rarely take you out of it.
+How to use the map. Start from the middle of the cloud: a grain of about 100 ms, 30 grains a second. This is a safe point where almost any source sounds beautiful. Then move one knob and watch which zone you have gone into. The other knobs (position, pitch, spreads, window) change the color inside a zone, but rarely take you out of it.
 
 ## Twenty instruments
 
@@ -26,7 +26,7 @@ How to use the map. Start from the middle of the cloud: a grain of about 100 ms,
 
 The source is the same everywhere: a spoon against a cup. The parameters are given in the terms of [Part 2](../chast-2-parametry/index.md), and on the right it is shown where this sound is easiest to build and in which recipe it has already been worked out.
 
-| № | Sound | How to get it | Where it's easiest |
+| # | Sound | How to get it | Where it's easiest |
 | --- | --- | --- | --- |
 | 1 | Icy pad | position on the ring, grain 100–150 ms, cloud, bell window, a little position and pitch spread, slow scan | everywhere: recipes 10.1, 11.1, 12.1 |
 | 2 | Eternal ring | scan at zero, position spread 10–30 ms, grain 80–150 ms | everywhere: the freeze from chapter 4 |

@@ -65,11 +65,11 @@ This is the first knob to raise if a frozen sound seems mechanical.
 
 ??? info "Under the hood"
 
-    The hum at zero spread arises because all the grains are identical: a stream of identical grains becomes a periodic signal, and the grain rate sticks out as a separate tone ([chapter 2](../chast-1-zerno/02-anatomiya-zerna.md)). Position spread makes neighbouring grains different and breaks this periodicity. In essence it is decorrelation, the same trick on which a chorus is built.
+    The hum at zero spread arises because all the grains are identical: a stream of identical grains becomes a periodic signal, and the grain rate sticks out as a separate tone ([chapter 2](../chast-1-zerno/02-anatomiya-zerna.md)). Position spread makes neighboring grains different and breaks this periodicity. In essence it is decorrelation, the same trick on which a chorus is built.
 
 ## Live input
 
-Some granulators can take grains from sound that is coming in right now: from a microphone, a guitar, a neighbouring track. The sound is written into a short ring buffer, and the position moves through that. This turns the granulator into an effect. Which of our three instruments can do this we will go through in [Part 3](../chast-3-instrumenty/index.md).
+Some granulators can take grains from sound that is coming in right now: from a microphone, a guitar, a neighboring track. The sound is written into a short ring buffer, and the position moves through that. This turns the granulator into an effect. Which of our three instruments can do this we will go through in [Part 3](../chast-3-instrumenty/index.md).
 
 ## Exercise 4.1. Three points of the spoon { .exercise }
 

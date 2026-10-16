@@ -100,7 +100,7 @@
       title: T("Послушай: размер зерна и форма окна", "Listen: grain size and window shape"),
       controls: [
         { type: "range", key: "s", label: T("Размер зерна", "Grain size"), value: 62, show: (v) => `${fmt(logMap(v, 1, 500), logMap(v, 1, 500) < 10 ? 1 : 0)} ${T("мс", "ms")}` },
-        { type: "seg", key: "shape", label: T("Форма окна", "Window shape"), options: [["hann", T("Колокол", "Bell")], ["gauss", T("Гаусс", "Gauss")], ["tukey", T("Трапеция", "Trapezoid")], ["perc", T("Перкуссия", "Percussive")], ["rev", T("Обратная", "Reversed")], ["rect", T("Прямоугольник", "Rectangle")]], value: "hann" },
+        { type: "seg", key: "shape", label: T("Форма окна", "Window shape"), options: [["hann", T("Колокол", "Bell")], ["gauss", T("Гаусс", "Gaussian")], ["tukey", T("Трапеция", "Trapezoid")], ["perc", T("Перкуссия", "Percussive")], ["rev", T("Обратная", "Reversed")], ["rect", T("Прямоугольник", "Rectangle")]], value: "hann" },
       ],
       params(s) {
         const size = logMap(s.s, 1, 500) / 1000;
@@ -112,7 +112,7 @@
       },
       hint(s) {
         const ms = logMap(s.s, 1, 500);
-        let h = ms <= 10 ? T("Щелчки и жужжание: тембр ложки пропал.", "Clicks and buzzing: the spoon's timbre is gone.") : ms <= 30 ? T("Зернисто и шершаво, ложка едва узнаётся.", "Grainy and rough, the spoon is barely recognizable.") : ms <= 100 ? T("Тон и окраска звона: зона пэдов.", "The pitch and colour of the ring: pad territory.") : T("Слышны куски звона целиком.", "You can hear whole pieces of the ring.");
+        let h = ms <= 10 ? T("Щелчки и жужжание: тембр ложки пропал.", "Clicks and buzzing: the spoon's timbre is gone.") : ms <= 30 ? T("Зернисто и шершаво, ложка едва узнаётся.", "Grainy and rough, the spoon is barely recognizable.") : ms <= 100 ? T("Тон и окраска звона: зона пэдов.", "The pitch and color of the ring: pad territory.") : T("Слышны куски звона целиком.", "You can hear whole pieces of the ring.");
         if (s.shape === "rect") h += T(" Прямоугольное окно щёлкает на каждом зерне.", " The rectangular window clicks on every grain.");
         if (s.shape === "perc") h += T(" Каждое зерно звучит как маленький щипок.", " Each grain sounds like a tiny pluck.");
         if (s.shape === "rev") h += T(" Зёрна всасываются, как запись задом наперёд.", " The grains get sucked in, like a recording played backwards.");
@@ -137,7 +137,7 @@
         const o = d * 0.05;
         const head = T(`Зерно 50 мс, перекрытие ${fmt(o, 1)}. `, `Grain 50 ms, overlap ${fmt(o, 1)}. `);
         if (s.j < 15 && d >= 20) return head + T(`Поток ровный: облако гудит тоном ${Math.round(d)} Гц.`, `The stream is steady: the cloud hums at ${Math.round(d)} Hz.`);
-        return head + (o < 0.45 ? T("Отдельные капли, редкий дождь.", "Single drops, a sparse rain.") : o <= 1 ? T("Дробь, зёрна почти встык.", "A rattle, grains nearly end to end.") : o <= 5 ? T("Гладкое облако.", "A smooth cloud.") : T("Плотная стена: звук похож на шум с окраской.", "A dense wall: it sounds like coloured noise."));
+        return head + (o < 0.45 ? T("Отдельные капли, редкий дождь.", "Single drops, a sparse rain.") : o <= 1 ? T("Дробь, зёрна почти встык.", "A rattle, grains nearly end to end.") : o <= 5 ? T("Гладкое облако.", "A smooth cloud.") : T("Плотная стена: звук похож на шум с окраской.", "A dense wall: it sounds like colored noise."));
       },
     },
     pitch: {
@@ -168,7 +168,7 @@
         if (s.mode === "oct") return c < 1200 ? T("Подними разброс до октавы, и зёрна начнут прыгать по регистрам.", "Raise the spread to an octave and the grains will start jumping between registers.") : T("Мерцание по октавам: блики на воде, а нота одна.", "Shimmering in octaves: glints on water, yet it is one note.");
         if (s.mode === "fifth") return c < 500 ? T("Подними разброс, чтобы появились квинты и октавы.", "Raise the spread to bring in fifths and octaves.") : T("Мерцающий органный аккорд.", "A shimmering organ chord.");
         if (s.mode === "scale") return c < 200 ? T("Подними разброс, чтобы зёрна разошлись по нотам лада.", "Raise the spread so the grains fan out across the notes of the scale.") : T("Одна клавиша, а звучит облако-аккорд.", "One key, and a cloud of a chord sounds.");
-        return c < 1 ? T("Все зёрна на одной ноте.", "All the grains are on one note.") : c <= 10 ? T("Лёгкий хорус: звук шире и теплее.", "A light chorus: the sound is wider and warmer.") : c <= 50 ? T("Плывущая, «пьяная» расстройка.", "A drifting, \"drunken\" detune.") : c <= 600 ? T("Облако соседних нот: кластер, туман.", "A cloud of neighbouring notes: a cluster, a haze.") : T("Зёрна прыгают по регистрам.", "The grains jump between registers.");
+        return c < 1 ? T("Все зёрна на одной ноте.", "All the grains are on one note.") : c <= 10 ? T("Лёгкий хорус: звук шире и теплее.", "A light chorus: the sound is wider and warmer.") : c <= 50 ? T("Плывущая, «пьяная» расстройка.", "A drifting, \"drunken\" detune.") : c <= 600 ? T("Облако соседних нот: кластер, туман.", "A cloud of neighboring notes: a cluster, a haze.") : T("Зёрна прыгают по регистрам.", "The grains jump between registers.");
       },
     },
   };

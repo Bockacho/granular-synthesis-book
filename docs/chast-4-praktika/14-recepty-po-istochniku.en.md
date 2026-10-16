@@ -4,7 +4,7 @@
 
 A granulator plays only what lies in the file. So the first question is always the same: what is there in this sound that isn't in others? Every source has its own strong zone on the map and its own traps.
 
-About rights. For your own tracks, use your own recordings or samples with a licence that allows reworking. A granulator can make someone else's recording unrecognizable, but the rights to the source don't go anywhere because of that.
+About rights. For your own tracks, use your own recordings or samples with a license that allows reworking. A granulator can make someone else's recording unrecognizable, but the rights to the source don't go anywhere because of that.
 
 ## Singing
 
@@ -14,7 +14,7 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 
 **Where to start.** Grain 80–150 ms, a cloud, a bell, position spread 10–20 ms. A voice is recognized even from short grains, so for an "inhuman" choir go down to 20–40 ms and add pitch spread.
 
-**The trap.** Transposing the grains shifts the formants as well: an octave higher, the voice becomes a chipmunk. If you need a voice of the same colour but on another note, keep the grain pitch in place and change the note with the grain rate ([chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md)) or take a vowel in the right key.
+**The trap.** Transposing the grains shifts the formants as well: an octave higher, the voice becomes a chipmunk. If you need a voice of the same color but on another note, keep the grain pitch in place and change the note with the grain rate ([chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md)) or take a vowel in the right key.
 
 **Recipe.** One drawn-out "ah", the position in its middle, Cloud or a dense cloud, pitch spread 15–25 cents, wide stereo. You get a choir from one voice.
 
@@ -34,7 +34,7 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 
 **What it has.** A complex noise spectrum, random events, the space of the place.
 
-**Where to put the position.** Look for stretches with character: a passing car, a bird, a creak. An even city hum is good as an underlay but boring as the main voice.
+**Where to put the position.** Look for stretches with character: a passing car, a bird, a creak. An even city hum is good as a background layer but boring as the main voice.
 
 **Where to start.** Long grains 200–500 ms, a slow scan, strong position spread. The sound keeps the place but loses the plot.
 
@@ -102,7 +102,7 @@ About rights. For your own tracks, use your own recordings or samples with a lic
 
 **The trap.** Tuning. Record in the same key as the track, and don't touch the grain transposition.
 
-**Recipe.** A slow scan through the transitions between chords, a long reverb on top. You get an underlay that sounds in the track's harmony but repeats none of its chords.
+**Recipe.** A slow scan through the transitions between chords, a long reverb on top. You get a background layer that sounds in the track's harmony but repeats none of its chords.
 
 ## Exercise 14.1. Seven sources, one setting { .exercise }
 

@@ -2,7 +2,7 @@
 
 # Ableton Granulator III
 
-Granulator III was written by Robert Henke, the very person who created the first Granulator, together with the Ableton team: Marco Tonni (interface, implementation, project management), Erik Karl and Kostya Kazhev (interface design). It is the third instrument in the series, and Henke calls it completely new. Henke lists the main points: full MPE support, an extended modulation matrix, a simplified interface, sound capture right into the instrument without extra devices, and a monophonic mode.
+Granulator III was written by Robert Henke, the very person who created the first Granulator, together with the Ableton team: Marco Tonni (interface, implementation, project management), Eric Carl and Kostya Kazhev (interface design). It is the third instrument in the series, and Henke calls it completely new. Henke lists the main points: full MPE support, an extended modulation matrix, a simplified interface, sound capture right into the instrument without extra devices, and a monophonic mode.
 
 !!! note "About the version"
 
@@ -44,7 +44,7 @@ On loading and on capture the sound is normalized: the loudest spot is raised to
 | Position spread (chapter 4) | **Variation** → Position |
 | Live input (chapter 4) | **Capture** |
 | Size (chapter 5) | **Grain Size**, from 2 ms to 2 s |
-| Envelope (chapter 5) | **Shape**, with its own behaviour in each mode |
+| Envelope (chapter 5) | **Shape**, with its own behavior in each mode |
 | Density (chapter 6) | in Classic set by the grain size, in Cloud by the **Density** knob |
 | Pitch (chapter 7) | **Transpose** and **Tune** |
 | Direction (chapter 7) | **Reverse** in Loop mode |
@@ -114,7 +114,7 @@ Shape is modulated by MPE Slide and Press, the LFO and Envelope 2. An important 
 
 Variation is responsible for per-grain randomness. The common knob sets how much randomness there is at all, and the separate parameters decide what it touches: **Position**, **Grain Size**, **Transpose** and **Volume**. Henke describes what comes out: static loops come alive, on small grains the sound becomes noisy, rhythmic loops crumble into granular madness.
 
-Select the Variation knob, and orange target knobs appear on the modulation display. By default only Position is raised. Transpose is labelled there in short: TR.
+Select the Variation knob, and orange target knobs appear on the modulation display. By default only Position is raised. Transpose is labeled there in short: TR.
 
 Subtleties worth knowing:
 
@@ -198,9 +198,9 @@ Important: an unsaved capture will vanish the next time the project is opened, a
 
 The capture source can be another Live track or an external input: a microphone, a hardware synthesizer. The second Source menu chooses the point where the signal is taken, and in the second tutorial the signal after effects is chosen.
 
-**Generative resampling** (second tutorial). Granulator III sits on its own track and captures a neighbouring track with drums. An LFO device in square mode is assigned to the Capture button and presses it every two bars, so the granulator updates its material by itself. At Scan 1 the captured sound is almost as it is, at Scan 0.25 it turns into a texture. Add an LFO to Grain Size and Shape, and you get an instrument for live performance that feeds itself.
+**Generative resampling** (second tutorial). Granulator III sits on its own track and captures a neighboring track with drums. An LFO device in square mode is assigned to the Capture button and presses it every two bars, so the granulator updates its material by itself. At Scan 1 the captured sound is almost as it is, at Scan 0.25 it turns into a texture. Add an LFO to Grain Size and Shape, and you get an instrument for live performance that feeds itself.
 
-## Recipes on the spoon
+## Spoon recipes
 
 A tip from the first tutorial: set the knobs on one sample, and then swap samples and listen. The sound is largely decided by the source, and one setting on different files gives quite different results.
 
@@ -216,7 +216,7 @@ A tip from the first tutorial: set the knobs on one sample, and then swap sample
 
     1. Classic mode, Position on the ring.
     2. Transpose Key 0, Grain Size Key 100, Grain Size 3.822 ms.
-    3. Play a melody: the pitch is set by the grain size, and the colour by the spoon's ring.
+    3. Play a melody: the pitch is set by the grain size, and the color by the spoon's ring.
     4. Add a little Variation on Grain Size, and the tone becomes rough.
 
 !!! success "Recipe 11.3. Ragged rhythm in Loop"
@@ -253,5 +253,5 @@ A tip from the first tutorial: set the knobs on one sample, and then swap sample
 
 - [Granulator III, Robert Henke's page](https://www.roberthenke.com/technology/granulator3.html): all parameters, modes, Capture, Push limitations, the team.
 - [Granulator III, the pack page on ableton.com](https://www.ableton.com/en/packs/granulator-iii/): Live version requirements, the contents of the pack.
-- [Video tutorial 1](https://youtu.be/PqSFu6by6Kk): installation, sample tuning through a tuner, the behaviour of Shape in Classic, Capture.
+- [Video tutorial 1](https://youtu.be/PqSFu6by6Kk): installation, sample tuning through a tuner, the behavior of Shape in Classic, Capture.
 - [Video tutorial 2](https://youtu.be/ZVLM1XMT6Z0): Scan as a speed multiplier, Grain Size and transposition, calculating grain length for tempo, Position with Key, the Envelope 2 trick, generative resampling. The video was made with Ableton sponsorship.

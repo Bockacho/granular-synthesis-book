@@ -22,7 +22,7 @@ Size is set in three ways, and it is useful to understand which one your instrum
 What happens as you turn the size down from 500 ms to 1 ms:
 
 1. **500–100 ms.** Pieces of the source are audible, the spoon is recognizable as a whole, with its attack.
-2. **100–30 ms.** The attack blurs, and what remains is tone and colour. The zone of beautiful pads.
+2. **100–30 ms.** The attack blurs, and what remains is tone and color. The zone of beautiful pads.
 3. **30–10 ms.** The source is barely recognizable, and the sound becomes grainy and rough.
 4. **10–1 ms.** The source's timbre vanishes, leaving clicks, buzzing, hissing. In a synchronous stream, new timbres are born here.
 
@@ -41,7 +41,7 @@ The envelope decides how the grain's volume changes from start to end. You alrea
 | Shape | What it looks like | What it sounds like |
 | --- | --- | --- |
 | Bell (Hann) | a smooth rise, a smooth fall | soft, no clicks; the default working shape |
-| Gauss | a narrower bell with long tails | even softer, but a smaller part of the grain is audible; the sound is foggier |
+| Gaussian | a narrower bell with long tails | even softer, but a smaller part of the grain is audible; the sound is foggier |
 | Trapezoid (Tukey) | a fast rise, a flat shelf, a fast fall | more of the source, brighter and clearer; on short grains it can tick |
 | Triangle | a straight rise, a straight fall | between the bell and the trapezoid, slightly harsher than the bell |
 | Percussive | an instant attack, a long fall | each grain like a small pluck: drops, glassy rings, plucks |
@@ -53,7 +53,7 @@ Percussive windows have similar names in different programs. In Pigments it is E
 Often, instead of choosing a shape, you get one or two knobs:
 
 - **Smoothing (Smooth).** Moves the shape from a rectangle to a bell. Zero means crackle, maximum means softness.
-- **Skew (Skew, Tilt, Attack/Decay).** Shifts the peak of the envelope towards the start or the end of the grain. A peak at the start gives percussion, a peak at the end gives reverse percussion.
+- **Skew (Tilt, Attack/Decay).** Shifts the peak of the envelope toward the start or the end of the grain. A peak at the start gives percussion, a peak at the end gives reverse percussion.
 
 <div class="grain-demo" data-demo="size">The sound demo runs in the browser with JavaScript enabled.</div>
 
@@ -61,7 +61,7 @@ The window affects not only the grain's timbre but also the start of every note.
 
 ??? info "Under the hood"
 
-    The window is multiplied with the grain, and multiplication in time is convolution in the spectrum: the window's spectrum smears the source's spectrum. For windows with smooth edges (Hann, Gauss) the main lobe is slightly wider, but the side lobes are tens of decibels lower, so they add little noise. The rectangular window gives high side lobes, hence the crackle. The trapezoid stands in the middle: the shelf lets more of the source through, but the steep edges raise the side lobes.
+    The window is multiplied with the grain, and multiplication in time is convolution in the spectrum: the window's spectrum smears the source's spectrum. For windows with smooth edges (Hann, Gaussian) the main lobe is slightly wider, but the side lobes are tens of decibels lower, so they add little noise. The rectangular window gives high side lobes, hence the crackle. The trapezoid stands in the middle: the shelf lets more of the source through, but the steep edges raise the side lobes.
 
 ## Exercise 5.1. The shape decides { .exercise }
 

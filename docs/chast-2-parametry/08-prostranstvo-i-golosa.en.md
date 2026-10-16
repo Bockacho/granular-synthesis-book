@@ -9,12 +9,12 @@
 
 ## Grain panning
 
-Each grain can be placed at its own spot in the stereo field. As long as all the grains sound in the centre, the cloud is narrow, as if from a single speaker. Scatter them, and the cloud spills across the whole width, and in headphones the grains start flying past your ears.
+Each grain can be placed at its own spot in the stereo field. As long as all the grains sound in the center, the cloud is narrow, as if from a single speaker. Scatter them, and the cloud spills across the whole width, and in headphones the grains start flying past your ears.
 
 **What it's called:** Pan Spread, Stereo Spread, Width, Pan Random, Spatialize.
 
-- **0%.** All grains in the centre.
-- **20–50%.** The cloud is wide, but the centre is dense. A good option for a pad in a mix.
+- **0%.** All grains in the center.
+- **20–50%.** The cloud is wide, but the center is dense. A good option for a pad in a mix.
 - **100%.** The grains fly from edge to edge. Impressive in headphones, but on a mono speaker part of the sound may vanish.
 
 Check a wide cloud in mono: in your DAW switch the master to mono for a couple of seconds. If the sound dropped out or went dull, reduce the width.
@@ -45,7 +45,7 @@ Each grain costs the processor work. Density 200 grains a second, size 100 ms, a
 
 **What it's called:** Max Grains, Grain Limit, Voices, Polyphony, Quality.
 
-If the project lags: reduce the density, shorten the grains, cut the polyphony or freeze (freeze, bounce) the track to audio.
+If the project lags: reduce the density, shorten the grains, cut the polyphony or freeze or bounce the track to audio.
 
 ## Voices and play modes
 

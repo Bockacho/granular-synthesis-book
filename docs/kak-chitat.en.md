@@ -4,7 +4,7 @@ This book is written for two readers at once. The main text is for someone who h
 
 The book goes from simple to complex. [Part 1](chast-1-zerno/index.md) explains what a sound grain is. [Part 2](chast-2-parametry/index.md) takes each parameter apart, one at a time, in detail. [Part 3](chast-3-instrumenty/index.md) walks through everything Serum 2, Granulator III and Pigments can do. [Part 4](chast-4-praktika/index.md) is for interesting combinations, and [Part 5](chast-5-dalshe-sam/index.md) holds the exercises, the glossary and the free plugins.
 
-## A sound to practise on
+## A sound to practice on
 
 Before the first chapter, record the clink of a teaspoon against a cup on your phone. It has a sharp knock, a clear ring and a quiet, drawn-out tail, so every granulator parameter will sound different on it.
 

@@ -31,7 +31,7 @@ Pitch spread gives each grain a random deviation from the main note. It is one o
 | --- | --- |
 | 1–10 cents | a light chorus, the sound is wider and warmer |
 | 10–50 cents | a drifting, "drunken" detune, a sound as if from old tape |
-| a few semitones | a cloud of neighbouring notes, a cluster, a haze |
+| a few semitones | a cloud of neighboring notes, a cluster, a haze |
 | octaves | the grains jump between registers, shimmering |
 
 ??? info "Under the hood"
@@ -56,7 +56,7 @@ A grain can be read backwards. A short reversed grain is almost indistinguishabl
 
 Often you get a probability: 0% means all grains are forward, 100% means all are reversed, 50% means mixed. The mix gives a wobbly, unsteady sound, as if time is staggering.
 
-In Quanta 2 grain direction has five modes. FORWARD and REVERSE play the grains forwards or backwards. PLAY DIR follows the movement of the position: when the position travels towards the end of the file, the grains play forwards, when towards the start, backwards. -PLAY DIR works the opposite way. RANDOM picks the direction at random for each grain. A reversed grain reads the same piece of the file as the forward one, only backwards, so the edge of the piece doesn't shift.
+In Quanta 2 grain direction has five modes. FORWARD and REVERSE play the grains forwards or backwards. PLAY DIR follows the movement of the position: when the position travels toward the end of the file, the grains play forwards, when toward the start, backwards. -PLAY DIR works the opposite way. RANDOM picks the direction at random for each grain. A reversed grain reads the same piece of the file as the forward one, only backwards, so the edge of the piece doesn't shift.
 
 ??? info "Under the hood"
 
@@ -70,7 +70,7 @@ In some engines pitch can be changed right inside the grain: each one starts on 
 
 1. The spoon, position on the ring, size 100 ms, density 40, position spread 20 ms.
 2. Play the note C. The ring has become that note.
-3. Lower the pitch by −24 semitones. The spoon has become a bell.
+3. Set the pitch to −24 semitones. The spoon has become a bell.
 4. Bring the pitch back. Give a pitch spread of 15 cents. The sound has become wider.
 5. If there is a way to tie spread to intervals, choose octaves and raise the spread to ±1 octave. Shimmering.
 6. Set the reverse probability to 50%. Listen to how wobbly it has become.

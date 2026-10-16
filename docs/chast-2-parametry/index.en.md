@@ -1,5 +1,5 @@
 ---
-title: "Part 2. Parameters in Depth"
+title: "Part 2. Parameters in depth"
 ---
 
 <p class="eyebrow">Part 2</p>

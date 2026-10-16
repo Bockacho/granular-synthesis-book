@@ -26,7 +26,7 @@ What you hear as density grows, at a grain size of 50 ms:
 | 2–8 grains/s | 0.1–0.4 | separate drops, pointillism, a sparse rain |
 | 10–20 | 0.5–1 | a rattle, tremolo, grains almost end to end |
 | 30–100 | 1.5–5 | a smooth cloud, chorus |
-| 100 and up | over 5 | a dense wall, the source is blurred, the sound is like coloured noise |
+| 100 and up | over 5 | a dense wall, the source is blurred, the sound is like colored noise |
 
 The composer John McKay described the same ladder in a listener's words: as density grows, a sequence of separate sounds turns into a stream, the stream into a swarm, the swarm into a merged band, and the band into a solid mass (retold after [Truax, 1988](https://doi.org/10.2307/3679938)).
 
@@ -50,17 +50,17 @@ The more grains sound at once, the louder the cloud. Double the density and the 
 - **Timing spread medium.** The tone is rough and alive, like a choir or a bow.
 - **Timing spread maximum.** There is no tone, there is a cloud, a rustle, a swarm.
 
-Next to synchronicity there is sometimes one more knob: intermittency (Intermittency). It sets the probability that the next grain simply won't be born. The stream keeps to its previous grid, even or random, but holes appear in it, and the cloud thins out without a change of density on the knob. This is how the knob works in the free EmissionControl2 ([chapter 21](../chast-5-dalshe-sam/21-chto-dalshe.md)).
+Next to synchronicity there is sometimes one more knob: intermittency. It sets the probability that the next grain simply won't be born. The stream keeps to its previous grid, even or random, but holes appear in it, and the cloud thins out without a change of density on the knob. This is how the knob works in the free EmissionControl2 ([chapter 21](../chast-5-dalshe-sam/21-chto-dalshe.md)).
 
 ## Grains as a note generator
 
 The most unexpected trick of granular synthesis. Tie density to the keyboard: press A4 and the grains go 440 times a second, synchronously. Now the granulator plays notes, though the position stands still and you haven't touched the grain's pitch.
 
-The inside of the grain decides the timbre. A grain from the spoon's ring gives a metallic note, a grain from the vowel "ah" gives a note coloured with "ah". That is how a synthetic choir is assembled from a recorded voice, and a bass from a knock on a table.
+The inside of the grain decides the timbre. A grain from the spoon's ring gives a metallic note, a grain from the vowel "ah" gives a note colored with "ah". That is how a synthetic choir is assembled from a recorded voice, and a bass from a knock on a table.
 
-In this mode the sound has two pitches at once. One is set by the grain rate, and that is the note. The other is set by the pitch inside the grain ([chapter 7](../chast-2-parametry/07-vysota-i-napravlenie.md)), and that is the colour, the formant. Move the grain's pitch and the note stays, while the timbre "opens" and "closes" like a mouth when singing.
+In this mode the sound has two pitches at once. One is set by the grain rate, and that is the note. The other is set by the pitch inside the grain ([chapter 7](../chast-2-parametry/07-vysota-i-napravlenie.md)), and that is the color, the formant. Move the grain's pitch and the note stays, while the timbre "opens" and "closes" like a mouth when singing.
 
-This mode exists in ready-made instruments too. In Grain from Reason Studios it is called Grain Oscillator: the sound is assembled from two very short grains, the grain rate follows the note, and the original pitch of the recording is responsible only for the timbre. Two knobs show both sides of the principle. Grain Spacing sets the distance between the two grains inside the recording: the larger it is, the more even the sound from note to note, almost like a wavetable. Formant moves the colour without touching the note, and at a large Grain Spacing sounds similar to classic oscillator sync.
+This mode exists in ready-made instruments too. In Grain from Reason Studios it is called Grain Oscillator: the sound is assembled from two very short grains, the grain rate follows the note, and the original pitch of the recording is responsible only for the timbre. Two knobs show both sides of the principle. Grain Spacing sets the distance between the two grains inside the recording: the larger it is, the more even the sound from note to note, almost like a wavetable. Formant moves the color without touching the note, and at a large Grain Spacing sounds similar to classic oscillator sync.
 
 ??? info "Under the hood"
 

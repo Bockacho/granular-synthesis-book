@@ -17,7 +17,7 @@ In Serum 2 the granulator lives inside the oscillator. Any of the three main osc
 
 1. Click the oscillator's header and choose **Granular** in the context menu.
 2. If this oscillator already had a sample in Sample or Spectral mode, it appears on the display at once. Otherwise the display is empty.
-3. Open the sample drop-down menu. It holds the factory tonal and non-tonal samples, and also Serum's wavetables: you can granulate those too. Your own file is loaded with the **Load Sample** item. Reviews write that you can also simply drag a file onto the display ([PML](https://www.productionmusiclive.com/blogs/news/how-to-use-granular-synthesis-in-serum-2)).
+3. Open the sample drop-down menu. It holds the factory tonal and non-tonal samples, and also Serum's wavetables: you can granulate those too. Your own file is loaded with the **Load Sample** item. Reviews say that you can also simply drag a file onto the display ([PML](https://www.productionmusiclive.com/blogs/news/how-to-use-granular-synthesis-in-serum-2)).
 4. After loading, the same menu will show the file on disk or reload it.
 
 For drones, turning off pitch tracking is useful. Right-click the oscillator's header and clear **Enable Pitch Tracking**. Then Granular mode plays the note C3 on any key. **Pitch Bend Tracking** appears there too: turn that off as well if the pitch wheel shouldn't touch the drone.
@@ -140,7 +140,7 @@ The window button opens the settings of the grain envelope. Alt-dragging the but
 | Welch | a parabolic dome | a compact, dense grain with a strong middle |
 | Gaussian | a bell | soft, flowing textures |
 | Blackman-Harris | steep slopes, a smooth peak, edges strongly damped | the cleanest sound at heavy overlap |
-| Sinc | a sharp centre and oscillating tails | an unusual colour, adds harmonics |
+| Sinc | a sharp center and oscillating tails | an unusual color, adds harmonics |
 | Tukey | a flat middle, rounded edges | more of the source, clear |
 | Triangle | a straight rise to the peak, a straight fall | a simple, slightly sharper grain |
 | Trapezoid | a rise, a long shelf, a fall | an even grain body, a dense sound |
@@ -170,7 +170,7 @@ A tip from the section on Sample mode: if a sample doesn't sound on the note C3,
 
 ## Warp
 
-The Warp button opens and hides the distortion settings. By default Warp is off, the mode is chosen from the menu or with the < > arrows, the depth with a knob. The modes are the same as for wavetables: sync, shape bends, filters, a dozen and a half kinds of distortion, and also FM, PD, AM and ring modulation from another oscillator or filter. There are two slots (in the Y-axis list they are named Warp and Warp 2).
+The Warp button opens and hides the distortion settings. By default Warp is off, the mode is chosen from the menu or with the < > arrows, the depth with a knob. The modes are the same as for wavetables: sync, shape bends, filters, some fifteen kinds of distortion, and also FM, PD, AM and ring modulation from another oscillator or filter. There are two slots (in the Y-axis list they are named Warp and Warp 2).
 
 That means a cloud from the spoon can be frequency-modulated by a sine from OSC B. The second oscillator must be switched on for this, but its volume can be turned to zero. That gives bell-like and metallic clouds that an ordinary granulator won't give.
 
@@ -209,7 +209,7 @@ All connections are visible and editable in the modulation matrix (the **Matrix*
 
 Hover the cursor to the left of the Serum logo and a waveform icon appears. Drag it onto a DAW audio track, and Serum will render the last note or chord played to a WAV. The copy goes to the Renders folder, and an Alt-click (Option-click) on the icon opens it. That way a heavy cloud turns into a light audio file.
 
-## Recipes on the spoon
+## Spoon recipes
 
 Always start from a clean patch: the main menu, **Init Preset**. Then OSC A in Granular, the spoon loaded, the start and end markers on the ring.
 

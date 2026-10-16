@@ -1,5 +1,5 @@
 ---
-title: "Part 1. What a Sound Grain Is"
+title: "Part 1. What a sound grain is"
 ---
 
 <p class="eyebrow">Part 1</p>

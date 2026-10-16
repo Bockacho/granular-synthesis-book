@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | Pad | cloud | grain 80–200 ms, a dense cloud, a bell window, position and pitch spreads a little | a slow LFO on position, a long volume attack | chorus or reverb |
 | Drone | cloud or wall | freeze, long grains 200–500 ms, zero pitch tracking by keys | a very slow LFO on position and filter | a long reverb, saturation |
-| Underlay, ambient | wall | long grains, high density, strong position spread | a random LFO on position | a high-pass filter, reverb |
+| Background layer, ambient | wall | long grains, high density, strong position spread | a random LFO on position | a high-pass filter, reverb |
 | Rhythm, glitch | slicing, drops | density and length by tempo, reversed grains, a stepped random LFO on position | automation of grain reversal | compressor, sidechain |
 | Percussion | clicks, drops | position on the attack, grain 5–30 ms, a percussive window, density by tempo | an envelope on grain length and shape | filter, transient shaper |
 | Bass | cloud, low end | transposition down 2–3 octaves, a long grain, mono, glide | an envelope on the filter | a low-pass filter, saturation |
@@ -26,7 +26,7 @@ When the task isn't in the table, questions help. Answer them in order, and most
 2. **Is the sound rhythmic?** Yes: density and length by tempo, the slicing or drops zone. No: a cloud.
 3. **Must the source be recognizable?** Yes: grains longer than 30–50 ms and small spreads. No: short grains, strong spreads.
 4. **Does the sound move by itself or is it played?** By itself: LFOs and envelopes ([chapter 9](../chast-2-parametry/09-modulyaciya.md)). Played: a macro, the modulation wheel, MPE.
-5. **Where is it in the mix?** At the bottom: cut the top and narrow the stereo. At the top: cut the low end, widen the stereo. In the centre of attention: keep the spreads smaller so the sound stays compact.
+5. **Where is it in the mix?** At the bottom: cut the top and narrow the stereo. At the top: cut the low end, widen the stereo. In the center of attention: keep the spreads smaller so the sound stays compact.
 
 ## The freeze-frame in detail
 

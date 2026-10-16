@@ -25,8 +25,8 @@ In a synthesizer, every key you press starts its own stream of grains. Play a ch
 | Grain length | What you hear | Where it's useful |
 | --- | --- | --- |
 | under 2 ms | a click, the source is unrecognizable | percussion, crackle, glitch |
-| 2–20 ms | a coloured click, a buzz; in a dense stream, a new timbre | basses, synthetic voices, metal |
-| 20–100 ms | the pitch and colour of the source are recognizable, but not its words or rhythm | pads, clouds, stretching |
+| 2–20 ms | a colored click, a buzz; in a dense stream, a new timbre | basses, synthetic voices, metal |
+| 20–100 ms | the pitch and color of the source are recognizable, but not its words or rhythm | pads, clouds, stretching |
 | over 100 ms | whole fragments of the source are audible | slicing, rhythms, mosaic |
 
 The boundaries are blurry and shift with the material. A voice is recognized from shorter grains than noise is, and the pure tone of the spoon is recognized from very short ones.
@@ -58,7 +58,7 @@ Below one means a dotted line and rhythm. Above one means a merged cloud, and th
   <figcaption>Illustration 2.2. A synchronous and an asynchronous stream.</figcaption>
 </figure>
 
-**Synchronous stream.** The grains come at equal intervals, like metronome ticks. While there are fewer than 15–20 a second, you hear a rattle. Beyond that the ear stops telling the separate hits apart and hears a tone, and the pitch of that tone equals the number of grains per second. 110 grains per second sounds like the note A2, and 220 sounds like A3. And it doesn't matter what is inside the grain: a spoon or a voice. The inside of the grain sets the colour, and the grain rate sets the note.
+**Synchronous stream.** The grains come at equal intervals, like metronome ticks. While there are fewer than 15–20 a second, you hear a rattle. Beyond that the ear stops telling the separate hits apart and hears a tone, and the pitch of that tone equals the number of grains per second. 110 grains per second sounds like the note A2, and 220 sounds like A3. And it doesn't matter what is inside the grain: a spoon or a voice. The inside of the grain sets the color, and the grain rate sets the note.
 
 **Asynchronous stream.** The intervals are random. There is no tone, there is a rustle, rain, gravel, a swarm. This is how classic granular clouds sound.
 
@@ -68,7 +68,7 @@ Below one means a dotted line and rhythm. Above one means a merged cloud, and th
 
 ??? info "Under the hood"
 
-    A synchronous stream of grains gives a periodic signal with period 1/r. Its spectrum consists of harmonics of the frequency r, while the spectral envelope, that is, the formants, is set by the content of the grain and the window shape. The same principle underlies Xavier Rodet's FOF formant synthesis from IRCAM and the pulsar synthesis that Curtis Roads described in the book "Microsound". In an asynchronous stream there is no period, and the spectrum smears into a continuous band of noise coloured by the source.
+    A synchronous stream of grains gives a periodic signal with period 1/r. Its spectrum consists of harmonics of the frequency r, while the spectral envelope, that is, the formants, is set by the content of the grain and the window shape. The same principle underlies Xavier Rodet's FOF formant synthesis from IRCAM and the pulsar synthesis that Curtis Roads described in the book "Microsound". In an asynchronous stream there is no period, and the spectrum smears into a continuous band of noise colored by the source.
 
 ## Exercise 2.1. Calculate the cloud { .exercise }
 
@@ -80,4 +80,4 @@ Calculate the overlap and predict what you will hear. The answers are hidden bel
 
 ??? question "Answers"
 
-    First: 0.3, a sparse rattle with gaps. Second: 5, a thick smooth cloud. Third: 2.2, a merged tone, the note A4 coloured by the source.
+    First: 0.3, a sparse rattle with gaps. Second: 5, a thick smooth cloud. Third: 2.2, a merged tone, the note A4 colored by the source.

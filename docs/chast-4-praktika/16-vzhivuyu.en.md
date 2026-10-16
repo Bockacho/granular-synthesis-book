@@ -2,7 +2,7 @@
 
 # Granular sound live
 
-On stage a granulator stops being processing and becomes an instrument. One note holds the cloud, while your hands move time, density and graininess. For this to work you need three things: convenient control, headroom on the processor and insurance against surprises.
+On stage a granulator stops being processing and becomes an instrument. One note holds the cloud, while your hands move time, density and graininess. For this to work you need three things: convenient control, headroom on the processor and a safety net against surprises.
 
 ## Control: fewer knobs, more meaning
 
@@ -15,11 +15,11 @@ You can't turn twenty knobs on stage. Put together two or three main ones.
 
 ## Live input
 
-The strongest stage trick: granulating sound that is being born right now. Of the three instruments in the book, Granulator III can do this (Capture, [chapter 11](../chast-3-instrumenty/11-granulator-iii.md)). A voice, a guitar, a hardware synth, the sound of the hall through a microphone: everything becomes a source with one press. A link with an LFO on the Capture button turns the granulator into a machine that updates its material by itself every few bars.
+The strongest stage trick: granulating sound that is being born right now. Of the three instruments in the book, Granulator III can do this (Capture, [chapter 11](../chast-3-instrumenty/11-granulator-iii.md)). A voice, a guitar, a hardware synth, the sound of the room through a microphone: everything becomes a source with one press. A link with an LFO on the Capture button turns the granulator into a machine that updates its material by itself every few bars.
 
 In hardware, live granular sound comes from modules like Mutable Instruments Clouds and Make Noise Morphagene ([chapter 3](../chast-1-zerno/03-istoriya.md)). The principle is the same: a buffer records the input, grains read the buffer. Among newer ones are Beads, the successor of Clouds, and the Instruō Arbhar with a microphone right on the panel, and for guitarists pedals like the Hologram Microcosm and the Red Panda Particle 2. The desktop Tasty Chips GR-1 plays both as a synthesizer and as a drone machine.
 
-Inside, a live granulator is built like a delay line: the input is constantly written into a short ring buffer, and grains read it with different lags. If you send part of the output back into the buffer (feedback), the grains start to granulate themselves, and the cloud builds up in layers, like an echo. Truax built this kind of feedback into his system as early as the 1980s ([Truax, 1988](https://doi.org/10.2307/3679938)). It is more convenient to keep the processed and dry signals on two separate knobs rather than one mix knob: then the granulated sound lives as a voice of its own. This is how the Stanford prototype GrainProc (2013) was built: a guitarist controlled these knobs on a tablet with the toes ([NIME 2013](https://www.nime.org/proceedings/2013/nime2013_99.pdf)).
+Inside, a live granulator is built like a delay line: the input is constantly written into a short ring buffer, and grains read it with different lags. If you send part of the output back into the buffer (feedback), the grains start to granulate themselves, and the cloud builds up in layers, like an echo. Truax built this kind of feedback into his system as early as the 1980s ([Truax, 1988](https://doi.org/10.2307/3679938)). It is more convenient to keep the processed and dry signals on two separate knobs rather than one mix knob: then the granulated sound lives as a voice of its own. This is how the Stanford prototype GrainProc (2013) was built: a guitarist controlled these knobs on a tablet with their toes ([NIME 2013](https://www.nime.org/proceedings/2013/nime2013_99.pdf)).
 
 ## The processor
 
@@ -28,18 +28,18 @@ A granulator is heavier than an ordinary synthesizer, the Serum 2 manual says so
 - **Grain limit.** Max Grains in Serum, Limit in Pigments, Density in Cloud mode for Granulator III. Set the ceiling with headroom.
 - **Unison and polyphony.** They multiply the number of grains. On stage three or four voices are often enough instead of eight.
 - **Extra processing.** The Granulator III filter can be switched off and saves processor power, Henke says so directly.
-- **Freezing to audio.** Everything you don't need to turn live, convert to audio files in advance. The underlay can be played as a recording, leaving just one granulator live.
+- **Freezing to audio.** Everything you don't need to turn live, convert to audio files in advance. The background layer can be played as a recording, leaving just one granulator live.
 - **The audio interface buffer.** A bigger buffer gives the processor more headroom at the cost of latency. For clouds and drones a delay of 10–20 ms hardly gets in the way.
 
-## Insurance
+## Safety nets
 
-- **A limiter on the output.** Density raises the volume ([chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md)), and on stage this is easy to do by accident. A limiter catches the jumps before the hall hears them.
+- **A limiter on the output.** Density raises the volume ([chapter 6](../chast-2-parametry/06-plotnost-i-sinkhronnost.md)), and on stage this is easy to do by accident. A limiter catches the jumps before the audience hears them.
 - **A high-pass filter.** A dense cloud accumulates rumble. A cut below 30–40 Hz is almost inaudible but protects the speakers and your volume headroom.
 - **A point of return.** Set up the main macro so that in the zero position a safe, proven sound plays. Lost in the noise: macro to zero.
 - **Capture with a safety net.** Granulator III normalizes the captured sound to 0 dB: a quiet rustle can suddenly sound loud. Keep the track volume lower until you hear the capture.
-- **A mono check.** A hall often sounds closer to mono than headphones do. Check the widest clouds in mono in advance ([chapter 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)).
+- **A mono check.** A venue often sounds closer to mono than headphones do. Check the widest clouds in mono in advance ([chapter 8](../chast-2-parametry/08-prostranstvo-i-golosa.md)).
 
-## Show the grains to the hall
+## Show the grains to the audience
 
 The authors of the Borderlands granulator noticed a weak spot of granular performances: everything the musician does is hidden behind the laptop screen, and the audience doesn't see the link between the movement of a hand and the sound. Their solution: show the interface itself. In Borderlands the sound files lie on the screen as rectangles, clouds of grains are moved over them with a mouse, and each grain flashes at the moment of its birth.
 

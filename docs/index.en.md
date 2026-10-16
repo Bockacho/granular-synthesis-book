@@ -47,7 +47,7 @@ The main text is clear to a twelve-year-old, and the "Under the hood" boxes give
 
     [Three instruments](chast-3-instrumenty/index.md)
 
-    Serum 2, Granulator III and Pigments down to the last knob, with recipes on the spoon.
+    Serum 2, Granulator III and Pigments down to the last knob, with spoon recipes.
 
 -   <span class="num">PART 4</span>
 

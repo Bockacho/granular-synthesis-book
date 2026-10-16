@@ -1,5 +1,5 @@
 ---
-title: "Part 4. Endless Possibilities in Practice"
+title: "Part 4. Endless possibilities in practice"
 ---
 
 <p class="eyebrow">Part 4</p>

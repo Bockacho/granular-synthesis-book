@@ -79,11 +79,11 @@ plugins:
           nav_translations:
             Главная: Home
             Как читать: How to read
-            "Часть 1. Что такое звуковое зерно": "Part 1. What a Sound Grain Is"
-            "Часть 2. Параметры вглубь": "Part 2. Parameters in Depth"
-            "Часть 3. Три инструмента": "Part 3. Three Instruments"
-            "Часть 4. Бесконечность на практике": "Part 4. Endless Possibilities in Practice"
-            "Часть 5. Дальше сам": "Part 5. On Your Own"
+            "Часть 1. Что такое звуковое зерно": "Part 1. What a sound grain is"
+            "Часть 2. Параметры вглубь": "Part 2. Parameters in depth"
+            "Часть 3. Три инструмента": "Part 3. Three instruments"
+            "Часть 4. Бесконечность на практике": "Part 4. Endless possibilities in practice"
+            "Часть 5. Дальше сам": "Part 5. On your own"
             "Глава 1. Звук можно разрезать": "Chapter 1. Sound can be cut up"
             "Глава 2. Анатомия зерна и облака": "Chapter 2. The anatomy of a grain and a cloud"
             "Глава 3. Откуда это взялось": "Chapter 3. Where it all came from"
