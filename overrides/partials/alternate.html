@@ -1,0 +1,12 @@
+{#-
+  Языки видны сразу: короткие кнопки вместо значка с выпадающим списком.
+  Порядок и ссылки берутся из config.extra.alternate (их заполняет плагин i18n).
+-#}
+<nav class="md-header__option gs-lang" aria-label="{{ lang.t('select.language') }}">
+  {% for alt in config.extra.alternate %}
+    {% set current = alt.lang == config.theme.language %}
+    <a href="{{ alt.link | url }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}" title="{{ alt.name }}"
+       class="gs-lang__link{% if current %} gs-lang__link--current{% endif %}"
+       {% if current %}aria-current="true"{% endif %}>{{ alt.lang | upper }}</a>
+  {% endfor %}
+</nav>

@@ -94,6 +94,52 @@
 .md-tabs__link:hover {
   color: var(--md-accent-fg-color);
 }
+/* ── Языки: все видны сразу, текущий подсвечен ── */
+.gs-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0 0.3rem;
+}
+.gs-lang__link {
+  display: inline-block;
+  min-width: 1.7rem;
+  padding: 0.25rem 0.3rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  font-family: var(--font-head);
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+  transition: color 0.15s, border-color 0.15s;
+}
+.gs-lang__link:hover,
+.gs-lang__link:focus-visible {
+  color: var(--md-accent-fg-color);
+}
+.gs-lang__link--current {
+  color: var(--md-default-fg-color);
+  border-color: var(--rule);
+  background-color: var(--md-default-bg-color--light, var(--card-bg));
+}
+[data-md-color-scheme="default"] .gs-lang__link--current {
+  background-color: var(--card-bg);
+}
+@media screen and (max-width: 30em) {
+  .gs-lang {
+    gap: 0;
+    margin: 0 0.1rem;
+  }
+  .gs-lang__link {
+    min-width: 1.45rem;
+    padding: 0.25rem 0.18rem;
+    font-size: 0.58rem;
+  }
+}
+
 .md-search__form {
   background-color: var(--md-default-bg-color--light, var(--card-bg));
   border-radius: 0.4rem;

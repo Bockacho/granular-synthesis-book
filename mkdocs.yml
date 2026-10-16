@@ -51,23 +51,21 @@ theme:
     - content.tooltips
 
 hooks:
-  - hooks/english_labels.py
+  - hooks/ui_labels.py
 
 plugins:
   - search:
       lang:
         - ru
         - en
+        - es
+        - de
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
       reconfigure_material: true
       reconfigure_search: false
       languages:
-        - locale: ru
-          default: true
-          name: Русский
-          build: true
         - locale: en
           name: English
           build: true
@@ -105,6 +103,85 @@ plugins:
             "Глава 19. Задания": "Chapter 19. Exercises"
             "Глава 20. Словарь": "Chapter 20. Glossary"
             "Глава 21. Бесплатные инструменты и что читать дальше": "Chapter 21. Free instruments and what to read next"
+        - locale: es
+          name: Español
+          build: true
+          site_name: Síntesis granular
+          site_description: Un manual de síntesis granular para músicos electrónicos, del primer grano a tocar en directo.
+          copyright: >
+            Textos e ilustraciones bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">CC BY-NC-SA 4.0</a>. <a href="https://paypal.me/limbmusic">Apoya al autor</a>.
+            Los nombres de los programas y sus interfaces pertenecen a sus titulares.
+          nav_translations:
+            "Главная": "Inicio"
+            "Как читать": "Cómo leer"
+            "Часть 1. Что такое звуковое зерно": "Parte 1. Qué es un grano de sonido"
+            "Часть 2. Параметры вглубь": "Parte 2. Los parámetros a fondo"
+            "Часть 3. Три инструмента": "Parte 3. Tres instrumentos"
+            "Часть 4. Бесконечность на практике": "Parte 4. Posibilidades infinitas en la práctica"
+            "Часть 5. Дальше сам": "Parte 5. Por tu cuenta"
+            "Глава 1. Звук можно разрезать": "Capítulo 1. El sonido se puede cortar"
+            "Глава 2. Анатомия зерна и облака": "Capítulo 2. Anatomía del grano y de la nube"
+            "Глава 3. Откуда это взялось": "Capítulo 3. De dónde salió todo esto"
+            "Глава 4. Источник и позиция": "Capítulo 4. Fuente y posición"
+            "Глава 5. Размер зерна и огибающая": "Capítulo 5. Tamaño del grano y envolvente"
+            "Глава 6. Плотность и синхронность": "Capítulo 6. Densidad y sincronía"
+            "Глава 7. Высота, направление и разброс высоты": "Capítulo 7. Altura, dirección y dispersión de altura"
+            "Глава 8. Пространство, случайность и голоса": "Capítulo 8. Espacio, azar y voces"
+            "Глава 9. Модуляция: звук, который живёт сам": "Capítulo 9. Modulación: un sonido que vive por sí solo"
+            "Глава 10. Xfer Serum 2": "Capítulo 10. Xfer Serum 2"
+            "Глава 11. Ableton Granulator III": "Capítulo 11. Ableton Granulator III"
+            "Глава 12. Arturia Pigments": "Capítulo 12. Arturia Pigments"
+            "Глава 13. Карта звука и двадцать инструментов из одной ложки": "Capítulo 13. El mapa del sonido y veinte instrumentos de una cucharilla"
+            "Глава 14. Рецепты по источнику": "Capítulo 14. Recetas por fuente"
+            "Глава 15. Рецепты по задаче": "Capítulo 15. Recetas por tarea"
+            "Глава 16. Гранулярность вживую": "Capítulo 16. Lo granular en directo"
+            "Глава 17. Кто так делает": "Capítulo 17. Quién trabaja así"
+            "Глава 18. Типичные ошибки": "Capítulo 18. Errores típicos"
+            "Глава 19. Задания": "Capítulo 19. Ejercicios"
+            "Глава 20. Словарь": "Capítulo 20. Glosario"
+            "Глава 21. Бесплатные инструменты и что читать дальше": "Capítulo 21. Instrumentos gratuitos y qué leer después"
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: Granularsynthese
+          site_description: Ein Lehrbuch über Granularsynthese für elektronische Musiker – vom ersten Grain bis zum Live-Spiel.
+          copyright: >
+            Texte und Illustrationen unter <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">CC BY-NC-SA 4.0</a>. <a href="https://paypal.me/limbmusic">Den Autor unterstützen</a>.
+            Programmnamen und Oberflächen gehören ihren Rechteinhabern.
+          nav_translations:
+            "Главная": "Startseite"
+            "Как читать": "Lesehinweise"
+            "Часть 1. Что такое звуковое зерно": "Teil 1. Was ein Grain ist"
+            "Часть 2. Параметры вглубь": "Teil 2. Die Parameter im Detail"
+            "Часть 3. Три инструмента": "Teil 3. Drei Instrumente"
+            "Часть 4. Бесконечность на практике": "Teil 4. Unendliche Möglichkeiten in der Praxis"
+            "Часть 5. Дальше сам": "Teil 5. Auf eigene Faust"
+            "Глава 1. Звук можно разрезать": "Kapitel 1. Klang lässt sich zerschneiden"
+            "Глава 2. Анатомия зерна и облака": "Kapitel 2. Anatomie von Grain und Wolke"
+            "Глава 3. Откуда это взялось": "Kapitel 3. Wo alles herkommt"
+            "Глава 4. Источник и позиция": "Kapitel 4. Quelle und Position"
+            "Глава 5. Размер зерна и огибающая": "Kapitel 5. Grain-Größe und Hüllkurve"
+            "Глава 6. Плотность и синхронность": "Kapitel 6. Dichte und Synchronität"
+            "Глава 7. Высота, направление и разброс высоты": "Kapitel 7. Tonhöhe, Richtung und Tonhöhenstreuung"
+            "Глава 8. Пространство, случайность и голоса": "Kapitel 8. Raum, Zufall und Stimmen"
+            "Глава 9. Модуляция: звук, который живёт сам": "Kapitel 9. Modulation: ein Klang, der von selbst lebt"
+            "Глава 10. Xfer Serum 2": "Kapitel 10. Xfer Serum 2"
+            "Глава 11. Ableton Granulator III": "Kapitel 11. Ableton Granulator III"
+            "Глава 12. Arturia Pigments": "Kapitel 12. Arturia Pigments"
+            "Глава 13. Карта звука и двадцать инструментов из одной ложки": "Kapitel 13. Die Klangkarte und zwanzig Instrumente aus einem Löffel"
+            "Глава 14. Рецепты по источнику": "Kapitel 14. Rezepte nach Quelle"
+            "Глава 15. Рецепты по задаче": "Kapitel 15. Rezepte nach Aufgabe"
+            "Глава 16. Гранулярность вживую": "Kapitel 16. Granular live"
+            "Глава 17. Кто так делает": "Kapitel 17. Wer so arbeitet"
+            "Глава 18. Типичные ошибки": "Kapitel 18. Typische Fehler"
+            "Глава 19. Задания": "Kapitel 19. Aufgaben"
+            "Глава 20. Словарь": "Kapitel 20. Glossar"
+            "Глава 21. Бесплатные инструменты и что читать дальше": "Kapitel 21. Kostenlose Instrumente und weiterführende Lektüre"
+        - locale: ru
+          default: true
+          name: Русский
+          build: true
+
   - glightbox:
       zoomable: true
       skip_classes:
