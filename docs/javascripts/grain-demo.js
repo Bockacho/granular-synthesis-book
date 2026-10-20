@@ -286,6 +286,7 @@
       if (current && current !== demo) current.stop();
       current = demo;
       demo.playing = true;
+      el.classList.add("is-playing");
       demo.next = ctx.currentTime + 0.05;
       demo.timer = setInterval(tick, 25);
       play.innerHTML = ICON_PAUSE;
@@ -295,6 +296,7 @@
     function stop() {
       demo.playing = false;
       clearInterval(demo.timer);
+      el.classList.remove("is-playing");
       play.innerHTML = ICON_PLAY;
       play.setAttribute("aria-label", T("Играть", "Play", "Reproducir", "Abspielen"));
       if (current === demo) current = null;
