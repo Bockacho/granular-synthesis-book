@@ -4,3 +4,5 @@ mkdocs-glightbox==0.5.2
 mkdocs-git-revision-date-localized-plugin==1.5.0
 pymdown-extensions==10.21.3
 mkdocs-static-i18n==1.3.0
+# selectolax 1.0 ломает mkdocs-glightbox: с ним со страниц пропадают все картинки
+selectolax>=0.3,<1
