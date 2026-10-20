@@ -327,7 +327,11 @@
       const H = ch;
       let visible = false;
       g2d.clearRect(0, 0, W, H);
-      g2d.strokeStyle = "rgba(143,211,224,0.55)";
+      const skin = getComputedStyle(canvas);
+      const waveColor = skin.getPropertyValue("--gd-wave").trim() || "#8fd3e0";
+      const grainColor = skin.getPropertyValue("--gd-grain").trim() || "#e8832a";
+      g2d.globalAlpha = 0.8;
+      g2d.strokeStyle = waveColor;
       g2d.lineWidth = 2 * dpr;
       g2d.lineCap = "round";
       g2d.beginPath();
@@ -336,6 +340,7 @@
         x ? g2d.lineTo(x, y) : g2d.moveTo(x, y);
       }
       g2d.stroke();
+      g2d.globalAlpha = 1;
       if (ctx) {
         const now = ctx.currentTime;
         for (const d of demo.dots) {
@@ -346,10 +351,12 @@
           const x = W - (age / SPAN) * W;
           const y = H * 0.5 - (d.pitch / 26) * H * 0.85 + Math.sin((x / W) * Math.PI * 4) * H * 0.1;
           const w = Math.max(3 * dpr, (d.size / SPAN) * W);
-          g2d.fillStyle = `rgba(232,131,42,${(1 - age / SPAN) * 0.9 + 0.1})`;
+          g2d.globalAlpha = (1 - age / SPAN) * 0.9 + 0.1;
+          g2d.fillStyle = grainColor;
           g2d.beginPath();
-          g2d.ellipse(x - w / 2, y, w / 2, 3.2 * dpr, 0, 0, Math.PI * 2);
+          g2d.ellipse(x - w / 2, y, w / 2, 3.4 * dpr, 0, 0, Math.PI * 2);
           g2d.fill();
+          g2d.globalAlpha = 1;
         }
       }
       if (demo.playing || visible) kick();
