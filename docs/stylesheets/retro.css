@@ -1,14 +1,14 @@
 /* ── Ретрофутуризм 2000-х: техдокументация, а не железо ──
-   Плоская печатная графика: чёрный, серебро, один акцент (лайм), точечно маджента.
+   Плоская печатная графика: чёрный, серебро, один акцент (неон), точечно маджента.
    Лайм — только маркер, плашка, подчёркивание; крупные поверхности нейтральные.
-   Тёмная тема: почти чёрная страница, лаймовые ссылки.
-   Светлая тема: холодная бумага, чёрный текст, лаймовый маркер под ссылками.
+   Тёмная тема: почти чёрная страница, неоновые ссылки.
+   Светлая тема: холодная бумага, чёрный текст, неоновый маркер под ссылками.
    Грузится после extra.css и переопределяет его палитру и формы. */
 
 :root {
   --font-head: "Tektur", "Exo 2", "Golos Text", sans-serif;
-  --rt-lime: #b8ff2e;
-  --rt-lime-soft: rgba(184, 255, 46, 0.24);
+  --rt-neon: #19f0ff;
+  --rt-neon-soft: rgba(25, 240, 255, 0.24);
   --rt-black: #0b0d0f;
   --rt-paper: #f1f4f5;
 }
@@ -38,6 +38,9 @@
   --eyebrow: #c8005f;
   --rt-edge: #0b0d0f;
   --rt-accent2: #c8005f;
+  /* старые имена из extra.css: оранжевое «зерно» и голубая «волна» теперь маджента и неон */
+  --grain: #c8005f;
+  --wave: #19f0ff;
 }
 [data-md-color-scheme="slate"] {
   --md-hue: 200;
@@ -50,8 +53,8 @@
   --md-default-fg-color--lighter: #7d8991;
   --md-default-fg-color--lightest: #232a30;
   --md-typeset-color: #cdd5d9;
-  --md-typeset-a-color: #b8ff2e;
-  --md-accent-fg-color: #b8ff2e;
+  --md-typeset-a-color: #19f0ff;
+  --md-accent-fg-color: #19f0ff;
   --md-primary-fg-color: #0b0d0f;
   --md-primary-bg-color: #f1f4f5;
   --md-primary-bg-color--light: #98a4ac;
@@ -65,22 +68,24 @@
   --card-bg: #12161a;
   --card-border: #3a4248;
   --rule: #2a3136;
-  --eyebrow: #b8ff2e;
+  --eyebrow: #19f0ff;
   --rt-edge: #d7dde0;
   --rt-accent2: #ff4db0;
-  --rt-lime-soft: rgba(184, 255, 46, 0.12);
+  --grain: #ff4db0;
+  --wave: #19f0ff;
+  --rt-neon-soft: rgba(25, 240, 255, 0.12);
 }
 ::selection {
-  background: var(--rt-lime);
+  background: var(--rt-neon);
   color: var(--rt-black);
 }
 
-/* ── Шапка: чёрная, с линейкой и лаймовой чертой ── */
+/* ── Шапка: чёрная, с линейкой и неоновой чертой ── */
 .md-header {
   background-color: var(--rt-black);
   background-image:
-    repeating-linear-gradient(90deg, rgba(184, 255, 46, 0.55) 0 1px, transparent 1px 8px),
-    linear-gradient(var(--rt-lime), var(--rt-lime));
+    repeating-linear-gradient(90deg, rgba(25, 240, 255, 0.55) 0 1px, transparent 1px 8px),
+    linear-gradient(var(--rt-neon), var(--rt-neon));
   background-size: 100% 5px, 100% 2px;
   background-position: left bottom 2px, left bottom;
   background-repeat: no-repeat;
@@ -96,7 +101,7 @@
   text-transform: uppercase;
 }
 .md-header__button.md-logo svg {
-  fill: var(--rt-lime);
+  fill: var(--rt-neon);
 }
 .md-header__button,
 .md-search__icon {
@@ -104,7 +109,7 @@
 }
 .md-tabs {
   background-color: var(--rt-black);
-  border-bottom: 2px solid var(--rt-lime);
+  border-bottom: 2px solid var(--rt-neon);
 }
 .md-tabs__link {
   font-family: var(--font-head);
@@ -115,9 +120,9 @@
 }
 .md-tabs__item--active .md-tabs__link,
 .md-tabs__link:hover {
-  color: var(--rt-lime);
+  color: var(--rt-neon);
 }
-/* Языки: квадратные плашки, текущий — лайм */
+/* Языки: квадратные плашки, текущий — неон */
 .gs-lang__link {
   min-width: 1.9rem;
   padding: 0.3rem 0.35rem;
@@ -130,17 +135,17 @@
 }
 .gs-lang__link:hover,
 .gs-lang__link:focus-visible {
-  color: var(--rt-lime);
-  border-color: var(--rt-lime);
+  color: var(--rt-neon);
+  border-color: var(--rt-neon);
 }
 .gs-lang__link--current,
 [data-md-color-scheme="default"] .gs-lang__link--current {
-  background-color: var(--rt-lime);
-  border-color: var(--rt-lime);
+  background-color: var(--rt-neon);
+  border-color: var(--rt-neon);
   color: var(--rt-black);
 }
 .md-footer {
-  border-top: 2px solid var(--rt-lime);
+  border-top: 2px solid var(--rt-neon);
 }
 .md-footer-meta,
 .md-footer {
@@ -163,7 +168,7 @@
   margin: 0 0 1.2em;
   padding-bottom: 0.55em;
   border-bottom: 2px solid var(--rt-edge);
-  background: linear-gradient(var(--rt-lime), var(--rt-lime)) left bottom / 3.4rem 6px no-repeat;
+  background: linear-gradient(var(--rt-neon), var(--rt-neon)) left bottom / 3.4rem 6px no-repeat;
 }
 .md-typeset h1::before {
   content: "GRANULAR SYNTHESIS ▸▸ TEXTBOOK";
@@ -200,13 +205,13 @@
   display: inline-block;
   padding: 0.25rem 0.65rem;
   background: var(--rt-black);
-  color: var(--rt-lime);
+  color: var(--rt-neon);
   font-family: var(--font-head);
   font-weight: 600;
   letter-spacing: 0.16em;
 }
 [data-md-color-scheme="slate"] .md-typeset .eyebrow {
-  background: var(--rt-lime);
+  background: var(--rt-neon);
   color: var(--rt-black);
 }
 .md-typeset .hero h1 {
@@ -216,7 +221,7 @@
   background: none;
 }
 
-/* ── Ссылки: маркер вместо цвета (светлая), лайм (тёмная) ── */
+/* ── Ссылки: маркер вместо цвета (светлая), неон (тёмная) ── */
 .md-typeset p a:not(.md-button):not(.headerlink),
 .md-typeset li a:not(.md-button):not(.headerlink),
 .md-typeset td a:not(.md-button) {
@@ -226,19 +231,19 @@
 [data-md-color-scheme="default"] .md-typeset p a:not(.md-button):not(.headerlink),
 [data-md-color-scheme="default"] .md-typeset li a:not(.md-button):not(.headerlink),
 [data-md-color-scheme="default"] .md-typeset td a:not(.md-button) {
-  background-image: linear-gradient(transparent 62%, var(--rt-lime) 62%);
+  background-image: linear-gradient(transparent 62%, var(--rt-neon) 62%);
 }
 [data-md-color-scheme="default"] .md-typeset p a:not(.md-button):not(.headerlink):hover,
 [data-md-color-scheme="default"] .md-typeset li a:not(.md-button):not(.headerlink):hover {
-  background-image: linear-gradient(var(--rt-lime), var(--rt-lime));
+  background-image: linear-gradient(var(--rt-neon), var(--rt-neon));
 }
 [data-md-color-scheme="slate"] .md-typeset p a:not(.md-button):not(.headerlink),
 [data-md-color-scheme="slate"] .md-typeset li a:not(.md-button):not(.headerlink) {
-  border-bottom: 1px solid rgba(184, 255, 46, 0.45);
+  border-bottom: 1px solid rgba(25, 240, 255, 0.45);
 }
 [data-md-color-scheme="slate"] .md-typeset p a:not(.md-button):not(.headerlink):hover,
 [data-md-color-scheme="slate"] .md-typeset li a:not(.md-button):not(.headerlink):hover {
-  background: var(--rt-lime);
+  background: var(--rt-neon);
   color: var(--rt-black);
 }
 
@@ -256,7 +261,7 @@
 }
 .md-typeset .md-button:hover,
 .md-typeset .md-button:focus {
-  background: var(--rt-lime);
+  background: var(--rt-neon);
   border-color: var(--rt-edge);
   color: var(--rt-black);
 }
@@ -265,14 +270,14 @@
 .md-typeset .md-button--primary:focus {
   background-color: var(--rt-black);
   border-color: var(--rt-black);
-  color: var(--rt-lime);
+  color: var(--rt-neon);
   clip-path: polygon(0 0, calc(100% - 0.8rem) 0, 100% 0.8rem, 100% 100%, 0 100%);
 }
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary,
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover,
 [data-md-color-scheme="slate"] .md-typeset .md-button--primary:focus {
-  background-color: var(--rt-lime);
-  border-color: var(--rt-lime);
+  background-color: var(--rt-neon);
+  border-color: var(--rt-neon);
   color: var(--rt-black);
 }
 .md-typeset .md-button--primary:hover,
@@ -302,7 +307,7 @@
 .md-typeset .admonition-title,
 .md-typeset summary {
   background-color: var(--rt-black) !important;
-  color: var(--rt-lime) !important;
+  color: var(--rt-neon) !important;
   border-radius: 0;
   font-family: var(--font-head);
   font-size: 0.7rem;
@@ -313,7 +318,7 @@
 .md-typeset .admonition-title::before,
 .md-typeset summary::before,
 .md-typeset summary::after {
-  background-color: var(--rt-lime) !important;
+  background-color: var(--rt-neon) !important;
 }
 [data-md-color-scheme="slate"] .md-typeset .admonition-title,
 [data-md-color-scheme="slate"] .md-typeset summary {
@@ -328,26 +333,26 @@
   transition: background-color 0.15s;
 }
 .md-typeset .grid.cards > ul > li:hover {
-  background-color: var(--rt-lime-soft);
+  background-color: var(--rt-neon-soft);
   border-color: var(--rt-edge);
 }
 .md-typeset .grid.cards .num {
   display: inline-block;
   padding: 0.15rem 0.5rem;
   background: var(--rt-black);
-  color: var(--rt-lime);
+  color: var(--rt-neon);
   font-family: var(--font-head);
   font-weight: 600;
   letter-spacing: 0.14em;
 }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards .num {
-  background: var(--rt-lime);
+  background: var(--rt-neon);
   color: var(--rt-black);
 }
 
 /* ── Иллюстрации: «плашка» с метками обрезки ──
-   Нарисованные картинки перекрашены сдвигом оттенка: оранжевый станет маджентой,
-   голубой станет лаймом. Скриншоты программ (Serum, Granulator, Pigments) не трогаем. */
+   Нарисованные картинки перекрашены сдвигом оттенка: оранжевые зёрна станут голубыми,
+   голубые волны станут розовыми. Скриншоты программ (Serum, Granulator, Pigments) не трогаем. */
 .md-typeset figure {
   position: relative;
   width: fit-content;
@@ -369,7 +374,8 @@
   max-width: 100%;
 }
 .md-typeset img[src$=".png"]:not([src$="10-1.png"]) {
-  filter: hue-rotate(-72deg) saturate(1.25) contrast(1.06);
+  /* contrast давит тёмно-синий фон картинок в чистый чёрный (без бордового оттенка) */
+  filter: hue-rotate(160deg) saturate(1.2) contrast(1.55) brightness(0.92);
 }
 .md-typeset figure::before,
 .md-typeset figure::after,
@@ -441,7 +447,7 @@
 }
 .md-typeset table:not([class]) th {
   background-color: var(--rt-black);
-  color: var(--rt-lime);
+  color: var(--rt-neon);
   font-family: var(--font-head);
   font-size: 0.66rem;
   font-weight: 600;
@@ -450,6 +456,16 @@
 }
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   background-color: #1b2126;
+}
+
+/* ── Упражнения: квадратный маркер вместо оранжевой точки ── */
+.md-typeset h2.exercise::before {
+  width: 0.42em;
+  height: 0.42em;
+  border: 2px solid var(--rt-edge);
+  border-radius: 0;
+  background: var(--rt-neon);
+  vertical-align: 0.1em;
 }
 
 /* перебиваем скругления тёмной темы из extra.css */

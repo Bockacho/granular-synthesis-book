@@ -329,7 +329,7 @@
       g2d.clearRect(0, 0, W, H);
       const skin = getComputedStyle(canvas);
       const waveColor = skin.getPropertyValue("--gd-wave").trim() || "#8fd3e0";
-      const grainColor = skin.getPropertyValue("--gd-grain").trim() || "#e8832a";
+      const grainColor = skin.getPropertyValue("--gd-dot").trim() || skin.getPropertyValue("--gd-grain").trim() || "#19f0ff";
       g2d.globalAlpha = 0.8;
       g2d.strokeStyle = waveColor;
       g2d.lineWidth = 2 * dpr;

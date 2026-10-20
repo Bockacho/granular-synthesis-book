@@ -399,9 +399,9 @@
 /* ── Звуковые демо: блок «GRANULAR UNIT 01» ──
    Ретрофутуризм 2000-х: хром, стеклянные кнопки, кислотный ЖК-дисплей, асимметричные углы.
    Шрифты: Tektur (метки, кириллица есть), Exo 2 (читаемый текст), JetBrains Mono (цифры).
-   Скины следуют теме сайта: светлая тема — серебро и лайм, тёмная — графит и циан. */
+   Скины следуют теме сайта: светлая тема — серебро и неон, тёмная — графит и циан. */
 .grain-demo {
-  /* серебро + кислотный лайм + маджента */
+  /* серебро + кислотный неон + маджента */
   --gd-panel-1: #f4f7f8;
   --gd-panel-2: #c9d2d8;
   --gd-ink: #0b0d0f;
@@ -411,10 +411,11 @@
   --gd-title-bg: #0b0d0f;
   --gd-title-fg: #f4f7f8;
   --gd-lcd: #060a06;
-  --gd-lcd-fg: #b8ff2e;
-  --gd-lcd-text: #e9ffc7;
-  --gd-grid: rgba(184, 255, 46, 0.11);
-  --gd-wave: #8be02a;
+  --gd-lcd-fg: #19f0ff;
+  --gd-lcd-text: #dffcff;
+  --gd-grid: rgba(25, 240, 255, 0.11);
+  --gd-wave: #ff2fa0;
+  --gd-dot: #19f0ff;
   --gd-grain: #ff2fa0;
   --gd-led-off: #8a8f94;
   --gd-led-glow: rgba(255, 47, 160, 0.9);
@@ -422,7 +423,7 @@
   --gd-btn-2: #bcc6cc;
   --gd-btn-fg: #0b0d0f;
   --gd-on-bg: #0b0d0f;
-  --gd-on-fg: #b8ff2e;
+  --gd-on-fg: #19f0ff;
   --gd-thumb-1: #ffffff;
   --gd-thumb-2: #aab5bc;
   --gd-shadow: rgba(11, 13, 15, 0.28);
@@ -437,19 +438,20 @@
   --gd-line: #59636c;
   --gd-title-bg: #000000;
   --gd-title-fg: #ffffff;
-  --gd-lcd: #02090b;
+  --gd-lcd: #060a06;
   --gd-lcd-fg: #19f0ff;
-  --gd-lcd-text: #d9fbff;
+  --gd-lcd-text: #dffcff;
   --gd-grid: rgba(25, 240, 255, 0.11);
-  --gd-wave: #17b9c6;
-  --gd-grain: #ff3b3b;
+  --gd-wave: #ff4db0;
+  --gd-dot: #19f0ff;
+  --gd-grain: #ff4db0;
   --gd-led-off: #5a6068;
-  --gd-led-glow: rgba(255, 59, 59, 0.9);
+  --gd-led-glow: rgba(255, 77, 176, 0.9);
   --gd-btn-1: #48515a;
   --gd-btn-2: #1f2429;
   --gd-btn-fg: #eef2f4;
   --gd-on-bg: #19f0ff;
-  --gd-on-fg: #021014;
+  --gd-on-fg: #0b0d0f;
   --gd-thumb-1: #f4f7f8;
   --gd-thumb-2: #8d99a2;
   --gd-shadow: rgba(0, 0, 0, 0.5);
