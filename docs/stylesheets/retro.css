@@ -472,6 +472,11 @@
   vertical-align: 0.1em;
 }
 
+/* Якорь «¶» у заголовков: достаточный контраст на светлой теме */
+.md-typeset .headerlink {
+  color: var(--md-default-fg-color--light);
+}
+
 /* Узкие экраны: название в шапке не схлопывается до двух букв */
 @media (max-width: 34em) {
   .md-header__topic:first-child,
@@ -487,6 +492,17 @@
   }
   .md-header__button.md-logo {
     display: none;
+  }
+  /* Длинные слова (нем. «Granularsynthese») не должны распирать страницу */
+  .md-typeset h1,
+  .md-typeset h2 {
+    overflow-wrap: anywhere;
+  }
+  .md-typeset .hero h1 {
+    font-size: 1.7em;
+  }
+  .md-typeset .hero .eyebrow {
+    max-width: 100%;
   }
 }
 
