@@ -247,6 +247,21 @@
   color: var(--rt-black);
 }
 
+/* Окно зума (glightbox) показывает картинку вне .md-typeset, поэтому перекраска повторена здесь */
+.gslide-image img[src$=".png"]:not([src$="10-1.png"]) {
+  filter: hue-rotate(160deg) saturate(2.4) contrast(1.55) brightness(0.9);
+}
+
+/* Ссылка плагина зума вокруг картинки (a.glightbox): без маркера, подчёркивания и отступов */
+.md-typeset a.glightbox,
+.md-typeset a.glightbox:hover,
+.md-typeset a.glightbox:focus {
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  color: inherit;
+}
+
 /* ── Кнопки: плоские, с одним срезанным углом ── */
 .md-typeset .md-button {
   border: 2px solid var(--rt-edge);
