@@ -10,29 +10,29 @@
   --rt-neon: #19f0ff;
   --rt-neon-soft: rgba(25, 240, 255, 0.24);
   --rt-black: #0b0d0f;
-  --rt-paper: #f1f4f5;
+  --rt-paper: #d3dade;
 }
 
 [data-md-color-scheme="default"] {
-  --md-default-bg-color: #eef0ef;
+  --md-default-bg-color: #d4d9dc;
   --md-default-fg-color: #0b0d0f;
-  --md-default-fg-color--light: #46515a;
+  --md-default-fg-color--light: #36424a;
   --md-default-fg-color--lighter: #5b6770;
-  --md-default-fg-color--lightest: #cfd5d3;
+  --md-default-fg-color--lightest: #b0b8bd;
   --md-typeset-color: #171c20;
   --md-typeset-a-color: #0b0d0f;
   --md-accent-fg-color: #c8005f;
   --md-primary-fg-color: #0b0d0f;
-  --md-primary-bg-color: #f1f4f5;
-  --md-primary-bg-color--light: #98a4ac;
-  --md-code-bg-color: #e1e6e4;
+  --md-primary-bg-color: #d3dade;
+  --md-primary-bg-color--light: #8a969e;
+  --md-code-bg-color: #c3c9ce;
   --md-code-fg-color: #8a0043;
   --md-footer-bg-color: #0b0d0f;
   --md-footer-bg-color--dark: #050607;
-  --md-typeset-table-color: #b9c1bf;
-  --md-admonition-bg-color: #e4e8e6;
+  --md-typeset-table-color: #a6afb5;
+  --md-admonition-bg-color: #c7cdd2;
   --head-color: #0b0d0f;
-  --card-bg: #e4e8e6;
+  --card-bg: #c7cdd2;
   --card-border: #0b0d0f;
   --rule: #0b0d0f;
   --eyebrow: #c8005f;
@@ -48,28 +48,28 @@
   --md-default-bg-color--light: #12161a;
   --md-default-bg-color--lighter: #181d22;
   --md-default-bg-color--lightest: #232a30;
-  --md-default-fg-color: #f1f4f5;
-  --md-default-fg-color--light: #98a4ac;
+  --md-default-fg-color: #d9dfe3;
+  --md-default-fg-color--light: #8a969e;
   --md-default-fg-color--lighter: #7d8991;
   --md-default-fg-color--lightest: #232a30;
-  --md-typeset-color: #cdd5d9;
+  --md-typeset-color: #bcc5cb;
   --md-typeset-a-color: #19f0ff;
   --md-accent-fg-color: #19f0ff;
   --md-primary-fg-color: #0b0d0f;
-  --md-primary-bg-color: #f1f4f5;
-  --md-primary-bg-color--light: #98a4ac;
+  --md-primary-bg-color: #d3dade;
+  --md-primary-bg-color--light: #8a969e;
   --md-code-bg-color: #12161a;
   --md-code-fg-color: #ff79c0;
   --md-footer-bg-color: #050607;
   --md-footer-bg-color--dark: #000000;
   --md-typeset-table-color: #2a3136;
   --md-admonition-bg-color: #12161a;
-  --head-color: #f1f4f5;
+  --head-color: #d9dfe3;
   --card-bg: #12161a;
   --card-border: #3a4248;
   --rule: #2a3136;
   --eyebrow: #19f0ff;
-  --rt-edge: #d7dde0;
+  --rt-edge: #7f8a92;
   --rt-accent2: #ff4db0;
   --grain: #ff4db0;
   --wave: #19f0ff;
@@ -116,7 +116,7 @@
   font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #98a4ac;
+  color: #8a969e;
 }
 .md-tabs__item--active .md-tabs__link,
 .md-tabs__link:hover {
@@ -131,7 +131,7 @@
   font-family: var(--font-head);
   font-size: 0.6rem;
   letter-spacing: 0.08em;
-  color: #98a4ac;
+  color: #8a969e;
 }
 .gs-lang__link:hover,
 .gs-lang__link:focus-visible {
@@ -466,6 +466,25 @@
   border-radius: 0;
   background: var(--rt-neon);
   vertical-align: 0.1em;
+}
+
+/* Поиск в шапке: тёмная сталь, а не светлое пятно */
+.md-search__input {
+  background-color: #1b2126;
+  color: #cfd6db;
+  border-radius: 0;
+}
+.md-search__input::placeholder {
+  color: #8a969e;
+}
+.md-search__icon {
+  color: #8a969e;
+}
+
+/* Все типы блоков (question, warning, danger, ...) в одну рамку, без цветных обводок Material */
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: var(--rt-edge) !important;
 }
 
 /* перебиваем скругления тёмной темы из extra.css */
