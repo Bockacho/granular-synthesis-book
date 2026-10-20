@@ -1,50 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1260" viewBox="0 0 760 630" font-family="Helvetica, Arial, sans-serif" font-size="13">
-<rect width="760" height="630" fill="#ffffff"/>
-<text x="24" y="34" font-size="15" font-weight="600" fill="#1f1f1f">Grain-Länge und Dichte bestimmen den Charakter der Wolke</text>
-<text x="24" y="56" font-size="11.5" fill="#5f5f5f">Beide Skalen sind logarithmisch. Die Zonengrenzen sind ungefähr und verschieben sich je nach Quelle.</text>
-<line x1="120.0" x2="120.0" y1="120" y2="520" stroke="#e3e3e3"/>
-<line x1="120" x2="700" y1="520.0" y2="520.0" stroke="#e3e3e3"/>
-<line x1="313.3" x2="313.3" y1="120" y2="520" stroke="#e3e3e3"/>
-<line x1="120" x2="700" y1="386.7" y2="386.7" stroke="#e3e3e3"/>
-<line x1="506.7" x2="506.7" y1="120" y2="520" stroke="#e3e3e3"/>
-<line x1="120" x2="700" y1="253.3" y2="253.3" stroke="#e3e3e3"/>
-<line x1="700.0" x2="700.0" y1="120" y2="520" stroke="#e3e3e3"/>
-<line x1="120" x2="700" y1="120.0" y2="120.0" stroke="#e3e3e3"/>
-<rect x="124.0" y="350.5" width="185.3" height="165.5" rx="8" fill="#2F6FDB" fill-opacity="0.14" stroke="#2F6FDB"/>
-<text x="216.7" y="432" text-anchor="middle" font-weight="600" fill="#1f1f1f">Klicks, Knistern</text>
-<text x="216.7" y="448" text-anchor="middle" font-size="11.5" fill="#5f5f5f">kurz und selten</text>
-<rect x="124.0" y="124.0" width="243.5" height="125.3" rx="8" fill="#E8743B" fill-opacity="0.14" stroke="#E8743B"/>
-<text x="132.0" y="215" text-anchor="start" font-weight="600" fill="#1f1f1f">Summen, Ton</text>
-<text x="132.0" y="231" text-anchor="start" font-size="11.5" fill="#5f5f5f">gleichmäßiger Strom: ein Ton</text>
-<text x="132.0" y="245" text-anchor="start" font-size="11.5" fill="#5f5f5f">ungeordnet: ein Zischen</text>
-<rect x="375.5" y="367.2" width="127.1" height="108.7" rx="8" fill="#23A877" fill-opacity="0.14" stroke="#23A877"/>
-<text x="439.1" y="412" text-anchor="middle" font-weight="600" fill="#1f1f1f">Tropfen, Rattern</text>
-<text x="439.1" y="428" text-anchor="middle" font-size="11.5" fill="#5f5f5f">gepunktet mit Pausen</text>
-<rect x="452.5" y="257.3" width="142.4" height="101.9" rx="8" fill="#2E4A7D" fill-opacity="0.14" stroke="#2E4A7D"/>
-<text x="514.0" y="300" text-anchor="middle" font-weight="600" fill="#1f1f1f">Wolke</text>
-<text x="514.0" y="316" text-anchor="middle" font-size="11.5" fill="#5f5f5f">überlappende Grains</text>
-<rect x="510.7" y="430.8" width="185.3" height="85.2" rx="8" fill="#D6457A" fill-opacity="0.14" stroke="#D6457A"/>
-<text x="520.0" y="485" text-anchor="start" font-weight="600" fill="#1f1f1f">Zerschneiden</text>
-<text x="520.0" y="501" text-anchor="start" font-size="11.5" fill="#5f5f5f">Fetzen der Quelle</text>
-<rect x="510.7" y="124.0" width="185.3" height="125.3" rx="8" fill="#2E8B2E" fill-opacity="0.14" stroke="#2E8B2E"/>
-<text x="603.0" y="180" text-anchor="middle" font-weight="600" fill="#1f1f1f">Wand</text>
-<text x="603.0" y="196" text-anchor="middle" font-size="11.5" fill="#5f5f5f">die Quelle verschwimmt</text>
-<line x1="120.0" y1="120.0" x2="700.0" y2="520.0" stroke="#8a8a8a" stroke-width="1.5"/>
-<line x1="313.3" y1="120.0" x2="700.0" y2="386.7" stroke="#8a8a8a" stroke-width="1.25" stroke-dasharray="5 4"/>
-<text x="380.0" y="284" text-anchor="start" font-size="11.5" fill="#5f5f5f">O = 1</text>
-<text x="430.0" y="186" text-anchor="start" font-size="11.5" fill="#5f5f5f">O = 10</text>
-<line x1="120" x2="700" y1="520" y2="520" stroke="#8a8a8a" stroke-width="1.25"/>
-<line x1="120" x2="120" y1="120" y2="520" stroke="#8a8a8a" stroke-width="1.25"/>
-<text x="120.0" y="540" text-anchor="middle" font-size="11.5" fill="#5f5f5f">1 ms</text>
-<text x="313.3" y="540" text-anchor="middle" font-size="11.5" fill="#5f5f5f">10 ms</text>
-<text x="506.7" y="540" text-anchor="middle" font-size="11.5" fill="#5f5f5f">100 ms</text>
-<text x="700.0" y="540" text-anchor="middle" font-size="11.5" fill="#5f5f5f">1 s</text>
-<text x="112.0" y="524.0" text-anchor="end" font-size="11.5" fill="#5f5f5f">1</text>
-<text x="112.0" y="390.7" text-anchor="end" font-size="11.5" fill="#5f5f5f">10</text>
-<text x="112.0" y="257.3" text-anchor="end" font-size="11.5" fill="#5f5f5f">100</text>
-<text x="112.0" y="124.0" text-anchor="end" font-size="11.5" fill="#5f5f5f">1000</text>
-<text x="410.0" y="566" text-anchor="middle" fill="#1f1f1f">Grain-Länge</text>
-<text x="48" y="320" text-anchor="middle" transform="rotate(-90 48 320)" fill="#1f1f1f">Dichte, Grains pro Sekunde</text>
-<text x="24.0" y="594" text-anchor="start" font-size="11.5" fill="#5f5f5f">Durchgezogene Linie: Überlappung 1, Grains lückenlos. Links und darunter gepunktet mit Pausen, rechts und darüber eine Wolke.</text>
-<text x="24.0" y="612" text-anchor="start" font-size="11.5" fill="#5f5f5f">Gestrichelte Linie: Überlappung 10, dahinter verdichtet sich der Klang zur Wand.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1260" viewBox="0 0 760 630" font-family='"Helvetica Neue", Helvetica, Arial, sans-serif' font-size="13">
+<title>Grain-Länge und Dichte bestimmen den Charakter der Wolke</title>
+<rect width="760" height="630" fill="#070b0f"/>
+<rect x="24" y="16" width="30" height="3" fill="#19f0ff"/>
+<text x="24" y="40" font-size="15.5" font-weight="700" fill="#eef2f4">Grain-Länge und Dichte bestimmen den Charakter der Wolke</text>
+<text x="24" y="60" font-size="11.5" fill="#9fb0b9">Beide Skalen sind logarithmisch. Die Zonengrenzen sind ungefähr und verschieben sich je nach Quelle.</text>
+<line x1="120.0" x2="120.0" y1="120.0" y2="520.0" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="120.0" x2="700.0" y1="520.0" y2="520.0" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="313.3" x2="313.3" y1="120.0" y2="520.0" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="120.0" x2="700.0" y1="386.7" y2="386.7" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="506.7" x2="506.7" y1="120.0" y2="520.0" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="120.0" x2="700.0" y1="253.3" y2="253.3" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="700.0" x2="700.0" y1="120.0" y2="520.0" stroke="#19f0ff" stroke-opacity="0.16"/>
+<line x1="120.0" x2="700.0" y1="120.0" y2="120.0" stroke="#19f0ff" stroke-opacity="0.16"/>
+<path d="M124.0,350.5 L300.3,350.5 L309.3,359.5 L309.3,516.0 L124.0,516.0 Z" fill="#19f0ff" fill-opacity="0.13" stroke="#19f0ff" stroke-width="1.5"/>
+<path d="M124.0,124.0 L358.5,124.0 L367.5,133.0 L367.5,249.3 L124.0,249.3 Z" fill="#ff4db0" fill-opacity="0.13" stroke="#ff4db0" stroke-width="1.5"/>
+<path d="M375.5,367.2 L493.6,367.2 L502.6,376.2 L502.6,475.9 L375.5,475.9 Z" fill="#19f0ff" fill-opacity="0.13" stroke="#19f0ff" stroke-width="1.5" stroke-dasharray="6 4"/>
+<path d="M452.5,257.3 L585.9,257.3 L594.9,266.3 L594.9,359.2 L452.5,359.2 Z" fill="#aab5bd" fill-opacity="0.13" stroke="#aab5bd" stroke-width="1.5"/>
+<path d="M510.7,430.8 L687.0,430.8 L696.0,439.8 L696.0,516.0 L510.7,516.0 Z" fill="#aab5bd" fill-opacity="0.13" stroke="#aab5bd" stroke-width="1.5" stroke-dasharray="6 4"/>
+<path d="M510.7,124.0 L687.0,124.0 L696.0,133.0 L696.0,249.3 L510.7,249.3 Z" fill="#ff4db0" fill-opacity="0.13" stroke="#ff4db0" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="216.7" y="432" text-anchor="middle" font-weight="700" fill="#eef2f4">Klicks, Knistern</text>
+<text x="216.7" y="448" text-anchor="middle" font-size="11.5" fill="#9fb0b9">kurz und selten</text>
+<text x="132.0" y="215" text-anchor="start" font-weight="700" fill="#eef2f4">Summen, Ton</text>
+<text x="132.0" y="231" text-anchor="start" font-size="11.5" fill="#9fb0b9">gleichmäßiger Strom: ein Ton</text>
+<text x="132.0" y="245" text-anchor="start" font-size="11.5" fill="#9fb0b9">ungeordnet: ein Zischen</text>
+<text x="439.1" y="412" text-anchor="middle" font-weight="700" fill="#eef2f4">Tropfen, Rattern</text>
+<text x="439.1" y="428" text-anchor="middle" font-size="11.5" fill="#9fb0b9">gepunktet mit Pausen</text>
+<text x="514.0" y="300" text-anchor="middle" font-weight="700" fill="#eef2f4">Wolke</text>
+<text x="514.0" y="316" text-anchor="middle" font-size="11.5" fill="#9fb0b9">überlappende Grains</text>
+<text x="520.0" y="485" text-anchor="start" font-weight="700" fill="#eef2f4">Zerschneiden</text>
+<text x="520.0" y="501" text-anchor="start" font-size="11.5" fill="#9fb0b9">Fetzen der Quelle</text>
+<text x="603.0" y="180" text-anchor="middle" font-weight="700" fill="#eef2f4">Wand</text>
+<text x="603.0" y="196" text-anchor="middle" font-size="11.5" fill="#9fb0b9">die Quelle verschwimmt</text>
+<line x1="120" y1="120" x2="700" y2="520" stroke="#eef2f4" stroke-width="1.6" stroke-opacity="0.85"/>
+<line x1="313.3" y1="120" x2="700" y2="386.7" stroke="#eef2f4" stroke-width="1.4" stroke-opacity="0.65" stroke-dasharray="5 4"/>
+<text x="380" y="284" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#eef2f4">O = 1</text>
+<text x="430" y="186" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#eef2f4">O = 10</text>
+<line x1="120.0" x2="700.0" y1="520.0" y2="520.0" stroke="#8a969e" stroke-width="1.5"/>
+<line x1="120.0" x2="120.0" y1="120.0" y2="520.0" stroke="#8a969e" stroke-width="1.5"/>
+<line x1="178.2" x2="178.2" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="479.9" y2="479.9" stroke="#8a969e"/>
+<line x1="212.2" x2="212.2" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="456.4" y2="456.4" stroke="#8a969e"/>
+<line x1="236.4" x2="236.4" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="439.7" y2="439.7" stroke="#8a969e"/>
+<line x1="255.1" x2="255.1" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="426.8" y2="426.8" stroke="#8a969e"/>
+<line x1="270.4" x2="270.4" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="416.2" y2="416.2" stroke="#8a969e"/>
+<line x1="283.4" x2="283.4" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="407.3" y2="407.3" stroke="#8a969e"/>
+<line x1="294.6" x2="294.6" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="399.6" y2="399.6" stroke="#8a969e"/>
+<line x1="304.5" x2="304.5" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="392.8" y2="392.8" stroke="#8a969e"/>
+<line x1="371.5" x2="371.5" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="346.5" y2="346.5" stroke="#8a969e"/>
+<line x1="405.6" x2="405.6" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="323.1" y2="323.1" stroke="#8a969e"/>
+<line x1="429.7" x2="429.7" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="306.4" y2="306.4" stroke="#8a969e"/>
+<line x1="448.5" x2="448.5" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="293.5" y2="293.5" stroke="#8a969e"/>
+<line x1="463.8" x2="463.8" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="282.9" y2="282.9" stroke="#8a969e"/>
+<line x1="476.7" x2="476.7" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="274.0" y2="274.0" stroke="#8a969e"/>
+<line x1="487.9" x2="487.9" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="266.3" y2="266.3" stroke="#8a969e"/>
+<line x1="497.8" x2="497.8" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="259.4" y2="259.4" stroke="#8a969e"/>
+<line x1="564.9" x2="564.9" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="213.2" y2="213.2" stroke="#8a969e"/>
+<line x1="598.9" x2="598.9" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="189.7" y2="189.7" stroke="#8a969e"/>
+<line x1="623.1" x2="623.1" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="173.1" y2="173.1" stroke="#8a969e"/>
+<line x1="641.8" x2="641.8" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="160.1" y2="160.1" stroke="#8a969e"/>
+<line x1="657.1" x2="657.1" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="149.6" y2="149.6" stroke="#8a969e"/>
+<line x1="670.1" x2="670.1" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="140.7" y2="140.7" stroke="#8a969e"/>
+<line x1="681.3" x2="681.3" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="132.9" y2="132.9" stroke="#8a969e"/>
+<line x1="691.2" x2="691.2" y1="520.0" y2="524.0" stroke="#8a969e"/>
+<line x1="116.0" x2="120.0" y1="126.1" y2="126.1" stroke="#8a969e"/>
+<line x1="120.0" x2="120.0" y1="520.0" y2="527.0" stroke="#8a969e" stroke-width="1.5"/>
+<text x="120.0" y="542.0" text-anchor="middle" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">1 ms</text>
+<line x1="313.3" x2="313.3" y1="520.0" y2="527.0" stroke="#8a969e" stroke-width="1.5"/>
+<text x="313.3" y="542.0" text-anchor="middle" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">10 ms</text>
+<line x1="506.7" x2="506.7" y1="520.0" y2="527.0" stroke="#8a969e" stroke-width="1.5"/>
+<text x="506.7" y="542.0" text-anchor="middle" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">100 ms</text>
+<line x1="700.0" x2="700.0" y1="520.0" y2="527.0" stroke="#8a969e" stroke-width="1.5"/>
+<text x="700.0" y="542.0" text-anchor="middle" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">1 s</text>
+<line x1="113.0" x2="120.0" y1="520.0" y2="520.0" stroke="#8a969e" stroke-width="1.5"/>
+<text x="109.0" y="524.0" text-anchor="end" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">1</text>
+<line x1="113.0" x2="120.0" y1="386.7" y2="386.7" stroke="#8a969e" stroke-width="1.5"/>
+<text x="109.0" y="390.7" text-anchor="end" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">10</text>
+<line x1="113.0" x2="120.0" y1="253.3" y2="253.3" stroke="#8a969e" stroke-width="1.5"/>
+<text x="109.0" y="257.3" text-anchor="end" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">100</text>
+<line x1="113.0" x2="120.0" y1="120.0" y2="120.0" stroke="#8a969e" stroke-width="1.5"/>
+<text x="109.0" y="124.0" text-anchor="end" font-family='ui-monospace, "SF Mono", Menlo, Consolas, monospace' font-size="11.5" fill="#9fb0b9">1000</text>
+<text x="410" y="568" text-anchor="middle" font-weight="700" fill="#eef2f4">Grain-Länge</text>
+<text x="46" y="320" text-anchor="middle" transform="rotate(-90 46 320)" font-weight="700" fill="#eef2f4">Dichte, Grains pro Sekunde</text>
+<text x="24" y="596" font-size="10.6" fill="#9fb0b9">Durchgezogene Linie: Überlappung 1, Grains lückenlos. Links und darunter gepunktet mit Pausen, rechts und darüber eine Wolke.</text>
+<text x="24" y="613" font-size="10.6" fill="#9fb0b9">Gestrichelte Linie: Überlappung 10, dahinter verdichtet sich der Klang zur Wand.</text>
 </svg>

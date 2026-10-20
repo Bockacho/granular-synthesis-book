@@ -425,14 +425,11 @@
   letter-spacing: 0.12em;
   color: var(--rt-accent2);
 }
-/* Диаграммы SVG нарисованы на белом: на светлой странице «вплавляем» в фон (multiply),
-   на тёмной инвертируем с сохранением оттенков, чтобы не было белого прямоугольника. */
+/* Диаграммы SVG теперь нарисованы сразу тёмным экраном (scripts/make_karta_zvuka.py),
+   фильтры не нужны: одинаково смотрятся на обеих темах. */
 .md-typeset img[src$=".svg"] {
-  mix-blend-mode: multiply;
-}
-[data-md-color-scheme="slate"] .md-typeset img[src$=".svg"] {
   mix-blend-mode: normal;
-  filter: invert(0.9) hue-rotate(180deg) saturate(0.85);
+  filter: none;
 }
 
 /* ── Боковые меню ── */
