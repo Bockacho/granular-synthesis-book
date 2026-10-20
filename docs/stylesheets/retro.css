@@ -35,11 +35,11 @@
   --card-bg: #c7cdd2;
   --card-border: #0b0d0f;
   --rule: #0b0d0f;
-  --eyebrow: #c8005f;
+  --eyebrow: #a30049;
   --rt-edge: #0b0d0f;
-  --rt-accent2: #c8005f;
+  --rt-accent2: #a30049;
   /* старые имена из extra.css: оранжевое «зерно» и голубая «волна» теперь маджента и неон */
-  --grain: #c8005f;
+  --grain: #a30049;
   --wave: #19f0ff;
 }
 [data-md-color-scheme="slate"] {
@@ -375,7 +375,7 @@
 }
 .md-typeset img[src$=".png"]:not([src$="10-1.png"]) {
   /* contrast давит тёмно-синий фон картинок в чистый чёрный (без бордового оттенка) */
-  filter: hue-rotate(160deg) saturate(1.2) contrast(1.55) brightness(0.92);
+  filter: hue-rotate(160deg) saturate(2.4) contrast(1.55) brightness(0.9);
 }
 .md-typeset figure::before,
 .md-typeset figure::after,
@@ -396,10 +396,11 @@
 }
 .md-typeset figure::after,
 .md-typeset .hero > p:has(img)::after {
+  /* видоискатель: метки сверху, чтобы не зависеть от высоты подписи */
+  top: -0.55rem;
   right: -0.55rem;
-  bottom: -0.55rem;
+  border-top: 3px solid var(--rt-edge);
   border-right: 3px solid var(--rt-edge);
-  border-bottom: 3px solid var(--rt-edge);
 }
 .md-typeset figcaption {
   /* подпись не растягивает плашку: ширина берётся от картинки */
@@ -424,8 +425,14 @@
   letter-spacing: 0.12em;
   color: var(--rt-accent2);
 }
-[data-md-color-scheme="slate"] img[src$="karta-zvuka.svg"] {
-  filter: none;
+/* Диаграммы SVG нарисованы на белом: на светлой странице «вплавляем» в фон (multiply),
+   на тёмной инвертируем с сохранением оттенков, чтобы не было белого прямоугольника. */
+.md-typeset img[src$=".svg"] {
+  mix-blend-mode: multiply;
+}
+[data-md-color-scheme="slate"] .md-typeset img[src$=".svg"] {
+  mix-blend-mode: normal;
+  filter: invert(0.9) hue-rotate(180deg) saturate(0.85);
 }
 
 /* ── Боковые меню ── */
@@ -466,6 +473,29 @@
   border-radius: 0;
   background: var(--rt-neon);
   vertical-align: 0.1em;
+}
+
+/* Узкие экраны: название в шапке не схлопывается до двух букв */
+@media (max-width: 34em) {
+  .md-header__topic:first-child,
+  .md-header__title {
+    letter-spacing: 0.04em;
+    font-size: 0.68rem;
+  }
+  .gs-lang__link {
+    min-width: 1.55rem;
+    padding: 0.28rem 0.15rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+  }
+  .md-header__button.md-logo {
+    display: none;
+  }
+}
+
+/* На главной заголовок «Содержание» без номера раздела */
+.md-content__inner:has(.hero) h2::before {
+  display: none;
 }
 
 /* Поиск в шапке: тёмная сталь, а не светлое пятно */
